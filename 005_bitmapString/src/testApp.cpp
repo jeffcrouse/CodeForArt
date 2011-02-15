@@ -40,6 +40,8 @@ void testApp::draw(){
 		ofDrawBitmapString(msg, 10, y);
 	}
 	
+	ofDrawBitmapString("This is one line\nThis is another line", 100, 20);
+	
 }
 
 //--------------------------------------------------------------

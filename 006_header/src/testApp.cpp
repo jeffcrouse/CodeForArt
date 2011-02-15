@@ -6,19 +6,6 @@
  
  */
 
-float h=0;
-int hx;
-int hy;
-
-float m=0;
-int mx;
-int my;
-
-int origin_x = 320;	// We should use ofGetWidth 
-int origin_y = 240;	// and ofGetHeight here
-
-
-
 //--------------------------------------------------------------
 void testApp::setup(){
 

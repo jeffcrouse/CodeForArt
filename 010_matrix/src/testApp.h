@@ -4,8 +4,6 @@
 
 #include "ofMain.h"
 
-#define MOVE_DISTANCE 5
-
 class testApp : public ofBaseApp{
 
 	public:
@@ -21,10 +19,11 @@ class testApp : public ofBaseApp{
 		void mouseReleased(int x, int y, int button);
 		void windowResized(int w, int h);
 
-		void drawFrog(int x, int y);
-	
-		int x;
-		int y;
+		void drawFrog();
+
+		int frogX;
+		int frogY;
+		int frogAngle;
 };
 
 #endif

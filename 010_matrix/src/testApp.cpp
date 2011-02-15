@@ -18,42 +18,15 @@ void testApp::setup(){
 
 	ofSetFrameRate(24);
 	ofBackground(255,255,255);
-	ofSetWindowShape(640, 480);
-
+	//ofSetWindowShape(640, 480);
 	
-	x = 320;
-	y = 380;
+	frogX = ofGetWidth()/2;
+	frogY = ofGetHeight()/2;
+	frogAngle=0;
 }
 
-//--------------------------------------------------------------
-void testApp::update(){
-
-
+void testApp::drawFrog() {
 	
-}
-
-//--------------------------------------------------------------
-void testApp::draw(){
-
-	ofSetColor(0, 0, 0);
-	string msg = "x=" + ofToString(x) + " y=" + ofToString(y);
-	ofDrawBitmapString(msg, 10, 20);
-	
-	
-	drawFrog(x, y);
-	
-
-	if(y>ofGetHeight()-20)
-	{
-		drawFrog(x, ofGetHeight()-y-20);
-	}
-}
-
-void testApp::drawFrog(int x, int y) {
-	
-	ofPushMatrix();
-	ofTranslate(x, y);
-	ofScale(2, 2, 2);
 	
 	// Draw frog body
 	ofSetColor(32, 219, 36);
@@ -108,9 +81,40 @@ void testApp::drawFrog(int x, int y) {
 	// Draw eyes
 	ofSetColor(253, 3, 217);
 	ofCircle(7, 3, 2);
-	ofCircle(15, 3, 2);	
+	ofCircle(15, 3, 2);		
+}
+
+//--------------------------------------------------------------
+void testApp::update(){
+
+
 	
+}
+
+//--------------------------------------------------------------
+void testApp::draw(){
+
+	//ofSetColor(0, 0, 0);
+	//string msg = "x=" + ofToString(x) + " y=" + ofToString(y);
+	//ofDrawBitmapString(msg, 10, 20);
+	
+
+	ofPushMatrix();
+	{
+		ofTranslate(frogX, frogY);
+		ofRotateZ(frogAngle);
+		ofScale(5, 5);
+		ofTranslate(-10, -7);
+		
+		drawFrog();
+	}
 	ofPopMatrix();
+	
+	
+	
+	ofSetColor(255, 0, 0);
+	ofRect(0, ofGetHeight()-100, ofGetWidth(), 10);
+
 }
 
 //--------------------------------------------------------------
@@ -120,30 +124,25 @@ void testApp::keyPressed(int key){
 
 //--------------------------------------------------------------
 void testApp::keyReleased(int key){
-
-	if(key==OF_KEY_UP)
+	if(key == OF_KEY_UP)
 	{
-		y-=10;
-		if(y < -20)
-		{
-			y= ofGetHeight()-10;
-		}
+		frogY-=10;
+		frogAngle=0;
 	}
-	if(key==OF_KEY_DOWN)
+	if(key == OF_KEY_DOWN)
 	{
-		y+=10;
-		if(y > ofGetHeight())
-		{
-			y= 0;
-		}
+		frogY+=10;
+		frogAngle=180;
 	}
-	if(key==OF_KEY_LEFT)
+	if(key == OF_KEY_RIGHT)
 	{
-		x-=10;
+		frogX+=10;
+		frogAngle=90;
 	}
-	if(key==OF_KEY_RIGHT)
+	if(key == OF_KEY_LEFT)
 	{
-		x+=10;
+		frogX-=10;
+		frogAngle=270;
 	}
 }
 

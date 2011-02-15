@@ -20,8 +20,8 @@ class testApp : public ofBaseApp{
 		void windowResized(int w, int h);
 
 	
-		ofPoint pos;
-		ofPoint click;
+		int pos_x, pos_y;
+		int click_x, click_y;
 		float radius;
 };
 

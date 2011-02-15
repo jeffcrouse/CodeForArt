@@ -1,67 +1,51 @@
 #include "testApp.h"
 
 
-/*
- Things in this program
- 1. Comments - 2 different kinds
- 2. setup, update, draw, keyPressed, keyReleased
- 3. cout -- prints to console (how to find the console)
- 4. ofSetWindowShape
- 5. ofBackground
- 6. ofSetFrameRate
- 7. ofGetFrameNum
- 8. ofRandom
- 9. ofToggleFullscreen
-*/
-
+int circleX;
+int circleY;
+int circleRadius;
 
 //--------------------------------------------------------------
-// Stuff in here runs before the window shows up -- before any drawing happens.
 void testApp::setup(){
-	cout << "setup was called\n";
-	
-	ofSetWindowShape(640, 480);
-	ofBackground(255,255,255);
+
 	ofSetFrameRate(24);
+	ofBackground(255,255,255);
 	
+	ofSetWindowShape(400, 400);
+	
+
+	circleRadius = 200;
+	
+	ofEnableSmoothing();
+	
+	ofSetCircleResolution(100);
 	
 }
 
 //--------------------------------------------------------------
-// Stuff in here happens once every frame, right before draw()
 void testApp::update(){
-	cout << "update was called\n";
-	
+
+	circleX = ofGetWidth() / 2.0;
+	circleY = ofGetHeight() / 2.0;
 	
 }
 
 //--------------------------------------------------------------
-// Stuff in here happens once every frame, right after update()
 void testApp::draw(){
-	cout << "draw was called" << endl;
 
-	ofSetColor(0, 0, 0);
-	ofDrawBitmapString(ofToString(ofGetFrameRate()), 20, 20);
+	ofSetColor(255, 0, 0);
+	ofCircle(circleX, circleY, circleRadius);
 	
-	
-	//cout << "frame: " << ofGetFrameNum() << endl;
-	cout << "random number: " << ofRandom(0, 10) << "\n";
 }
 
 //--------------------------------------------------------------
-// Stuff in here happens when a key is pressed down.  It might be held down!
 void testApp::keyPressed(int key){
-	cout << "keyPressed was called\n";
-	
-	
+
 }
 
 //--------------------------------------------------------------
-// This gets called when a key is released.  Use this for most keyboard interaction.
 void testApp::keyReleased(int key){
-	cout << "keyReleased was called\n";
-	
-	ofToggleFullscreen();
+
 }
 
 //--------------------------------------------------------------

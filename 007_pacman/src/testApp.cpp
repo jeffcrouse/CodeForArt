@@ -2,7 +2,7 @@
 
 /*
  In this app:
- 1. ofSetupOpenGL
+ 1. 
  
  */
 
@@ -28,6 +28,9 @@ void testApp::update(){
 	// Introducing: the mod (remainder) operator!
 	mouth = (mouth+5) % 50;
 	
+	// 55 % 50 = 5;
+	// 80 % 50 = 30
+	
 	// Move pacman forward!
 	pac_x += 10;
 	
@@ -36,6 +39,7 @@ void testApp::update(){
 	{
 		pac_x = INITIAL_X;
 	}
+
 }
 
 //--------------------------------------------------------------
