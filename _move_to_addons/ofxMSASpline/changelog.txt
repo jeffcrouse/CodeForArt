@@ -1,0 +1,10 @@
+ofxMSASpline changelog
+
+v1.1	07/04/2009
+--------------------
+- changed license to revised BSD (a lot more more permissive than GPL)
+
+
+v1.0	03/10/08
+--------------------
+- initial version
