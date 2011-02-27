@@ -1,0 +1,35 @@
+<install>
+
+	<version>1.1</version>
+	<author>Mehmet Akten</author>
+	<url>www.msavisuals.com/msaspline</url>
+	
+    <requires>
+	</requires>
+    
+	<add>	
+		<src>
+			<folder name="addons/ofxMSASpline/src">			
+				<file>../../../addons/ofxMSASpline/src/ofxMSASpline.h</file>
+				<file>../../../addons/ofxMSASpline/src/ofxMSASpline1D.h</file>
+				<file>../../../addons/ofxMSASpline/src/ofxMSASpline2D.h</file>
+				<file>../../../addons/ofxMSASpline/src/ofxMSASpline2D.cpp</file>
+				<file>../../../addons/ofxMSASpline/src/ofxMSASpline3D.h</file>
+				<file>../../../addons/ofxMSASpline/src/ofxMSASpline3D.cpp</file>
+				<file>../../../addons/ofxMSASpline/src/ofxMSASplineInterpolationTypes.h</file>
+				<file>../../../addons/ofxMSASpline/src/ofxMSASplineTemplate.h</file>
+				<file>../../../addons/ofxMSASpline/src/ofxMSASurface3D.h</file>
+				<file>../../../addons/ofxMSASpline/src/ofxMSASurface3D.cpp</file>
+			</folder>
+		</src>
+
+		<include>
+			<path>../../../addons/ofxMSASpline/src</path>
+		</include>
+		
+		<link>
+		</link>
+
+	</add>
+	
+</install>
