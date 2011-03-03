@@ -19,6 +19,8 @@ void testApp::setup(){
 	vel.x = ofRandom(-26, 26);
 	vel.y = ofRandom(-26, 26);
 
+	
+	acceleration.y = 9.8;
 }
 
 //--------------------------------------------------------------
@@ -28,24 +30,20 @@ void testApp::update(){
 	
 	
 	// Bounce
-	if(pos.y >= ofGetHeight()-radius || pos.y <= radius) {
-		vel.y *= -1.0;
-		pos += vel;
+	if(pos.y >= ofGetHeight()-radius) {
+		vel.y *= -.9;
+		pos.y =  ofGetHeight()-radius;
+	}
+		
+	if(pos.y <= radius) {
+		vel.y *= -.9;
+		pos.y = radius;
 	}
 	
 	if(pos.x >= ofGetWidth()-radius || pos.x <= radius) {
 		vel.x *= -1.0;
-		pos += vel;
 	}
 	
-
-	 // gravity
-	if(pos.y >= ofGetHeight()-radius) {
-		pos.y = ofGetHeight()-radius;
-		acceleration.y = 0;
-		vel.y = 0;
-	}
-
 }
 
 //--------------------------------------------------------------

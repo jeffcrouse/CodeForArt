@@ -19,9 +19,8 @@ class testApp : public ofBaseApp{
 		void mouseReleased(int x, int y, int button);
 		void windowResized(int w, int h);
 
-	
-		int pos_x, pos_y;
-		int click_x, click_y;
+		ofPoint pos;
+		ofPoint click;
 		float radius;
 };
 

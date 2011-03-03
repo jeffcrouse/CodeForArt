@@ -3,6 +3,8 @@
 
 
 #include "ofMain.h"
+#include "Flock.h"
+#include "Boid.h"
 
 class testApp : public ofBaseApp{
 
@@ -19,13 +21,7 @@ class testApp : public ofBaseApp{
 		void mouseReleased(int x, int y, int button);
 		void windowResized(int w, int h);
 
-	
-		
-		ofPoint vel;
-		ofPoint acceleration;
-		
-		ofPoint pos;
-		float radius;
+		Flock f;
 };
 
 #endif

@@ -10,25 +10,52 @@
 void testApp::setup(){
 	ofSetFrameRate(24);
 	ofBackground(255,255,255);
-	ofSetWindowShape(640, 480);
+	ofSetWindowShape(1024,768);
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
 	
-	// In this app, we have two "vectors", which are just like arrays
-	// Each frame, we add a point to one array and an integer (radius) to another
-
-	// Make a random coordinate
-	float x=ofRandom(0, ofGetWidth());
-	float y=ofRandom(0, ofGetHeight());
-	float radius = ofRandom(10, 30);
-
-	// Insert the point at the end of the circles vector
-	circles.push_back( ofPoint(x,y) );
-
-	// Insert the radius at the back of the radii vector
-	radii.push_back( radius );
+	for(int i=0; i<positions.size(); i++)
+	{
+		ages[i]++;
+		a[i] = 255 - ages[i];
+		positions[i] += velocities[i];
+		
+		if(positions[i].x > ofGetWidth()-radii[i]) {
+			positions[i].x = ofGetWidth()-radii[i];
+			velocities[i].x *= -1;
+		}
+		
+		if(positions[i].y > ofGetHeight()-radii[i]) {
+			positions[i].y = ofGetHeight()-radii[i];
+			velocities[i].y *= -1;
+		}
+		
+		if(positions[i].x < radii[i]) {
+			positions[i].x = radii[i];
+			velocities[i].x *= -1;
+		}
+		
+		if(positions[i].y < radii[i]) {
+			positions[i].y = radii[i];
+			velocities[i].y *= -1;
+		}
+		
+		if(ages[i] > 200)
+		{
+			positions.erase( positions.begin() + i );
+			velocities.erase( velocities.begin() + i );
+			radii.erase( radii.begin() + i );
+			r.erase( r.begin() + i );
+			g.erase( g.begin() + i );
+			b.erase( b.begin() + i );
+			a.erase( a.begin() + i );
+			ages.erase( ages.begin() + i );
+		}
+		
+		
+	}
 }
 
 //--------------------------------------------------------------
@@ -36,12 +63,15 @@ void testApp::draw(){
 
 	ofSetColor(0,0,0);
 
-	// Loop through the entire vector and draw a circle
-	// circles.size() will give you the number of items in the array
-	for(int i=0; i<circles.size(); i++)
+	for (int i=0; i<positions.size(); i++)
 	{
-		ofCircle(circles[i].x, circles[i].y, radii[i]);
+		ofSetColor(r[i], g[i], b[i], a[i]);
+		ofCircle(positions[i].x, positions[i].y, radii[i]);
+		
+		ofSetColor(0, 0, 0);
+		ofDrawBitmapString(ofToString(ages[i]), positions[i].x, positions[i].y);
 	}
+	
 }
 
 //--------------------------------------------------------------
@@ -71,7 +101,34 @@ void testApp::mousePressed(int x, int y, int button){
 
 //--------------------------------------------------------------
 void testApp::mouseReleased(int x, int y, int button){
+	ofPoint pos;
+	pos.x = x;
+	pos.y = y;
+	positions.push_back( pos );
+	
+	ofPoint vel;
+	vel.x = ofRandom(-10, 10);
+	vel.y = ofRandom(-10, 10);
+	velocities.push_back( vel );
+	
+	float radius = ofRandom(10, 50);
+	radii.push_back( radius );
+	
+	int red = ofRandom(0, 255);
+	r.push_back( red );
+	
+	int green = ofRandom(0, 255);
+	g.push_back( green );
+	
+	int blue = ofRandom(0, 255);
+	b.push_back( blue );
+	
+	int alpha = ofRandom(0, 255);
+	a.push_back( alpha );
 
+	int age = 0;
+	ages.push_back( age );
+	
 }
 
 //--------------------------------------------------------------

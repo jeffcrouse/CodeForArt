@@ -19,13 +19,12 @@ class testApp : public ofBaseApp{
 		void mouseReleased(int x, int y, int button);
 		void windowResized(int w, int h);
 
+		
+		vector<ofPoint> positions;
+		int r, g, b, a;
+		float angle, wavelength, rotateSpeed, scale;
 	
 		
-		ofPoint vel;
-		ofPoint acceleration;
-		
-		ofPoint pos;
-		float radius;
 };
 
 #endif

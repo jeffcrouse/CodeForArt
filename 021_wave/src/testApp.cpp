@@ -9,7 +9,7 @@
 //--------------------------------------------------------------
 void testApp::setup(){
 
-	ofSetFrameRate(24);
+	ofSetFrameRate(60);
 	ofBackground(255, 255, 255);
 	ofEnableSmoothing();
 	
@@ -17,6 +17,7 @@ void testApp::setup(){
 	pos.x = radius;
 	pos.y = ofGetHeight()/2.0;
 
+	i=0;
 }
 
 //--------------------------------------------------------------
@@ -26,11 +27,13 @@ void testApp::update(){
 	float offset = (ofGetHeight()/2.0);
 	float amplitude = 300;
 	
+	i++;
+	
 	// Move X along
 	// Y = Asin(t/wavelength) + b;
 	
 	pos.x += 2;
-	pos.y = amplitude * sin(ofGetFrameNum() / wavelength ) + 400;
+	pos.y = amplitude * sin(i / wavelength) + offset;
 }
 
 //--------------------------------------------------------------

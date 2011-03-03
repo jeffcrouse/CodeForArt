@@ -25,6 +25,7 @@ class testApp : public ofBaseApp{
 		float v;		// velocity
 		float angle;
 		float friction;
+		bool showFlame;
 };
 
 #endif

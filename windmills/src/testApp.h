@@ -3,6 +3,8 @@
 
 
 #include "ofMain.h"
+#include "Windmill.h"
+
 
 class testApp : public ofBaseApp{
 
@@ -19,13 +21,8 @@ class testApp : public ofBaseApp{
 		void mouseReleased(int x, int y, int button);
 		void windowResized(int w, int h);
 
-	
-		
-		ofPoint vel;
-		ofPoint acceleration;
-		
-		ofPoint pos;
-		float radius;
+		vector<Windmill> windmills;
+		ofPoint lastPos;
 };
 
 #endif

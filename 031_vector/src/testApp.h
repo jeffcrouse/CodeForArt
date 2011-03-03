@@ -19,12 +19,12 @@ class testApp : public ofBaseApp{
 		void mouseReleased(int x, int y, int button);
 		void windowResized(int w, int h);
 
-		// When declaring a vector, you might expect to see something like:
-		// vector circles;
-		// So what is the <ofPoint> and <int>?
-		// This tells c++ what kind of variables you are going to put into the vector.
-		vector<ofPoint>circles;
-		vector<int>radii;
+		vector<ofPoint> positions;
+		vector<ofPoint> velocities;
+		vector<float> radii;
+		vector<int> r, b, g, a;
+		vector<int> ages;
+	
 };
 
 #endif

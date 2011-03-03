@@ -1,61 +1,71 @@
 #include "testApp.h"
 
-
-/*
- IN THIS APP:
- 1. Moving an element from one spot to another
- 2. Moving an element smoothly
- 3. Using ofPoint to represent positions
- 
- 
- ASSIGNMENT
- 1. Use matrix transformations to move the ball.
- 2. Change the ball to something
- */
-
 //--------------------------------------------------------------
 void testApp::setup(){
-
-	ofSetFrameRate(60);
-	ofBackground(255, 255, 255);
+	ofBackground(0, 0, 0);
+	ofSetFrameRate(24);
 	ofEnableSmoothing();
 	
-	radius =50;
+	//pos.x = 400;
+	//pos.y = 500;
 	
-	pos.x = click.x = 0;
-	pos.y = click.y = ofGetHeight() / 2.0;
+	ofPoint pos1;
+	pos1.x = 200;
+	pos1.y = 300;
 	
+	ofPoint pos2;
+	pos2.x = 500;
+	pos2.y = 600;
+	
+	positions.push_back( pos1 );
+	positions.push_back( pos2 );
+	
+	r = ofRandom(0, 150);
+	g = ofRandom(100, 255);
+	b = 255;
+	wavelength = 20.0;
+	rotateSpeed = 10;
+	scale = .4;
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
-
-	ofPoint diff = click - pos;
-	ofPoint change = diff / 30.0;
-
-	pos += change;
-
-	
-	
-	/*
-	float x_diff = click_x - pos_x;
-	float y_diff = click_y - pos_y;
-	
-	float x_change = x_diff / 30.0;
-	float y_change = y_diff / 30.0;
-	
-	pos_x += x_change;
-	pos_y += y_change;
-	 */
+	angle += rotateSpeed;
+	a = (255/2.0) * cos(ofGetFrameNum()/wavelength) + (255/2.0);
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
-
-	ofFill();
-	ofSetColor(0, 0, 0);
-	ofCircle(pos.x, pos.y, radius);
+	ofSetColor(255, 255, 255);
+	ofDrawBitmapString("alpha="+ofToString(a, 2), 20, 20);
+	ofDrawBitmapString("speed="+ofToString(rotateSpeed, 2), 20, 40);
 	
+	
+	for(int i=0; i<positions.size(); i++)
+	{
+		ofSetColor(r, g, b, a);
+		ofFill();
+		
+		ofPushMatrix();
+		ofTranslate(positions[i].x, positions[i].y);
+		ofRotateZ(angle);
+		ofScale(scale, scale);
+		
+			ofEnableAlphaBlending();
+			
+			ofBeginShape();
+				ofVertex(-20, -140);
+				ofVertex(80, -140);
+				ofVertex(0, 100);
+				ofVertex(20, 140);
+				ofVertex(-80, 140);
+				ofVertex(10, -100);
+			ofEndShape(true);
+			
+			ofDisableAlphaBlending();
+		
+		ofPopMatrix();
+	}
 }
 
 //--------------------------------------------------------------
@@ -70,7 +80,7 @@ void testApp::keyReleased(int key){
 
 //--------------------------------------------------------------
 void testApp::mouseMoved(int x, int y ){
-
+	//rotateSpeed = ofDist(x, y, pos.x, pos.y) / 10.0;
 }
 
 //--------------------------------------------------------------
@@ -85,8 +95,7 @@ void testApp::mousePressed(int x, int y, int button){
 
 //--------------------------------------------------------------
 void testApp::mouseReleased(int x, int y, int button){
-	click.x = x;
-	click.y = y;
+
 }
 
 //--------------------------------------------------------------
