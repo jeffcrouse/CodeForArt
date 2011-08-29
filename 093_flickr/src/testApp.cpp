@@ -14,7 +14,8 @@ void testApp::setup(){
 	string url = "http://www.flickr.com/services/rest/?method=flickr.interestingness.getList&api_key=76fee119f6a01912ef7d32cbedc761bb&format=json&nojsoncallback=1";
 
 	bool parsingSuccessful = response.open(url);
-	if ( !parsingSuccessful ) {
+	if ( !parsingSuccessful )
+    {
 		cout  << "Failed to parse JSON\n" << endl;
 	}
 
@@ -27,8 +28,7 @@ void testApp::setup(){
 		string server = response["photos"]["photo"][i]["server"].asString();
 		string url = "http://farm"+ofToString(farm)+".static.flickr.com/"+server+"/"+id+"_"+secret+".jpg";
 		
-		
-		WebImage img;
+		ofImage img;
 		img.loadImage(url);
 		images.push_back( img );
 	}

@@ -37,7 +37,7 @@ void testApp::draw(){
 		ofRotateX(angle);
 		ofTranslate(0, -fraggles.height/2.0);
 		
-		ofSetColor(0xFFFFFF);
+		ofSetHexColor(0xFFFFFF);
 		
 		pixels = fraggles.getPixels();
 		
@@ -45,7 +45,7 @@ void testApp::draw(){
 		{
 			for(int x=0; x<fraggles.width; x+=2)
 			{
-				int i = ((fraggles.width*y)+x) * 1000000;
+				int i = (fraggles.width*y) + x;
 				int r = pixels[ i + 0 ];
 				int g = pixels[ i + 1 ];
 				int b = pixels[ i + 2 ];

@@ -23,11 +23,6 @@ class testApp : public ofBaseApp{
 
 		ParticleSystem ps;
 		ofPoint gravity;
-	
-	private:
-		void capture();
-		bool doCapture;
-		int framenum;
 };
 
 #endif

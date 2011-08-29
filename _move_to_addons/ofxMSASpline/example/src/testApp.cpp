@@ -45,7 +45,7 @@ void testApp::setup(){
 	
 	spline2D.reserve(numItems);		// not essential, but good habit if you know how big its gonna be
 	for(int i=0; i<numItems; i++) {
-		ofxVec2f v = ofxVec2f(i * len + padding - ofGetWidth()/2, ofGetHeight()/2 + ofGetHeight()*0.2f * cos(i*0.9));
+		ofVec2f v = ofVec2f(i * len + padding - ofGetWidth()/2, ofGetHeight()/2 + ofGetHeight()*0.2f * cos(i*0.9));
 		spline2D.push_back(v);
 	}	
 	
@@ -136,9 +136,9 @@ void testApp::keyPressed(int key) {
 
 //--------------------------------------------------------------
 void testApp::mousePressed(int x, int y, int button) {
-	ofxVec3f pt;
+	ofVec3f pt;
 	pt.set(x-ofGetWidth()/2, y, 0);
-	pt.rotate(-currentRot, ofxVec3f(0, 1, 0));
+	pt.rotate(-currentRot, ofVec3f(0, 1, 0));
 	splineMouse.push_back(pt);
 }
 

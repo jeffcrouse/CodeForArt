@@ -66,7 +66,9 @@ void testApp::mouseReleased(int x, int y, int button){
 	if(x>rectX && y> rectY && x < rectX+rectWidth && y < rectY+rectHeight)
 	{
 		cout << "Clicked in Rectangle" << endl;
-	} else {
+	} 
+    else
+    {
 		cout << "Not in Rectangle" << endl;
 	}
 

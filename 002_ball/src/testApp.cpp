@@ -47,7 +47,8 @@ void testApp::draw(){
 	{
 		ofSetColor(0, 155, 155);
 	}
-	else if(mouseIsOver)
+	
+    if(mouseIsOver)
 	{
 		ofSetColor(255, 0, 0);
 	}
@@ -75,14 +76,13 @@ void testApp::keyReleased(int key){
 
 //--------------------------------------------------------------
 void testApp::mouseMoved(int x, int y ){
-	if(mouseIsDown) {
-		// mouse is being dragged
-	}
-	
-	if(ofDist(ballX, ballY, x, y) < 20) {
+
+	if(ofDist(ballX, ballY, x, y) < 20)
+    {
 		mouseIsOver=true;
 	}
-	else {
+	else
+    {
 		mouseIsOver=false;
 	}
 }

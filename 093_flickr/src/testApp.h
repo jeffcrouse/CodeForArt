@@ -4,7 +4,6 @@
 
 #include "ofMain.h"
 #include "ofxJSONElement.h"
-#include "WebImage.h"
 
 class testApp : public ofBaseApp{
 	
@@ -27,7 +26,7 @@ class testApp : public ofBaseApp{
 
 		ofxJSONElement response;
 	
-		vector<WebImage> images;
+		vector<ofImage> images;
 };
 
 #endif	

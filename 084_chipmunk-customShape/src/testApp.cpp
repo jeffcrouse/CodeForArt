@@ -85,7 +85,7 @@ void testApp::update() {
 	
 	//if the bubbles go off screen - kill them!!!
 	for(int i=0; i<polys.size(); i++) {
-		printf("[%i] is %f %f\n", i, polys[i].getPosition().x, polys[i].getPosition().y);
+		//printf("[%i] is %f %f\n", i, polys[i].getPosition().x, polys[i].getPosition().y);
 	
 		//bounds
 		if(polys[i].getPosition().y > ofGetHeight())  polys[i].kill();
@@ -108,7 +108,7 @@ void testApp::draw() {
 	ofNoFill();
 	ofRect(0, 0, ofGetWidth(), ofGetHeight());
 	
-	ofSetColor(0xffffff);
+	ofSetHexColor(0xffffff);
 	ofFill();
 	for(int i=0; i<polys.size(); i++) {
 		polys[i].draw();
@@ -118,7 +118,7 @@ void testApp::draw() {
 	}
 	
 	//debug info
-	ofSetColor(0xff00ff);
+	ofSetHexColor(0xff00ff);
 	string str = "";
 	str += "FPS: "+ofToString(ofGetFrameRate()) + "\n";
 	str += "Polys Count: " + ofToString((int)polys.size()) + "\n";

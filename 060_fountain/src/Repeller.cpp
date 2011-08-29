@@ -21,7 +21,7 @@ Repeller::Repeller() {
 }
 
 void Repeller::draw() {
-	ofSetColor(0x000000);
+	ofSetHexColor(0x000000);
 	if(bDragging) {
 		ofFill();
 	} else {

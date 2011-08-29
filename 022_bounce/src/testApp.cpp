@@ -65,6 +65,13 @@ void testApp::keyPressed(int key){
 //--------------------------------------------------------------
 void testApp::keyReleased(int key){
 
+    radius = 20;
+	pos.x = ofGetWidth()/2.0;
+	pos.y = 20;
+	
+	vel.x = ofRandom(-26, 26);
+	vel.y = ofRandom(-26, 26);
+    
 }
 
 //--------------------------------------------------------------

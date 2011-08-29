@@ -34,19 +34,18 @@ void testApp::setup(){
 
 
 	// Twitter API: http://dev.twitter.com/doc/get/trends/current
-	// Create a "session" with a particular domain
 	string url = "http://api.twitter.com/1/trends/current.json?exclude=hashtags";
 	
 
-	
 	// Now parse the JSON
 	bool parsingSuccessful = result.open(url);
-	if ( parsingSuccessful ) {
-		
+	if ( parsingSuccessful )
+    {
 		cout << result.getRawString() << endl;
 		
-	} else {
-	
+	}
+    else
+    {
 		cout  << "Failed to parse JSON" << endl;
 
 	}
@@ -64,7 +63,7 @@ void testApp::draw(){
 	// See this page for all of the ways to access data in a Json::Value
 	// http://jsoncpp.sourceforge.net/class_json_1_1_value.html	
 
-	ofSetColor(0x00FF00);
+	ofSetHexColor(0x00FF00);
 	
 	vector<string> childNames = result["trends"].getMemberNames();
 	string timestamp = childNames[0];

@@ -44,7 +44,7 @@ void Thing::drawVector(ofPoint loc, ofPoint v, float scayl) {
 	float heading2D = ofRadToDeg(theta);
 	float mag = sqrt(v.x*v.x + v.y*v.y);
 	
-	ofSetColor(0x000000);
+	ofSetHexColor(0x000000);
 	ofNoFill();
 	
 	ofPushMatrix();
@@ -70,7 +70,7 @@ void Thing::applyForce(ofPoint force) {
 
 void Thing::draw() {
 	ofFill();
-	ofSetColor(0x999999);
+	ofSetHexColor(0x999999);
 	ofCircle(loc.x, loc.y, mass*10);
 	Thing::drawVector(loc, vel, 5);
 }

@@ -13,7 +13,7 @@ void testApp::setup() {
 	ofBackground(10, 10, 10);
 	ofSetVerticalSync(true);
 	
-	physics.setup(10, ofPoint(0, 600));
+	physics.setup(50, ofPoint(0, 600));
 	
 	//create a floor
 	ofxChipmunkRect r;
@@ -52,12 +52,11 @@ void testApp::draw() {
 	ofNoFill();
 	ofRect(0, 0, ofGetWidth(), ofGetHeight());
 	
-	ofSetColor(0xffffff);
+	ofSetHexColor(0xffffff);
 	ofFill();
 	for(int i=0; i<bubbles.size(); i++) {
 		
-		ofSetColor(255, 0, ofRandom(0,255));
-		ofCircle(bubbles[i].body->p.x, bubbles[i].body->p.y, bubbles[i].radius);
+		ofCircle(bubbles[i].body->p.x, bubbles[i].body->p.y, bubbles[i].getRadius());
 		//bubbles[i].draw();
 	}
 	
@@ -66,7 +65,7 @@ void testApp::draw() {
 	}
 	
 	//debug info
-	ofSetColor(0xff00ff);
+	ofSetHexColor(0xff00ff);
 	string str = "";
 	str += "FPS: "+ofToString(ofGetFrameRate()) + "\n";
 	str += "Bubbles Count: " + ofToString((int)bubbles.size()) + "\n";

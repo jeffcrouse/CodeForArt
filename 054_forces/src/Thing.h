@@ -16,7 +16,7 @@ class Thing{
 public:
 	Thing();
 	
-	
+	void reset();
 	void draw();
 	void update();
 	void applyForce(ofPoint force);

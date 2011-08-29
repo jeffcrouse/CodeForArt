@@ -28,6 +28,7 @@
 # OS generated files #
 ######################
 .DS_Store?
+.DS_Store
 ehthumbs.db
 Icon?
 Thumbs.db
@@ -37,7 +38,17 @@ Thumbs.db
 ######################
 *.perspectivev3
 *.pbxuser
+*.mode1
+*.mode1v3
+*.mode2v3
+*.perspective
+*.xcworkspace
+xcuserdata
 
-.DS_Store
 */build/*
 */bin/*.app/*
+
+# Exclude temp nibs and swap files
+*~.nib
+*.swp
+

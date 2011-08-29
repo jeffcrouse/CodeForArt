@@ -4,6 +4,11 @@
 /*
  *	In this application:
  *	1. Make the ball move in a wave
+ *
+ *
+ *
+ *  Assignment
+ *  1.  Make the ball cycle back to the left side of the screen
  */
 
 //--------------------------------------------------------------

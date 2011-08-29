@@ -6,40 +6,26 @@ void testApp::setup(){
 	
 	// this load font loads the non-full character set
 	// (ie ASCII 33-128), at size "32"
-	
 	franklinBook.loadFont("frabk.ttf", 32);
 	franklinBook.setLineHeight(36);
 
-	// the page http://search.yahoo.com/search?p=GOOG contains the current stock price for Google
+    
+    // the page http://search.yahoo.com/search?p=GOOG contains the current stock price for Google
+    string url = "http://search.yahoo.com/search?p=GOOG";
+    string result = ofLoadURL(url).data.getText();
 	
-	
-	// Create a session with search.yahoo.com
-	HTTPClientSession session("search.yahoo.com", 80);
-	
-	
-	// Send a request to the session
-	// Try with AAPL
-	HTTPRequest req(HTTPRequest::HTTP_GET, "/search?p=GOOG", HTTPMessage::HTTP_1_1);
-	session.sendRequest(req);
-	
-	
-	HTTPResponse res;
-	istream& rs = session.receiveResponse(res);
-	cout << res.getStatus() << " " << res.getReason() << endl;	
-	StreamCopier::copyToString(rs, result);
-	
-	
+    
 	// Use a regular expression to get the bit of text that we want.
 	RegularExpression re("<li class=\"price\">([0-9\\.]+)</li>");
 	RegularExpression::MatchVec matches;
 	re.match(result, 0, matches);
 	
-	
-	
+    
 	// result.substr(matches[0].offset, matches[0].length)  -- contains the entire matched <li>
 	// result.substr(matches[1].offset, matches[1].length) -- contains the subpattern inside the ()
-	message = result.substr(matches[1].offset, matches[1].length);
-
+    int stock_price_start_position = matches[1].offset;
+    int stock_price_length = matches[1].length;
+	message = result.substr(stock_price_start_position, stock_price_length);
 }
 
 
@@ -51,8 +37,7 @@ void testApp::update(){
 //--------------------------------------------------------------
 void testApp::draw(){
 	
-
-	ofSetColor(0x00FF00);
+	ofSetHexColor(0x00FF00);
 	franklinBook.drawString(message, 10, 40);
 
 }

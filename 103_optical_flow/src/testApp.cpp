@@ -109,7 +109,7 @@ void testApp::draw(){
 
 	
 	// draw the incoming, the grayscale, the bg and the thresholded difference
-	ofSetColor(0xffffff);
+	ofSetHexColor(0xffffff);
 	ofPushMatrix();
 	ofTranslate((ofGetWidth()/2)-320, 300, 0);
 	
@@ -132,7 +132,7 @@ void testApp::draw(){
 	
 	ofTranslate(320, 0);
 	
-	ofSetColor(0x000000);
+	ofSetHexColor(0x000000);
 	ofNoFill();
 	ofRect(0, 0, 320, 240);	
 	for(int x=20; x<320; x+=20) {
@@ -144,7 +144,7 @@ void testApp::draw(){
 	
 	
 	
-	ofSetColor(0xffffff);
+	ofSetHexColor(0xffffff);
 	char reportStr[1024];
 	sprintf(reportStr, "press ' ' to capture bg\nthreshold %i (press: +/-)\nfps: %f", threshold, ofGetFrameRate());
 	ofDrawBitmapString(reportStr, 20, 200);

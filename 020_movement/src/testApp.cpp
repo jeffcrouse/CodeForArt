@@ -4,7 +4,7 @@
 /*
  IN THIS APP:
  1. Moving an element from one spot to another
- 2. Moving an element smoothly
+ 2. Moving an element smoothly (without diagonal/straight line crap)
  3. Using ofPoint to represent positions
  
  

@@ -67,7 +67,7 @@ void testApp::draw() {
 	
 	
 	
-	ofSetColor(0xffffff);
+	ofSetHexColor(0xffffff);
 	floor.draw();
 	
 	ofFill();
@@ -79,7 +79,7 @@ void testApp::draw() {
 	}
 		
 	//debug info
-	ofSetColor(0xff00ff);
+	ofSetHexColor(0xff00ff);
 	string str = "";
 	str += "FPS: "+ofToString(ofGetFrameRate()) + "\n";
 	str += "Bubbles Count: " + ofToString((int)bubbles.size()) + "\n";

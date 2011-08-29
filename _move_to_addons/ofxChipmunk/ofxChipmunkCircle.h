@@ -25,7 +25,10 @@ class ofxChipmunkCircle : public ofxChipmunkBaseShape{
 		virtual void draw() {
 			ofCircle(body->p.x, body->p.y, radius);
 		}
-
+        
+    	//-----------------------------------------------------------------------------------------
+        // added by Jeff - Aug 29 2011
+        float getRadius() { return radius; }
 
 	protected:
 		//-----------------------------------------------------------------------------------------

@@ -73,10 +73,7 @@ class ofxChipmunkPoly : public ofxChipmunkBaseShape{
 			for (int i = 0; i < points.size(); i++){
 					tempP[0] = points[i].x;
 					tempP[1] = points[i].y;
-					
-					printf("pushing!\n");
-					
-					v.push_back(tempP);
+                    v.push_back(tempP);
 			}
 				
 			Delaunay delobject(v);

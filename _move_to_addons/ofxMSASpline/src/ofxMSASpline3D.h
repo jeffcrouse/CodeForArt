@@ -34,11 +34,11 @@
 
 #include "ofxMSASplineTemplate.h"
 
-float fabs(const ofxVec3f& v);
+float fabs(const ofVec3f& v);
 
 
 /**************************** 3D Spline (of ofxVec3) ****************************/
-class ofxMSASpline3D : public ofxMSASpline<ofxVec3f> {
+class ofxMSASpline3D : public ofxMSASpline<ofVec3f> {
 public:
 	void drawRaw(int dotSize = 20, int lineWidth = 4){
 		int numItems = size();
@@ -79,7 +79,7 @@ public:
 			glLineWidth(lineWidth);
 			glBegin(GL_LINE_STRIP);
 			for(float f=0; f<1; f+= spacing) {
-				ofxVec3f v = sampleAt(f);
+				ofVec3f v = sampleAt(f);
 				glVertex3fv((const float*)&v);
 			}
 			glEnd();
@@ -89,7 +89,7 @@ public:
 			glPointSize(dotSize);
 			glBegin(GL_POINTS);
 			for(float f=0; f<1; f+= spacing) {
-				ofxVec3f v = sampleAt(f);
+				ofVec3f v = sampleAt(f);
 				glVertex3fv((const float*)&v);
 			}
 			glEnd();

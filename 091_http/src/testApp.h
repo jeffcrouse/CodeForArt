@@ -3,23 +3,9 @@
 
 
 #include "ofMain.h"
-#include "Poco/Net/HTTPClientSession.h"
-#include "Poco/Net/HTTPRequest.h"
-#include "Poco/Net/HTTPResponse.h"
-#include "Poco/StreamCopier.h"
-#include "Poco/Path.h"
-#include "Poco/Exception.h"
 #include "Poco/RegularExpression.h"
 
-using Poco::Net::HTTPClientSession;
-using Poco::Net::HTTPRequest;
-using Poco::Net::HTTPResponse;
-using Poco::Net::HTTPMessage;
-using Poco::StreamCopier;
-using Poco::Path;
-using Poco::Exception;
 using Poco::RegularExpression;
-
 
 class testApp : public ofBaseApp{
 	

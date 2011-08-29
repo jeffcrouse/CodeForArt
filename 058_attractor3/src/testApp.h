@@ -23,11 +23,6 @@ class testApp : public ofBaseApp{
 
 		vector<Thing> things;
 		Attractor a;
-	
-	private:
-		void capture();
-		bool doCapture;
-		int framenum;
 };
 
 #endif

@@ -33,11 +33,11 @@
 
 #include "ofxMSASplineTemplate.h"
 
-float fabs(const ofxVec2f& v);
+float fabs(const ofVec2f& v);
 
 
 /**************************** 2D Spline (of ofxVec2) ****************************/
-class ofxMSASpline2D : public ofxMSASpline<ofxVec2f> {
+class ofxMSASpline2D : public ofxMSASpline<ofVec2f> {
 public:
 	void drawRaw(int dotSize = 20, int lineWidth = 4){
 		int numItems = size();
@@ -76,7 +76,7 @@ public:
 			glLineWidth(lineWidth);
 			glBegin(GL_LINE_STRIP);
 			for(float f=0; f<1; f+= spacing) {
-				ofxVec2f v = sampleAt(f);
+				ofVec2f v = sampleAt(f);
 				glVertex2f(v.x, v.y);
 			}
 			glEnd();
@@ -86,7 +86,7 @@ public:
 			glPointSize(dotSize);
 			glBegin(GL_POINTS);
 			for(float f=0; f<1; f+= spacing) {
-				ofxVec2f v = sampleAt(f);
+				ofVec2f v = sampleAt(f);
 				glVertex2f(v.x, v.y);
 			}
 			glEnd();

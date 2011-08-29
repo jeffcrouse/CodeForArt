@@ -3,8 +3,6 @@
 //--------------------------------------------------------------
 void testApp::setup(){
 	ofSetFrameRate(36);
-	doCapture = false;
-	framenum = 1;
 	
 	a.loc.x = ofGetWidth()/2;
 	a.loc.y = ofGetHeight()/2;
@@ -35,7 +33,6 @@ void testApp::draw(){
 	for(int i=0; i<things.size(); i++) {
 		things[i].draw();
 	}
-	capture();
 }
 
 //--------------------------------------------------------------
@@ -45,7 +42,6 @@ void testApp::keyPressed(int key){
 
 //--------------------------------------------------------------
 void testApp::keyReleased(int key){
-	if(key=='c') doCapture = !doCapture;
 }
 
 //--------------------------------------------------------------
@@ -73,12 +69,3 @@ void testApp::windowResized(int w, int h){
 
 }
 
-//--------------------------------------------------------------
-void testApp::capture() {
-	if(doCapture && ofGetFrameNum() % 4 == 0)
-	{
-		char fin[255];
-		sprintf(fin, "frame%05d.png", framenum++);
-		ofSaveScreen(fin);
-	}
-}

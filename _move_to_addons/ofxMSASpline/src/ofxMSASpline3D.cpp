@@ -33,6 +33,6 @@
 
 #include "ofxMSASpline3D.h"
 
-float fabs(const ofxVec3f& v) {
+float fabs(const ofVec3f& v) {
 	return v.length();
 }
