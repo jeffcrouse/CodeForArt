@@ -18,9 +18,9 @@ Introduction
 image::images/ofw-logo.png["oF Logo",float="right"]
 This documentation was created for the CodeForArt class at http://www.newschool.edu/parsons/mfa-design-technology/[Parsons The New School for Design]. The apps provided are meant to compliment the existing examples, and also provide a more structured path through the topics of interactive programming with openFrameworks.
 
-NOTE:  The CodeForArt folder should be placed in the root level of your openFrameworks directory (alongside addons, apps, and libs).  
+NOTE:  The CodeForArt folder should be placed in the root level of your openFrameworks directory (alongside addons, apps, and libs). 
 
-NOTE:  This repository has recently undergone a pretty dramatic change and is being re-created to focus more on the accompanying documentation. New documentation will be added throughout the Spring 2012 semester.  If you just want the old examples, please get https://github.com/jefftimesten/CodeForArt/tree/v0.1[the *v0.1* tag on github].
+NOTE:  This repository has recently undergone a pretty dramatic change and is being re-created to focus more on the accompanying documentation. New documentation will be added throughout the Spring 2012 semester. If you just want the old examples, please get https://github.com/jefftimesten/CodeForArt/tree/v0.1[the *v0.1* tag on github].
 
 So let's start from the beginning.
 
@@ -46,7 +46,7 @@ Simply put, openFrameworks is a tool that makes it much easier to make things wi
 openFrameworks is actively developed by http://thesystemis.com/[Zach Lieberman], http://muonics.net/[Theodore Watson], and http://arturocastro.net/[Arturo Castro], with help from the http://www.openframeworks.cc/community/[OF community]. openFrameworks is indebted to two significant precursors: the http://processing.org/[Processing development environment], created by http://reas.com/[Casey Reas], http://benfry.com/[Ben Fry] and the Processing community; and the ACU Toolkit, a privately distributed C++ library developed by Ben Fry and others in the http://acg.media.mit.edu/[MIT Media Lab's Aesthetics and Computation Group].
 __________________________
 
-Some of these packages (like OpenGL) will be explored in more depth in other parts of the documentation.  Most of them do their thing in the background and you will probably never have to worry about them.  Each of these libraries have their own syntax, conventions, and quirks, but the beauty of openFrameworks is that you don't have to worry about them -- oF is a single, consistent interface to the functionality that these other libraries provide.
+Some of these packages (like OpenGL) will be explored in more depth in other parts of the documentation. Most of them do their thing in the background and you will probably never have to worry about them. Each of these libraries have their own syntax, conventions, and quirks, but the beauty of openFrameworks is that you don't have to worry about them -- oF is a single, consistent interface to the functionality that these other libraries provide.
 
 [qanda]
 .Q&A
@@ -66,17 +66,17 @@ What is a software framework?::
 	
 	In fact many other multimedia authoring environments work this way even if they do so less transparently.
 	
-	Consider this loose analogy: You are writing and directing your own film and have decided to work with a film production company. The production company reserves the location, provides all of the infrastructure, finds the camera crew, lighting director, sound engineer and other important staff. It makes sure everyone is on the set on time and doing their job when they should, including you. Your job is to define what happens on the set once everyone is ready.  OpenFrameworks is like a film production company for your program. It takes care of the administrative and logistical details and allows you to concentrate on your creative vision.
+	Consider this loose analogy: You are writing and directing your own film and have decided to work with a film production company. The production company reserves the location, provides all of the infrastructure, finds the camera crew, lighting director, sound engineer and other important staff. It makes sure everyone is on the set on time and doing their job when they should, including you. Your job is to define what happens on the set once everyone is ready. OpenFrameworks is like a film production company for your program. It takes care of the administrative and logistical details and allows you to concentrate on your creative vision.
 
 
 C++ is a programming language
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-We learned in the last section that openFrameworks is *not* a programing language, but rather a software framework for creating http://en.wikipedia.org/wiki/C%2B%2B[`c++`] programs.  But what is c++?
+We learned in the last section that openFrameworks is *not* a programing language, but rather a software framework for creating http://en.wikipedia.org/wiki/C%2B%2B[`c++`] programs. But what is c++?
 
-NOTE: This documentation aims to guide you through openFrameworks, during which you will become comfortable with the `c++` language.  But it is beyond its scope to delve too deeply into a bottom-up introduction to `c++`, so if that is what you are after, you'll have better luck with the sites listed in the Additional Resources appendix. 
+NOTE: This documentation aims to guide you through openFrameworks, during which you will become comfortable with the `c++` language. But it is beyond its scope to delve too deeply into a bottom-up introduction to `c++`, so if that is what you are after, you'll have better luck with the sites listed in the Additional Resources appendix. 
 
-`C++` is an extension of http://en.wikipedia.org/wiki/C_(programming_language)[the C language], which was developed in 1979 at Bell Labs. They are both general purpose computing languages that can be run on virtually any computing platform in the world.  The most basic c++ program looks like this:
+`C++` is an extension of http://en.wikipedia.org/wiki/C_(programming_language)[the C language], which was developed in 1979 at Bell Labs. They are both general purpose computing languages that can be run on virtually any computing platform in the world. The most basic c++ program looks like this:
 
 [source,cpp]
 ---------------------------------------------------------------------
@@ -94,16 +94,16 @@ int main()
 
 TIP: You can get a line-by-line breakdown of this program in the http://www.cplusplus.com/doc/tutorial/program_structure/[cplusplus.com "Structure of a program"] tutorial.
 
-After being run through a compiler, this code will create a fully executable program. It is an exceedingly simple command-line program that simply prints "Hello World!" to the console, but a program nonetheless.  You can try it yourself by following these steps:
+After being run through a compiler, this code will create a fully executable program. It is an exceedingly simple command-line program that simply prints "Hello World!" to the console, but a program nonetheless. You can try it yourself by following these steps:
 
-WARNING:  This process will vary slightly depending on platform.  The following instructions are for the Mac OS, and you must have XCode installed to run them.
+WARNING:  This process will vary slightly depending on platform. The following instructions are for the Mac OS, and you must have XCode installed to run them.
 
 Compiling your First c++ program
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 image::images/PlainText.png["PlainText",float="right"]
 
-. Paste the code above into a text file and save it on your Desktop as *hello.cpp*.  
+. Paste the code above into a text file and save it on your Desktop as *hello.cpp*. 
 .. If you are using TextEdit, make sure you specify that you want to save it as "plain text", not "rich text" or anything else.
 . Go into /Applications/Utilities and double-click on Terminal.app image:images/Terminal.png["Terminal.app",height=24]
 . Type the following into the Terminal window, pressing enter after each line:
@@ -126,23 +126,23 @@ Congratulations, you've just created (and then run) your first c++ program!  You
 
 image::images/hello.png["Your First Program"]
 
-This might not look like other programs that you are used to -- programs with flashy custom icons that launch windows and use graphics and such -- but it's a program nonetheless. In fact, if you dig deep enough, every program on your computer boils down to a something just like the 'hello' program you just created. The rest is just bells and whistles.  
+This might not look like other programs that you are used to -- programs with flashy custom icons that launch windows and use graphics and such -- but it's a program nonetheless. In fact, if you dig deep enough, every program on your computer boils down to a something just like the 'hello' program you just created. The rest is just bells and whistles. 
 
-IMPORTANT: I can hear some people panicing right now, but don't worry! Things get much more exciting when we start playing with oF. This example was only meant to illustrate the low-level basics of c++.  Hopefully you will never have to compile a command line program on the command line again. 
+IMPORTANT: I can hear some people panicing right now, but don't worry! Things get much more exciting when we start playing with oF. This example was only meant to illustrate the low-level basics of c++. Hopefully you will never have to compile a command line program on the command line again. 
 
 
 What is a compiler? and an IDE?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you have used a program like Flash or Processing, you are familliar with the process of writing some code and then "pressing play" to see it in action. This is called *compilation* or *compiling*, and it's what we just did in the previous section. If you are familliar with video editing, compiling is somewhat similar to rendering. The idea is that you must translate the code that is "human readable" into format that your computer can execute. C, C++, Java, Objective-C, Fortran, Lisp, Pascal... these are all http://en.wikipedia.org/wiki/Compiled_language[compiled languages]. As cryptic as they may seem, all of these languages are supposed to be "human readable".  They were created specifically to be written, read, and understood by humans. But no matter which language you start with, in the end, it has to be translated into something your computer can understand.  Namely, http://en.wikipedia.org/wiki/Machine_code[machine code].
+If you have used a program like Flash or Processing, you are familliar with the process of writing some code and then "pressing play" to see it in action. This is called *compilation* or *compiling*, and it's what we just did in the previous section. If you are familliar with video editing, compiling is somewhat similar to rendering. The idea is that you must translate the code that is "human readable" into format that your computer can execute. C, C++, Java, Objective-C, Fortran, Lisp, Pascal... these are all http://en.wikipedia.org/wiki/Compiled_language[compiled languages]. As cryptic as they may seem, all of these languages are supposed to be "human readable". They were created specifically to be written, read, and understood by humans. But no matter which language you start with, in the end, it has to be translated into something your computer can understand. Namely, http://en.wikipedia.org/wiki/Machine_code[machine code].
 
 NOTE: Some languages, such as PHP and Python are known as "scripting languages."  They still require compiling, but it happens right before the program executes.
 
-The program that does the job of taking your code and translating it into machine code is called the *compiler*. http://gcc.gnu.org/[GCC] is one of the most popular compilers. It can compile lots of different languages. GCC is great for compiling, but knowing exactly how to tell the program exactly what you want to do is the subject of much headache and frustration. In the previous section, we conpiled a program with the simple command "g++ -o hello hello.cpp", but once you start doing stuff like using existing libraries, optimizing code for particular processors, bundling your application with resources like images, etc., all bets are off.  Telling GCC to compile even a moderately complicated openFrameworks project takes hundreds of lines of isoteric syntax and invoking dozens of helper tools. It's super complex.
+The program that does the job of taking your code and translating it into machine code is called the *compiler*. http://gcc.gnu.org/[GCC] is one of the most popular compilers. It can compile lots of different languages. GCC is great for compiling, but knowing exactly how to tell the program exactly what you want to do is the subject of much headache and frustration. In the previous section, we conpiled a program with the simple command "g++ -o hello hello.cpp", but once you start doing stuff like using existing libraries, optimizing code for particular processors, bundling your application with resources like images, etc., all bets are off. Telling GCC to compile even a moderately complicated openFrameworks project takes hundreds of lines of isoteric syntax and invoking dozens of helper tools. It's super complex.
 
-So instead, most developers use http://en.wikipedia.org/wiki/Integrated_development_environment[IDEs (Integrated Development Environments)] to organize and create code projects. Most IDEs will include a text editor, a file organizer, a compiler, and lots of GUI interfaces for customizing all of the options and details of the compilation process. http://en.wikipedia.org/wiki/Comparison_of_integrated_development_environments[Some popular IDEs are]: XCode, Visual Studio, CodeBlocks, Eclipse, NetBeans. There are IDEs for every operating system and language.  Some IDEs are for one specific language and some support many.
+So instead, most developers use http://en.wikipedia.org/wiki/Integrated_development_environment[IDEs (Integrated Development Environments)] to organize and create code projects. Most IDEs will include a text editor, a file organizer, a compiler, and lots of GUI interfaces for customizing all of the options and details of the compilation process. http://en.wikipedia.org/wiki/Comparison_of_integrated_development_environments[Some popular IDEs are]: XCode, Visual Studio, CodeBlocks, Eclipse, NetBeans. There are IDEs for every operating system and language. Some IDEs are for one specific language and some support many.
 
-You *might* be able to get away with calling stuff like Flash, Processing, VVVV, and MaxMSP IDEs -- most of the important features are there. The difference is that IDEs are typically blank slates -- they don't come with any specific functionality.  The other tools, on the other hand, come with lots of built-in functionality that is usually optimized for a particular purpose. For insance, Flash compiles programs to be run on the web, while Processing is a rapid prototyping tool.  
+You *might* be able to get away with calling stuff like Flash, Processing, VVVV, and MaxMSP IDEs -- most of the important features are there. The difference is that IDEs are typically blank slates -- they don't come with any specific functionality. The other tools, on the other hand, come with lots of built-in functionality that is usually optimized for a particular purpose. For insance, Flash compiles programs to be run on the web, while Processing is a rapid prototyping tool. 
 
 openFrameworks definitely comes with a lot of functionality. The difference with openFrameworks is that it doesn't come with it's own IDE. Technically, you can use whatever IDE you want to create an openFrameworks project, but just as interfacing with a compiler can be difficult, the process of setting up a project of any complexity in an IDE can also be complex and tedious. One of the great things about openFrameworks is that it provides starting points for several IDEs on the 3 major platforms. They've done the hard work of creating project templates for 3 different IDEs on the 3 major platforms so all you have to do is download and start coding.
 
@@ -207,7 +207,7 @@ One great thing about openFrameworks is that how easy to incorporate c++ code fr
 
 Why openFrameworks?
 ~~~~~~~~~~~~~~~~~~~
-openFrameworks is not the only creative coding framework out there.  So why should you (or shouldn't you) use openFrameworks?
+openFrameworks is not the only creative coding framework out there. So why should you (or shouldn't you) use openFrameworks?
 
 coming soon...
 
@@ -236,9 +236,9 @@ include::Chapter002-movement/README.txt[tabsize=2]
 About this Documentation
 ========================
 
-This documentation is generated with http://http://www.methods.co.nz/asciidoc[asciidoc].  If you want to re-generate any of the documentation, you'll need to install it.  You'll also need http://www.gnu.org/software/src-highlite/[source-highlight].  
+This documentation is generated with http://http://www.methods.co.nz/asciidoc[asciidoc]. If you want to re-generate any of the documentation, you'll need to install it. You'll also need http://www.gnu.org/software/src-highlite/[source-highlight]. 
 
-CAUTION: The most recent version of source-highlight at the time of this writing was 3.1.6, but I couldn't get this to compile on my Mac running 10.7.2.  However, going back to ftp://ftp.gnu.org/gnu/src-highlite/source-highlight-3.0.tar.gz[source-highlight-3.0] worked just fine.
+CAUTION: The most recent version of source-highlight at the time of this writing was 3.1.6, but I couldn't get this to compile on my Mac running 10.7.2. However, going back to ftp://ftp.gnu.org/gnu/src-highlite/source-highlight-3.0.tar.gz[source-highlight-3.0] worked just fine.
 
 Contributing to this documentation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
