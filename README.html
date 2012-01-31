@@ -1313,10 +1313,9 @@ Next to <strong>Base SDK</strong>, click and drag to "10.6"
 </div>
 <div class="sect2">
 <h3 id="_writing_code">1.4. Writing Code</h3>
-<div class="paragraph"><p>Okay, now that you know how to create a project, it&#8217;s time to start writing some code inside it. The next few sections will introduce you to the structure of an openFrameworks application.</p></div>
-</div>
-<div class="sect2">
-<h3 id="_testapp_cpp">1.5. testApp.cpp</h3>
+<div class="paragraph"><p>Okay, now that you know how to create a project, it&#8217;s time to start writing some code inside it. The next few sections will introduce you to the structure of an openFrameworks application and a few simple drawing and setup functions.</p></div>
+<div class="sect3">
+<h4 id="_testapp_cpp">1.4.1. testApp.cpp</h4>
 <div class="paragraph"><p>So it&#8217;s finally time to start looking at some code. The first thing you need to do is open up a project in XCode. I&#8217;m going to assume that we are working with "MyFirstProject" inside the workspace "MyFirstWorkspace" from the last section. When you first open it up, take a look in the <strong>Navigator View</strong> (the panel on the far left of XCode) and click the disclosure triangle like this:</p></div>
 <div class="paragraph"><p><span class="image">
 <img src="images/expand01.gif" alt="Open up the project" />
@@ -1338,7 +1337,7 @@ Click on testApp.cpp
 </p>
 </li>
 </ol></div>
-<div class="paragraph"><p>testApp.cpp is going to become your very good friend over the next few tutorials. In the <strong>Editor Window</strong>, you should see something like starts like this:</p></div>
+<div class="paragraph"><p>testApp.cpp is going to become your very good friend over the next few tutorials. In the <strong>Editor Window</strong>, you should see something that starts like this:</p></div>
 <div class="listingblock">
 <div class="content"><!-- Generator: GNU source-highlight 3.0
 by Lorenzo Bettini
@@ -1366,8 +1365,8 @@ http://www.gnu.org/software/src-highlite -->
 
 <span style="color: #FF0000">}</span></tt></pre></div></div>
 <div class="paragraph"><p>So what is going on here?</p></div>
-<div class="paragraph"><p>In a lot of ways, testApp.cpp is a lot like hello.cpp, the file that we wrote in the Introduction. It&#8217;s a plain text file that contains <tt>c++</tt> source code. The difference now is that we are editing it through our IDE, so there is some really nice syntax highlighting that will hopefully make it easier to make sense of the code, and it will be a lot easier to compile and run when we want to.</p></div>
-<div class="paragraph"><p>On a very basic level, what you see here is a bunch of empty functions. A <a href="http://en.wikipedia.org/wiki/Function_(computer_science)">function</a> is a set of instructions that make up part of a larger program. Just in the snippet of code above, there are 4 functions: setup, update, draw, and keyPressed. Each of the functions is followed by a set of curly brackets ({}). What usually goes inside of these curly brackets are the instructions that make up the functions.</p></div>
+<div class="paragraph"><p>In a lot of ways, testApp.cpp is like hello.cpp, the file that we wrote in the Introduction. It&#8217;s a plain text file that contains <tt>c++</tt> source code. The difference now is that we are editing it through our IDE, so there is some really nice syntax highlighting that will hopefully make it easier to make sense of the code, and it will be a lot easier to compile and run when we want to.</p></div>
+<div class="paragraph"><p>On a very basic level, what you see here is a bunch of empty functions. A <a href="http://en.wikipedia.org/wiki/Function_(computer_science)">function</a> is a set of instructions that make up part of a larger program. Just in the snippet of code above, there are 4 functions: setup, update, draw, and keyPressed. Each of the functions is followed by a set of curly brackets ({}). What usually goes inside of these curly brackets are the instructions (assiging values to variables, loops, and calls to other functions) that make up the functions.</p></div>
 <div class="paragraph"><p>If you refer back to the Q&amp;A "What is a software framework?" in the introduction, the film production company analogy is particularly useful at this point. What you are looking at in testApp.cpp is how openFrameworks has provided all of the infrastructure and logistical details. Now it&#8217;s your job to define what happens. You do this by putting code into the fuctions in testApp.cpp</p></div>
 <div class="paragraph"><p>These functions will be called by openFrameworks at different points during the execution of your program. Let&#8217;s take a look at a few of them.</p></div>
 <div class="dlist"><dl>
@@ -1376,7 +1375,7 @@ setup
 </dt>
 <dd>
 <p>
-  This function is called (ie: the code inside the curly brackets runs) before your program actually launches. So, let&#8217;s say, for instance, you wanted to set the size of the window. You probably want this to happen before the window actually opens, so setup would be a good place for that.
+  This function is called (ie: any code that you&#8217;ve put inside the curly brackets runs) at the very beginning of the life of your application, before your program window opens. So, let&#8217;s say, for instance, you wanted to set the size of the window. You probably want this to happen before the window actually opens, so setup would be a good place for that.
 </p>
 </dd>
 <dt class="hdlist1">
@@ -1398,8 +1397,8 @@ keyPressed, keyReleased, mouseMoved, mouseDragged, mousePressed
 </dl></div>
 <div class="paragraph"><p>But enough with the reading. Let&#8217;s see these things in action.</p></div>
 </div>
-<div class="sect2">
-<h3 id="_making_a_mark">1.6. Making a Mark</h3>
+<div class="sect3">
+<h4 id="_making_a_mark">1.4.2. Making a Mark</h4>
 <div class="paragraph"><p>We will start by drawing a simple circle in our gray window using the ofCircle function. Type <tt>ofCircle(200, 200, 60);</tt> on the blank line inside the draw() function so that your draw function looke like this:</p></div>
 <div class="listingblock">
 <div class="content"><!-- Generator: GNU source-highlight 3.0
@@ -1414,7 +1413,7 @@ http://www.gnu.org/software/src-highlite -->
 <td class="icon">
 <img src="./images/icons/note.png" alt="Note" />
 </td>
-<td class="content">Notice the semicolon at the end of the line. All function calls must end with a semicolon. Function names are always case sensitive, so OfSetColor will nto work, nor OFsetcolor, etc.</td>
+<td class="content">Notice the semicolon at the end of the line. All function calls must end with a semicolon. In addition, function names are always case sensitive, so OfSetColor will not work, nor OFsetcolor, etc. only ofSetColor.</td>
 </tr></table>
 </div>
 <div class="paragraph"><p>Now run your program. You should see something like:</p></div>
@@ -1449,10 +1448,18 @@ The "origin" of the coordinate system is in the upper left of the window. So, ou
 <td class="content">The order of the arguments is important. The first argument to ofCircle will always mean "x coordinate" and the third will always mean "radius".</td>
 </tr></table>
 </div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<img src="./images/icons/note.png" alt="Note" />
+</td>
+<td class="content">There are some functions (such as <a href="http://www.openframeworks.cc/documentation/graphics/ofGraphics.html#ofFill">ofFill</a>, which simply tells oF to fill shapes that are drawn) that have 0 arguments, but you still have to put parenthesis after them.</td>
+</tr></table>
+</div>
 <div class="paragraph"><p>If you hadn&#8217;t just read about it here, you could have found information about ofCircle on the <a href="http://www.openframeworks.cc/documentation/">openFrameworks documentation page</a>, which you will be using more as we move on.</p></div>
 </div>
-<div class="sect2">
-<h3 id="_adding_some_color">1.7. Adding some Color</h3>
+<div class="sect3">
+<h4 id="_adding_some_color">1.4.3. Adding some Color</h4>
 <div class="paragraph"><p>Your circle is great, but kind of boring. What if we want to introduce some color to our application?  To do that, we need the the <a href="http://www.openframeworks.cc/documentation/graphics/ofGraphics.html#ofSetColor">ofSetColor</a> function. Try adding <tt>ofSetColor(255, 0, 255);</tt> right above the ofCircle line, so that your draw function looks like this:</p></div>
 <div class="listingblock">
 <div class="content"><!-- Generator: GNU source-highlight 3.0
@@ -1505,8 +1512,8 @@ http://www.gnu.org/software/src-highlite -->
 <img src="images/MyFirstProject03.png" alt="Two Colorful Circles" width="500" />
 </span></p></div>
 </div>
-<div class="sect2">
-<h3 id="_all_the_shapes_you_can_handle">1.8. All The Shapes You Can Handle</h3>
+<div class="sect3">
+<h4 id="_all_the_shapes_you_can_handle">1.4.4. All The Shapes You Can Handle</h4>
 <div class="paragraph"><p>Of course, oF can draw more than circles.</p></div>
 <div class="olist arabic"><ol class="arabic">
 <li>
@@ -1552,8 +1559,8 @@ http://www.gnu.org/software/src-highlite -->
 </tr></table>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_adding_movement">1.9. Adding Movement</h3>
+<div class="sect3">
+<h4 id="_adding_movement">1.4.5. Adding Movement</h4>
 <div class="paragraph"><p>Drawing static shapes is great, but what if we want our shapes to move around the screen?</p></div>
 <div class="paragraph"><p>We mentioned earlier that the draw() function is called repeatedly after the program is started. This is very important because it is how we achieve animation in openFrameworks. It might be a little unintuitive if you are used to  Flash or even something like stop-frame animation, where you can add something to a "stage" and then reposition it as needed. This is <strong>not</strong> how openFrameworks (or most computer animation) works. Actually, openFrameworks is more like traditional (we&#8217;re talking old-school Disney/Bambi) animation, where we must redraw the frame completely every single "frame". In the parlance of openFrameworks, every time the draw() function is called is one "frame". So, in actuality, when you run the program above and see your purple circle, what you are actually looking at is the circle being drawn, then cleared (a single frame), and then drawn, then cleared, repeatedly. It&#8217;s just happening so fast that it appears to stay where it is.</p></div>
 <div class="paragraph"><p>In the example above, when we draw our circle, we use two numbers to tell the ofCircle function where to draw the circle within the window. So it follows that, if we want the circle to appear to move, we need to change these numbers over time. Perhaps the first time draw() happens, the circle is drawn at (200, 300), but in the next time, we want it to be one pixel to the right (201, 300), and then another pixel to the right (202, 300), and so on.</p></div>
@@ -1591,7 +1598,7 @@ http://www.gnu.org/software/src-highlite -->
   <span style="font-weight: bold"><span style="color: #000000">ofSetColor</span></span><span style="color: #990000">(</span><span style="color: #993399">255</span><span style="color: #990000">,</span> <span style="color: #993399">0</span><span style="color: #990000">,</span> <span style="color: #993399">255</span><span style="color: #990000">);</span>
   <span style="font-weight: bold"><span style="color: #000000">ofCircle</span></span><span style="color: #990000">(</span>myCircleX<span style="color: #990000">,</span> myCircleY<span style="color: #990000">,</span> <span style="color: #993399">60</span><span style="color: #990000">);</span>
 <span style="color: #FF0000">}</span></tt></pre></div></div>
-<div class="paragraph"><p>Notice that we are still passing 3 arguments to the ofCircle function.  But now, instead of the old "hard-coded" (200, 300) values that we can&#8217;t change, we are letting the variables that we made stand in.</p></div>
+<div class="paragraph"><p>Notice that we are still passing 3 arguments to the ofCircle function. But now, instead of the old "hard-coded" (200, 300) values that we can&#8217;t change, we are letting the variables that we made stand in.</p></div>
 <div class="paragraph"><p>If you run your app now, you shouldn&#8217;t notice any change. That&#8217;s because we haven&#8217;t gotten around to changing the variables yet. So let&#8217;s do it.</p></div>
 <div class="paragraph"><p>Let&#8217;s edit our draw function a little so that it looks like this:</p></div>
 <div class="listingblock">
@@ -1605,7 +1612,7 @@ http://www.gnu.org/software/src-highlite -->
   <span style="font-weight: bold"><span style="color: #000000">ofSetColor</span></span><span style="color: #990000">(</span><span style="color: #993399">255</span><span style="color: #990000">,</span> <span style="color: #993399">0</span><span style="color: #990000">,</span> <span style="color: #993399">255</span><span style="color: #990000">);</span>
   <span style="font-weight: bold"><span style="color: #000000">ofCircle</span></span><span style="color: #990000">(</span>myCircleX<span style="color: #990000">,</span> myCircleY<span style="color: #990000">,</span> <span style="color: #993399">60</span><span style="color: #990000">);</span>
 <span style="color: #FF0000">}</span></tt></pre></div></div>
-<div class="paragraph"><p>In this new line, we are using the "assignment operator" again, just like in the setup function. In English, that line would say "take the value of myCircleX plus one, and assign that to myCircleX".  In other words, we are incrementing myCircleX by 1. <tt>c++</tt> provides a shortcut for the common task of incrementing a variable: <tt>myCircleX++;</tt>  This is extremely common, so let&#8217;s actually change our code to use this handy shortcut:</p></div>
+<div class="paragraph"><p>In this new line, we are using the "assignment operator" again, just like in the setup function. In English, that line would say "take the value of myCircleX plus one, and assign that to myCircleX". In other words, we are incrementing myCircleX by 1. <tt>c++</tt> provides a shortcut for the common task of incrementing a variable: <tt>myCircleX++;</tt>  This is extremely common, so let&#8217;s actually change our code to use this handy shortcut:</p></div>
 <div class="literalblock">
 <div class="content">
 <pre><tt>myCircleX = myCircleX + 1;</tt></pre>
@@ -1616,7 +1623,7 @@ http://www.gnu.org/software/src-highlite -->
 <pre><tt>myCircleX++;</tt></pre>
 </div></div>
 <div class="paragraph"><p>If you run your program now, you should see your circle move off the screen to the right!  Animation!</p></div>
-<div class="paragraph"><p>There is just one thing we need to fix before moving on to more pressing aesthetic concerns. If you read back through the descriptions of what the update() and draw() functions are supposed to be used for, you&#8217;ll notice that the draw function is for drawing (so far, so good), but the update() function is where we are supposed to take care of updating variables. There are some very good reasons for this that we will get into later, but for now, let&#8217;s move the line we just wrote to the update function.  So, your update and draw functions should look like this:</p></div>
+<div class="paragraph"><p>There is just one thing we need to fix before moving on to more pressing aesthetic concerns. If you read back through the descriptions of what the update() and draw() functions are supposed to be used for, you&#8217;ll notice that the draw function is for drawing (so far, so good), but the update() function is where we are supposed to take care of updating variables. There are some very good reasons for this that we will get into later, but for now, let&#8217;s move the line we just wrote to the update function. So, your update and draw functions should look like this:</p></div>
 <div class="listingblock">
 <div class="content"><!-- Generator: GNU source-highlight 3.0
 by Lorenzo Bettini
@@ -1632,8 +1639,95 @@ http://www.gnu.org/software/src-highlite -->
 <span style="color: #FF0000">}</span></tt></pre></div></div>
 <div class="paragraph"><p>You shouldn&#8217;t notice any difference in terms of functionality, but it&#8217;s a good habit to get into.</p></div>
 </div>
+<div class="sect3">
+<h4 id="_framerate">1.4.6. Framerate</h4>
+<div class="paragraph"><p>One thing you may notice about your awesome moving circle is that it starts off kind of slow and then speeds away. This is actually caused by the framerate of your application, which is slow at first while the application fires up, but then gets super fast. As mentioned before, framerate refers to the rate at which the draw/update loop executes. Add this little line of code to the bottom of your draw() function to be able to see your framerate in the upper left corner of your window:</p></div>
+<div class="literalblock">
+<div class="content">
+<pre><tt>ofDrawBitmapString(ofToString(ofGetFrameRate())+"fps", 10, 15);</tt></pre>
+</div></div>
+<div class="paragraph"><p>Most likely, it says something very close to 1000fps. That means that your circle is being drawn close to one thousand times per second. If you were to fire up tons of other applications on your computer and start rendering a huge video in FinalCut, you&#8217;d notice this framerate drop.  The fact is that your application is simply trying to run as fast as it possibly can.</p></div>
+<div class="paragraph"><p>In the interest of having a smoother, more predictable kind of animation, we will lower the framerate to something more reasonable, like 60.  In order to do this, we will put a new line into our setup() function.</p></div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight 3.0
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><span style="color: #009900">void</span> testApp<span style="color: #990000">::</span><span style="font-weight: bold"><span style="color: #000000">setup</span></span><span style="color: #990000">()</span><span style="color: #FF0000">{</span>
+    <span style="font-weight: bold"><span style="color: #000000">ofSetFrameRate</span></span><span style="color: #990000">(</span><span style="color: #993399">60</span><span style="color: #990000">);</span>
+
+    myCircleX <span style="color: #990000">=</span> <span style="color: #993399">300</span><span style="color: #990000">;</span>
+    myCircleY <span style="color: #990000">=</span> <span style="color: #993399">200</span><span style="color: #990000">;</span>
+<span style="color: #FF0000">}</span></tt></pre></div></div>
+<div class="paragraph"><p>Add that and then run your program. You will notice that the circle moves considerably slower. Using this function is <strong>not</strong> a guarantee of 60 frames per second, but it is a guarantee that your framerate will be any higher than that.  And unless you have a really old computer, or your processor is already extremely taxed by some other program, it should have no problem running consistently at 60fps while doing something a simple as drawing a moving circle.</p></div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<img src="./images/icons/tip.png" alt="Tip" />
+</td>
+<td class="content">SAT word problem #1: If we know that the update loop is happening (at most) 60 times/second, and we are incrementing the x coordinate of the circle by 1 pixel every time update is called, how long will it take for the circle to move 240px?</td>
+</tr></table>
+</div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<img src="./images/icons/tip.png" alt="Tip" />
+</td>
+<td class="content">
+<div class="title">Too bloody slow</div>
+<div class="paragraph"><p>It&#8217;s true that we now have a good handle on the framerate, but 60px/second turns out to be really slow.  To fix this problem, we <strong>could</strong> increase the framerate, but 60fps is a pretty good framerate.  so instead, let&#8217;s change the speed of the circle itself:  instead of just incrementing the x coordinate by 1 pixel every time, let&#8217;s increment it by 4.  Using the same "incrementing" shortcut, we can change our update() function like this:</p></div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight 3.0
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><span style="color: #009900">void</span> testApp<span style="color: #990000">::</span><span style="font-weight: bold"><span style="color: #000000">update</span></span><span style="color: #990000">()</span><span style="color: #FF0000">{</span>
+    myCircleX<span style="color: #990000">+=</span><span style="color: #993399">4</span><span style="color: #990000">;</span>
+<span style="color: #FF0000">}</span></tt></pre></div></div>
+</td>
+</tr></table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_the_pacman_effect">1.4.7. The Pacman Effect</h4>
+<div class="paragraph"><p>Let&#8217;s have one final adventure with our purple circle before saying goodbye. Our application is still a litlte dissapointing because once our circle leaves the screen on the right, it&#8217;s gone forever. Let&#8217;s fix that problem by making the circle re-appear on the left side after leaving on the right: the Pacman Effect.</p></div>
+<div class="paragraph"><p>Before we write any code, let&#8217;s think about what this is going to mean in terms of the variables that we have. In the current state, we have myCircleX acting as the x coordinate for our circle, and it is being incrementing by 1 (or 4, if you followed the tip above) every frame. By default, an openFrameworks window is 1024x768.  So, one way we could achieve the Pacman Effect is to reset myCircleX back to 300 once it goes beyond 1024.</p></div>
+<div class="paragraph"><p>How can we do this? We know that we are supposed to do any variable updating in the update() function, so let&#8217;s start there. We also know that we <strong>only</strong> want to reset myCircleX <strong>if</strong> it has gone above 1024.  So for that, we use the <em>if</em> statement.</p></div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight 3.0
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><span style="color: #009900">void</span> testApp<span style="color: #990000">::</span><span style="font-weight: bold"><span style="color: #000000">update</span></span><span style="color: #990000">()</span><span style="color: #FF0000">{</span>
+    myCircleX<span style="color: #990000">++;</span>
+    <span style="font-weight: bold"><span style="color: #0000FF">if</span></span><span style="color: #990000">(</span>myCircleX <span style="color: #990000">&gt;</span> <span style="color: #993399">1024</span><span style="color: #990000">)</span>
+    <span style="color: #FF0000">{</span>
+        myCircleX <span style="color: #990000">=</span> <span style="color: #993399">300</span><span style="color: #990000">;</span>
+    <span style="color: #FF0000">}</span>
+<span style="color: #FF0000">}</span></tt></pre></div></div>
+<div class="paragraph"><p>This code says:</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+increment myCircleX by one.
+</p>
+</li>
+<li>
+<p>
+test if myCircleX is greater than 1024
+</p>
+</li>
+<li>
+<p>
+<strong>only</strong> if that test turns out to be true, set myCircleX back to 300;
+</p>
+</li>
+</ul></div>
+</div>
+</div>
 <div class="sect2">
-<h3 id="_framerate">1.10. Framerate</h3>
+<h3 id="_adding_interaction">1.5. Adding Interaction</h3>
+<div class="paragraph"><p>Now that you are a master of animation, it&#8217;s time to get the user involved.  For this section, we will be focusing on keyboard and mouse interaction.</p></div>
 </div>
 </div>
 </div>

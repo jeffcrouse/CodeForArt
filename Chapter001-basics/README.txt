@@ -150,10 +150,10 @@ image:images/workspace05.png["Your Executable"]
 Writing Code
 ------------
 
-Okay, now that you know how to create a project, it's time to start writing some code inside it. The next few sections will introduce you to the structure of an openFrameworks application.
+Okay, now that you know how to create a project, it's time to start writing some code inside it. The next few sections will introduce you to the structure of an openFrameworks application and a few simple drawing and setup functions.
 
 testApp.cpp
------------
+~~~~~~~~~~~
 
 So it's finally time to start looking at some code. The first thing you need to do is open up a project in XCode. I'm going to assume that we are working with "MyFirstProject" inside the workspace "MyFirstWorkspace" from the last section. When you first open it up, take a look in the *Navigator View* (the panel on the far left of XCode) and click the disclosure triangle like this:
 
@@ -163,7 +163,7 @@ image:images/expand01.gif["Open up the project"]
 . Click the disclosure triangle next to "src"
 . Click on testApp.cpp
 
-testApp.cpp is going to become your very good friend over the next few tutorials. In the *Editor Window*, you should see something like starts like this:
+testApp.cpp is going to become your very good friend over the next few tutorials. In the *Editor Window*, you should see something that starts like this:
 
 [source,cpp]
 ---------------------------------------------------------------------
@@ -192,16 +192,16 @@ void testApp::keyPressed(int key){
 
 So what is going on here?
 
-In a lot of ways, testApp.cpp is a lot like hello.cpp, the file that we wrote in the Introduction. It's a plain text file that contains `c++` source code. The difference now is that we are editing it through our IDE, so there is some really nice syntax highlighting that will hopefully make it easier to make sense of the code, and it will be a lot easier to compile and run when we want to.
+In a lot of ways, testApp.cpp is like hello.cpp, the file that we wrote in the Introduction. It's a plain text file that contains `c++` source code. The difference now is that we are editing it through our IDE, so there is some really nice syntax highlighting that will hopefully make it easier to make sense of the code, and it will be a lot easier to compile and run when we want to.
 
-On a very basic level, what you see here is a bunch of empty functions. A http://en.wikipedia.org/wiki/Function_(computer_science)[function] is a set of instructions that make up part of a larger program. Just in the snippet of code above, there are 4 functions: setup, update, draw, and keyPressed. Each of the functions is followed by a set of curly brackets ({}). What usually goes inside of these curly brackets are the instructions that make up the functions. 
+On a very basic level, what you see here is a bunch of empty functions. A http://en.wikipedia.org/wiki/Function_(computer_science)[function] is a set of instructions that make up part of a larger program. Just in the snippet of code above, there are 4 functions: setup, update, draw, and keyPressed. Each of the functions is followed by a set of curly brackets ({}). What usually goes inside of these curly brackets are the instructions (assiging values to variables, loops, and calls to other functions) that make up the functions. 
 
 If you refer back to the Q&A "What is a software framework?" in the introduction, the film production company analogy is particularly useful at this point. What you are looking at in testApp.cpp is how openFrameworks has provided all of the infrastructure and logistical details. Now it's your job to define what happens. You do this by putting code into the fuctions in testApp.cpp
 
 These functions will be called by openFrameworks at different points during the execution of your program. Let's take a look at a few of them.
 
 setup;;
-	This function is called (ie: the code inside the curly brackets runs) before your program actually launches. So, let's say, for instance, you wanted to set the size of the window. You probably want this to happen before the window actually opens, so setup would be a good place for that.
+	This function is called (ie: any code that you've put inside the curly brackets runs) at the very beginning of the life of your application, before your program window opens. So, let's say, for instance, you wanted to set the size of the window. You probably want this to happen before the window actually opens, so setup would be a good place for that.
 	
 update, draw;;
 	After the setup function runs, the update and draw functions begin a loop that continues until your program ends. So, after setup() runs, update() runs, then draw(), then update(), then draw(), etc. and by default, this happens as fast as your computer can handle. update() is typically used for updating the state of your program (ie: changing the value of variables), while draw() is used to actually draw things into your window.
@@ -212,7 +212,7 @@ keyPressed, keyReleased, mouseMoved, mouseDragged, mousePressed;;
 But enough with the reading. Let's see these things in action.
 
 Making a Mark
--------------
+~~~~~~~~~~~~~
 
 We will start by drawing a simple circle in our gray window using the ofCircle function. Type `ofCircle(200, 200, 60);` on the blank line inside the draw() function so that your draw function looke like this:
 
@@ -223,7 +223,7 @@ void testApp::draw(){
 }
 ---------------------------------------------------------------------
 
-NOTE: Notice the semicolon at the end of the line. All function calls must end with a semicolon. Function names are always case sensitive, so OfSetColor will nto work, nor OFsetcolor, etc.
+NOTE: Notice the semicolon at the end of the line. All function calls must end with a semicolon. In addition, function names are always case sensitive, so OfSetColor will not work, nor OFsetcolor, etc. only ofSetColor.
 
 Now run your program. You should see something like:
 
@@ -239,12 +239,14 @@ http://www.openframeworks.cc/documentation/graphics/ofGraphics.html#ofCircle[ofC
 . This may seem obvious, but the coordinates refer to the center of the circle. Other shapes (such as rectangles) use the upper left corner.
 . The "origin" of the coordinate system is in the upper left of the window. So, our circle appears 200 pixels from the left side of the screen, and 300 pixels from the top.
 
-NOTE: The order of the arguments is important. The first argument to ofCircle will always mean "x coordinate" and the third will always mean "radius".
+NOTE: The order of the arguments is important. The first argument to ofCircle will always mean "x coordinate" and the third will always mean "radius".  
+
+NOTE: There are some functions (such as http://www.openframeworks.cc/documentation/graphics/ofGraphics.html#ofFill[ofFill], which simply tells oF to fill shapes that are drawn) that have 0 arguments, but you still have to put parenthesis after them.  
 
 If you hadn't just read about it here, you could have found information about ofCircle on the http://www.openframeworks.cc/documentation/[openFrameworks documentation page], which you will be using more as we move on.
 
 Adding some Color
------------------
+~~~~~~~~~~~~~~~~~
 
 Your circle is great, but kind of boring. What if we want to introduce some color to our application?  To do that, we need the the http://www.openframeworks.cc/documentation/graphics/ofGraphics.html#ofSetColor[ofSetColor] function. Try adding `ofSetColor(255, 0, 255);` right above the ofCircle line, so that your draw function looks like this:
 
@@ -295,7 +297,7 @@ image:images/MyFirstProject03.png["Two Colorful Circles", width="500"]
 
 
 All The Shapes You Can Handle
------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Of course, oF can draw more than circles. 
 
@@ -310,7 +312,7 @@ NOTE: Control points can be tricky. If you've used the pen tool in photoshop or 
 TIP:  Try making 3 different projects in your "MyFirstWorkspace" workspace. In each one, draw a different shape in a different location using a different color.
 
 Adding Movement
----------------
+~~~~~~~~~~~~~~~
 
 Drawing static shapes is great, but what if we want our shapes to move around the screen?
 
@@ -356,7 +358,7 @@ void testApp::draw(){
 }
 ---------------------------------------------------------------------
 
-Notice that we are still passing 3 arguments to the ofCircle function.  But now, instead of the old "hard-coded" (200, 300) values that we can't change, we are letting the variables that we made stand in.
+Notice that we are still passing 3 arguments to the ofCircle function. But now, instead of the old "hard-coded" (200, 300) values that we can't change, we are letting the variables that we made stand in.
 
 If you run your app now, you shouldn't notice any change. That's because we haven't gotten around to changing the variables yet. So let's do it.
 
@@ -372,7 +374,7 @@ void testApp::draw(){
 }
 ---------------------------------------------------------------------
 
-In this new line, we are using the "assignment operator" again, just like in the setup function. In English, that line would say "take the value of myCircleX plus one, and assign that to myCircleX".  In other words, we are incrementing myCircleX by 1. `c++` provides a shortcut for the common task of incrementing a variable: `myCircleX++;`  This is extremely common, so let's actually change our code to use this handy shortcut:
+In this new line, we are using the "assignment operator" again, just like in the setup function. In English, that line would say "take the value of myCircleX plus one, and assign that to myCircleX". In other words, we are incrementing myCircleX by 1. `c++` provides a shortcut for the common task of incrementing a variable: `myCircleX++;`  This is extremely common, so let's actually change our code to use this handy shortcut:
 
 ....
 myCircleX = myCircleX + 1;
@@ -384,7 +386,7 @@ myCircleX++;
 
 If you run your program now, you should see your circle move off the screen to the right!  Animation!
 
-There is just one thing we need to fix before moving on to more pressing aesthetic concerns. If you read back through the descriptions of what the update() and draw() functions are supposed to be used for, you'll notice that the draw function is for drawing (so far, so good), but the update() function is where we are supposed to take care of updating variables. There are some very good reasons for this that we will get into later, but for now, let's move the line we just wrote to the update function.  So, your update and draw functions should look like this:
+There is just one thing we need to fix before moving on to more pressing aesthetic concerns. If you read back through the descriptions of what the update() and draw() functions are supposed to be used for, you'll notice that the draw function is for drawing (so far, so good), but the update() function is where we are supposed to take care of updating variables. There are some very good reasons for this that we will get into later, but for now, let's move the line we just wrote to the update function. So, your update and draw functions should look like this:
 
 [source,cpp]
 ---------------------------------------------------------------------
@@ -401,8 +403,74 @@ void testApp::draw(){
 You shouldn't notice any difference in terms of functionality, but it's a good habit to get into.
 
 Framerate
----------
+~~~~~~~~~
+
+One thing you may notice about your awesome moving circle is that it starts off kind of slow and then speeds away. This is actually caused by the framerate of your application, which is slow at first while the application fires up, but then gets super fast. As mentioned before, framerate refers to the rate at which the draw/update loop executes. Add this little line of code to the bottom of your draw() function to be able to see your framerate in the upper left corner of your window:
+
+....
+ofDrawBitmapString(ofToString(ofGetFrameRate())+"fps", 10, 15);
+....
+
+Most likely, it says something very close to 1000fps. That means that your circle is being drawn close to one thousand times per second. If you were to fire up tons of other applications on your computer and start rendering a huge video in FinalCut, you'd notice this framerate drop.  The fact is that your application is simply trying to run as fast as it possibly can.
+
+In the interest of having a smoother, more predictable kind of animation, we will lower the framerate to something more reasonable, like 60.  In order to do this, we will put a new line into our setup() function.
+
+[source,cpp]
+---------------------------------------------------------------------
+void testApp::setup(){
+    ofSetFrameRate(60);
+    
+    myCircleX = 300;
+    myCircleY = 200;
+}
+---------------------------------------------------------------------
+
+Add that and then run your program. You will notice that the circle moves considerably slower. Using this function is *not* a guarantee of 60 frames per second, but it is a guarantee that your framerate will be any higher than that.  And unless you have a really old computer, or your processor is already extremely taxed by some other program, it should have no problem running consistently at 60fps while doing something a simple as drawing a moving circle.
+
+TIP: SAT word problem #1: If we know that the update loop is happening (at most) 60 times/second, and we are incrementing the x coordinate of the circle by 1 pixel every time update is called, how long will it take for the circle to move 240px?
+
+[TIP]
+.Too bloody slow
+=====================================================================
+It's true that we now have a good handle on the framerate, but 60px/second turns out to be really slow.  To fix this problem, we *could* increase the framerate, but 60fps is a pretty good framerate.  so instead, let's change the speed of the circle itself:  instead of just incrementing the x coordinate by 1 pixel every time, let's increment it by 4.  Using the same "incrementing" shortcut, we can change our update() function like this:
+
+[source,cpp]
+---------------------------------------------------------------------
+void testApp::update(){
+    myCircleX+=4;
+}
+---------------------------------------------------------------------
+=====================================================================
+
+The Pacman Effect
+~~~~~~~~~~~~~~~~~
+
+Let's have one final adventure with our purple circle before saying goodbye. Our application is still a litlte dissapointing because once our circle leaves the screen on the right, it's gone forever. Let's fix that problem by making the circle re-appear on the left side after leaving on the right: the Pacman Effect.
+
+Before we write any code, let's think about what this is going to mean in terms of the variables that we have. In the current state, we have myCircleX acting as the x coordinate for our circle, and it is being incrementing by 1 (or 4, if you followed the tip above) every frame. By default, an openFrameworks window is 1024x768.  So, one way we could achieve the Pacman Effect is to reset myCircleX back to 300 once it goes beyond 1024.  
+
+How can we do this? We know that we are supposed to do any variable updating in the update() function, so let's start there. We also know that we *only* want to reset myCircleX *if* it has gone above 1024.  So for that, we use the 'if' statement.
+
+[source,cpp]
+---------------------------------------------------------------------
+void testApp::update(){
+    myCircleX++;		
+    if(myCircleX > 1024) 
+    {
+        myCircleX = 300;
+    }
+}
+---------------------------------------------------------------------
+This code says:
+
+- increment myCircleX by one.  
+- test if myCircleX is greater than 1024
+- *only* if that test turns out to be true, set myCircleX back to 300;
 
 
+Adding Interaction
+------------------
+
+Now that you are a master of animation, it's time to get the user involved.  For this section, we will be focusing on keyboard and mouse interaction.  
 
 
