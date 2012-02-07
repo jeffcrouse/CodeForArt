@@ -239,9 +239,9 @@ http://www.openframeworks.cc/documentation/graphics/ofGraphics.html#ofCircle[ofC
 . This may seem obvious, but the coordinates refer to the center of the circle. Other shapes (such as rectangles) use the upper left corner.
 . The "origin" of the coordinate system is in the upper left of the window. So, our circle appears 200 pixels from the left side of the screen, and 300 pixels from the top.
 
-NOTE: The order of the arguments is important. The first argument to ofCircle will always mean "x coordinate" and the third will always mean "radius".  
+NOTE: The order of the arguments is important. The first argument to ofCircle will always mean "x coordinate" and the third will always mean "radius". 
 
-NOTE: There are some functions (such as http://www.openframeworks.cc/documentation/graphics/ofGraphics.html#ofFill[ofFill], which simply tells oF to fill shapes that are drawn) that have 0 arguments, but you still have to put parenthesis after them.  
+NOTE: There are some functions (such as http://www.openframeworks.cc/documentation/graphics/ofGraphics.html#ofFill[ofFill], which simply tells oF to fill shapes that are drawn) that have 0 arguments, but you still have to put parenthesis after them. 
 
 If you hadn't just read about it here, you could have found information about ofCircle on the http://www.openframeworks.cc/documentation/[openFrameworks documentation page], which you will be using more as we move on.
 
@@ -411,9 +411,9 @@ One thing you may notice about your awesome moving circle is that it starts off 
 ofDrawBitmapString(ofToString(ofGetFrameRate())+"fps", 10, 15);
 ....
 
-Most likely, it says something very close to 1000fps. That means that your circle is being drawn close to one thousand times per second. If you were to fire up tons of other applications on your computer and start rendering a huge video in FinalCut, you'd notice this framerate drop.  The fact is that your application is simply trying to run as fast as it possibly can.
+Most likely, it says something very close to 1000fps. That means that your circle is being drawn close to one thousand times per second. If you were to fire up tons of other applications on your computer and start rendering a huge video in FinalCut, you'd notice this framerate drop. The fact is that your application is simply trying to run as fast as it possibly can.
 
-In the interest of having a smoother, more predictable kind of animation, we will lower the framerate to something more reasonable, like 60.  In order to do this, we will put a new line into our setup() function.
+In the interest of having a smoother, more predictable kind of animation, we will lower the framerate to something more reasonable, like 60. In order to do this, we will put a new line into our setup() function.
 
 [source,cpp]
 ---------------------------------------------------------------------
@@ -425,14 +425,14 @@ void testApp::setup(){
 }
 ---------------------------------------------------------------------
 
-Add that and then run your program. You will notice that the circle moves considerably slower. Using this function is *not* a guarantee of 60 frames per second, but it is a guarantee that your framerate will be any higher than that.  And unless you have a really old computer, or your processor is already extremely taxed by some other program, it should have no problem running consistently at 60fps while doing something a simple as drawing a moving circle.
+Add that and then run your program. You will notice that the circle moves considerably slower. Using this function is *not* a guarantee of 60 frames per second, but it is a guarantee that your framerate will be any higher than that. And unless you have a really old computer, or your processor is already extremely taxed by some other program, it should have no problem running consistently at 60fps while doing something a simple as drawing a moving circle.
 
 TIP: SAT word problem #1: If we know that the update loop is happening (at most) 60 times/second, and we are incrementing the x coordinate of the circle by 1 pixel every time update is called, how long will it take for the circle to move 240px?
 
 [TIP]
 .Too bloody slow
 =====================================================================
-It's true that we now have a good handle on the framerate, but 60px/second turns out to be really slow.  To fix this problem, we *could* increase the framerate, but 60fps is a pretty good framerate.  so instead, let's change the speed of the circle itself:  instead of just incrementing the x coordinate by 1 pixel every time, let's increment it by 4.  Using the same "incrementing" shortcut, we can change our update() function like this:
+It's true that we now have a good handle on the framerate, but 60px/second turns out to be really slow. To fix this problem, we *could* increase the framerate, but 60fps is a pretty good framerate. so instead, let's change the speed of the circle itself:  instead of just incrementing the x coordinate by 1 pixel every time, let's increment it by 4. Using the same "incrementing" shortcut, we can change our update() function like this:
 
 [source,cpp]
 ---------------------------------------------------------------------
@@ -447,9 +447,9 @@ The Pacman Effect
 
 Let's have one final adventure with our purple circle before saying goodbye. Our application is still a litlte dissapointing because once our circle leaves the screen on the right, it's gone forever. Let's fix that problem by making the circle re-appear on the left side after leaving on the right: the Pacman Effect.
 
-Before we write any code, let's think about what this is going to mean in terms of the variables that we have. In the current state, we have myCircleX acting as the x coordinate for our circle, and it is being incrementing by 1 (or 4, if you followed the tip above) every frame. By default, an openFrameworks window is 1024x768.  So, one way we could achieve the Pacman Effect is to reset myCircleX back to 300 once it goes beyond 1024.  
+Before we write any code, let's think about what this is going to mean in terms of the variables that we have. In the current state, we have myCircleX acting as the x coordinate for our circle, and it is being incrementing by 1 (or 4, if you followed the tip above) every frame. By default, an openFrameworks window is 1024x768. So, one way we could achieve the Pacman Effect is to reset myCircleX back to 300 once it goes beyond 1024. 
 
-How can we do this? We know that we are supposed to do any variable updating in the update() function, so let's start there. We also know that we *only* want to reset myCircleX *if* it has gone above 1024.  So for that, we use the 'if' statement.
+How can we do this? We know that we are supposed to do any variable updating in the update() function, so let's start there. We also know that we *only* want to reset myCircleX *if* it has gone above 1024. So for that, we use the 'if' statement.
 
 [source,cpp]
 ---------------------------------------------------------------------
@@ -463,7 +463,7 @@ void testApp::update(){
 ---------------------------------------------------------------------
 This code says:
 
-- increment myCircleX by one.  
+- increment myCircleX by one. 
 - test if myCircleX is greater than 1024
 - *only* if that test turns out to be true, set myCircleX back to 300;
 
@@ -471,6 +471,269 @@ This code says:
 Adding Interaction
 ------------------
 
-Now that you are a master of animation, it's time to get the user involved.  For this section, we will be focusing on keyboard and mouse interaction.  
+Now that you are a master of animation, it's time to get the user involved. For this section, we will be focusing on keyboard and mouse interaction. 
+
+So far, we've been focusing on 3 functions: setup(), update(), and draw(). For interaction, we will start with 2 of the other functions in your testApp.cpp file:
+
+[source,cpp]
+---------------------------------------------------------------------
+void testApp::keyPressed(int key){
+
+}
+
+void testApp::keyReleased(int key){
+
+}
+---------------------------------------------------------------------
+
+Going back to the producer metaphor can help us understand how these functions work. openFrameworks has done the hard work of setting up your app to know when the user has done some keyboard business. Now, all you have to do is put code into these functions that you want to execute when a particular event occurs: 
+
+- user physically presses down on a key
+- user physically releases the key
+
+This might be a little unintuitive if you are accustomed to thinking about typing a letter as a single action: "I just typed the letter 'o'". But in fact, they are 2 distinct actions, or "events", and eventually you might find it handy to be able to distinguish between them.
+
+Create a new project in "MyFirstWorkspace" called "KeyboardInteraction". If you need to, go back to "Creating your First Project" to see how.
+
+image:images/KeyboardInteraction01.png["Keyboard Interaction Project"]
+
+Introducing, cout!
+~~~~~~~~~~~~~~~~~~
+
+The easiest way to quickly see how these functions work is to print a message to the console. Remember when we printed "Hello, World!" to the console in the introduction? We did that using a `c++` thing called http://www.cplusplus.com/reference/iostream/cout/["cout"] (pronounced 'c out'). The syntax for using it is a bit weird because it's not technically a function (it's actually an object, which we will talk more about in later chapters), but if you can get beyond the syntax, it's actually very useful for debugging. 
+
+But first: you may be asking yourself: how will we see text output?  We are dealing with a GUI interface now. Luckily, XCode provdes a window where we can see anything text that your program outputs (also known as http://www.cplusplus.com/reference/clibrary/cstdio/stdout/[stdout]).
+
+So start by going to View->Debug Area->Activate Console, or press apple+shift+C
+
+image:images/activate-console.png["Activate Console"]
+
+NOTE: For XCode 3 users, use the key command Shift-Cmd-R. There's also a preference in XCode to bring up the console after each launch - Xcode->Preferences->Debugging->On Start Show Console.
+
+You should see a panel like this appear at the bottom of your XCode window
+
+image:images/debug-area.png["Debug Area"]
+
+Excellent! Your output will appear in the pane on the right. Now we will add some code to our key functions that will print stuff to the console:
+
+[source,cpp]
+---------------------------------------------------------------------
+void testApp::keyPressed(int key){
+    cout << "keyPressed " << key << endl;
+}
+
+void testApp::keyReleased(int key){
+    cout << "keyReleased " << key << endl;
+}
+---------------------------------------------------------------------
+
+As I mentioned before, the syntax for cout is a little strange and, frankly, way beyond the scope of this chapter. In `c++` parlance, cout represents the "standard output stream", and without worrying too much about what that means, "stream" is a nice way to think about it. If you look at the line of code within 'keyPressed', it appears that there is a "stream" of data flowing into the "cout". First we send in the string "keyPressed " down the stream, then we send in a variable: key. Finally, we send http://www.cplusplus.com/reference/iostream/manipulators/endl/[endl] down the stream. endl simply tells the console to go to the next line. 
+
+The 'key' variable represents the key that was pressed or released. More about this in a bit.
+
+Let's give it a try. Launch your program and type some keys. I will type "qwerty". You should see something like this in the console:
+
+...................................
+GNU gdb 6.3.50-20050815 (Apple version gdb-1708) (Thu Nov  3 21:59:02 UTC 2011)
+Copyright 2004 Free Software Foundation, Inc.
+GDB is free software, covered by the GNU General Public License, and you are
+welcome to change it and/or distribute copies of it under certain conditions.
+Type "show copying" to see the conditions.
+There is absolutely no warranty for GDB. Type "show warranty" for details.
+This GDB was configured as "x86_64-apple-darwin".tty /dev/ttys002
+[Switching to process 92317 thread 0x0]
+keyPressed 113
+keyReleased 113
+keyPressed 119
+keyReleased 119
+keyPressed 101
+keyReleased 101
+keyPressed 114
+keyReleased 114
+keyPressed 116
+keyReleased 116
+keyPressed 121
+keyReleased 121
+...................................
+
+Don't worry about the crap at the beginning -- that's added by the debugger.
+
+The fact that the 'key' is supplied as an 'int' may seem a bit strange. Perhaps you were expecting a string or a char? In fact, what this number represents is the http://www.asciitable.com/[ASCII code] for the key pressed. Check out this table:
+
+image:images/ascii_table.jpg["ASCII Table"]
+
+On the right of each column in red, you will see a key on your keyboard. Under the corresponding "Dec" (decimal=base 10) column, you will see the number that you will receive in the key functions. 
+
+[TIP]
+=====================================================================
+You can actually use something called http://www.cplusplus.com/doc/tutorial/typecasting/[type casting] to turn the int into a 'char', or letter. Simply put "(char)" before the "key" variable so that your cout statement looks like this:
+[source,cpp]
+---------------------------------------------------------------------
+cout << "keyPressed " << (char)key << endl;
+---------------------------------------------------------------------
+More about type casting later in this chapter!
+=====================================================================
+
+Fantastic. But presumably we want to do more with the key presses than print to the console. Let's use the keys to move a ball around on the screen.
+
+Start by adding two variables to your testApp and using them to draw a circle, just like we did in the Adding Movement section:
+
+[source,cpp]
+---------------------------------------------------------------------
+#include "testApp.h"
+
+int myCircleX;
+int myCircleY;
+
+void testApp::setup(){
+    myCircleX = 300;
+    myCircleY = 200;
+}
+
+void testApp::update(){
+
+}
+
+void testApp::draw(){
+    ofSetColor(255, 0, 255);
+	ofCircle(myCircleX, myCircleY, 60);
+}
+---------------------------------------------------------------------
+
+In the Adding Movement section, we used variables so that we could have the circle move by itself. The difference this time is that we want the ball to move in response to our keyboard input. This means that we need to modify the values of the variables depending on which keys are pressed rather than incrementing it automatically every frame. So it follows that we need to change the value of myCircleX and myCircleY in mousePressed() (or mouseReleased() -- it's up to you!) instead of update().
+
+Let's use a typical computer game keyboard scheme: say we want the ball to move up when we press 'w', to the left when we press 'a', down when we press 's', and right when we press 'd'. We could start by looking up the ASCII values and finding that the values are 119, 97, 115, and 100, respectively. Next, we think about what "up", "down", "left" and "right" mean in terms of our variables: myCircleX and myCircleY. What we end up with is:
+
+[source,cpp]
+---------------------------------------------------------------------
+void testApp::keyPressed(int key){
+    if(key==119) // 'w' key
+    {
+        myCircleY--;
+    }
+    if(key==97) // 'a' key
+    {
+        myCircleX--;
+    }
+}
+---------------------------------------------------------------------
+
+As we discovered, any time any key is pressed, the keyPressed() function is called. However, we want to be more selective than that. We want to be able to make certain things happen when the 'w' key is pressed, and other things happen when the 'a' key is pressed, etc. So, we need to add some http://www.cprogramming.com/tutorial/lesson2.html[if statements]. When the keyPressed function is called, the first thing that happens is we test if 'key' is equal to 119. 
+
+Notice the double equals sign. This signifies that we are performing a comparison rather than an assignment. In other words, we don't want to assign the value 119 to the variable 'key', we want to test whether key is equal to 119.  If this turns out to be true, than the code inside the curly brackets immediately following the if() is executed.
+
+Your challenge is to complete the function to respond to the 's' and 'd' keys.
+
+[TIP]
+=====================================================================
+This also works!
+[source,cpp]
+---------------------------------------------------------------------
+if(key=='w')
+{
+	myCircleY--;
+}
+if(key=='a')
+{
+	myCircleX--;
+}
+---------------------------------------------------------------------
+=====================================================================
+
+
+Mighty Mouse
+------------
+
+Keyboard interaction is great, but what about the mouse?  You might have noticed the following functions hanging out in testApp also:
+
+[source,cpp]
+---------------------------------------------------------------------
+void testApp::mouseMoved(int x, int y ){
+
+}
+
+void testApp::mouseDragged(int x, int y, int button){
+
+}
+
+void testApp::mousePressed(int x, int y, int button){
+
+}
+
+void testApp::mouseReleased(int x, int y, int button){
+
+}
+---------------------------------------------------------------------
+
+Create a new project called MouseInteraction so we can play with them.
+
+image:images/MouseInteraction01.png["Mouse Interaction Project"]
+
+Let's do the same thing with the mouse functions that we did with the key functions. Add the following to your project:
+
+[source,cpp]
+---------------------------------------------------------------------
+void testApp::mouseMoved(int x, int y){
+    cout << "mouseMoved: " << x << ", " << y << endl;
+}
+
+void testApp::mouseDragged(int x, int y, int button){
+    cout << "mouseDragged: " << x << ", " << y << " button: " << button << endl;
+}
+
+void testApp::mousePressed(int x, int y, int button){
+    cout << "mousePressed: " << x << ", " << y << " button: " << button << endl;
+}
+
+void testApp::mouseReleased(int x, int y, int button){
+     cout << "mouseReleased: " << x << ", " << y << " button: " << button << endl;
+}
+---------------------------------------------------------------------
+
+The 'x' and 'y' variables in the cout statement represent the location of the mouse click -- very handy information to have.
+
+Run the program and you should see something like this:
+
+...................................
+mouseMoved: 627, 500
+mouseMoved: 619, 500
+mouseMoved: 610, 500
+
+...
+
+mouseMoved: 426, 473
+mouseMoved: 426, 476
+mouseMoved: 427, 478
+mousePressed: 426, 478 button: 0
+mouseDragged: 427, 477 button: 0
+
+...
+
+mouseDragged: 548, 411 button: 0
+mouseDragged: 547, 411 button: 0
+mouseDragged: 546, 411 button: 0
+mouseReleased: 546, 411 button: 0
+mouseMoved: 544, 411
+mouseMoved: 543, 411
+mousePressed: 543, 411 button: 0
+mouseDragged: 542, 411 button: 0
+
+...
+
+mouseDragged: 433, 396 button: 0
+mouseDragged: 433, 377 button: 0
+mouseReleased: 433, 377 button: 0
+mouseMoved: 434, 370
+mouseMoved: 433, 367
+...................................
+
+There are a few important things to notice about this output. First, you will probably see a ton of "mouseMoved" messages. Indeed, this function is called whenever the mouse is moved so much as a single pixel, so be aware of this when adding code to mouseMoved. Next, notice that you see a "mousePressed" before every "mouseDragged" event, and then a bunch of "mouseDragged" messages, and then "mouseReleased" before it switches back to "mouseMoved".
+
+Interacting With Graphics
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+So now we know how to make something happen when the user does any mouse business. But printing to the console is hardly the kind of interaction we want. When it comes to interacting with GUI applications, the mouse is used in a variety of ways: simple clicking, double-clicking, dragging, hovering, gestures, etc. One very basic interaction is "user clicks on something, something happens. Let's see how we might accomplish this.
+
+
 
 
