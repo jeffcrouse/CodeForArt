@@ -1460,7 +1460,7 @@ The "origin" of the coordinate system is in the upper left of the window. So, ou
 </div>
 <div class="sect3">
 <h4 id="_adding_some_color">1.4.3. Adding some Color</h4>
-<div class="paragraph"><p>Your circle is great, but kind of boring. What if we want to introduce some color to our application?  To do that, we need the the <a href="http://www.openframeworks.cc/documentation/graphics/ofGraphics.html#ofSetColor">ofSetColor</a> function. Try adding <tt>ofSetColor(255, 0, 255);</tt> right above the ofCircle line, so that your draw function looks like this:</p></div>
+<div class="paragraph"><p>Your circle is great, but kind of boring. What if we want to introduce some color to our application? To do that, we need the the <a href="http://www.openframeworks.cc/documentation/graphics/ofGraphics.html#ofSetColor">ofSetColor</a> function. Try adding <tt>ofSetColor(255, 0, 255);</tt> right above the ofCircle line, so that your draw function looks like this:</p></div>
 <div class="listingblock">
 <div class="content"><!-- Generator: GNU source-highlight 3.0
 by Lorenzo Bettini
@@ -1762,7 +1762,7 @@ user physically releases the key
 <div class="sect3">
 <h4 id="_introducing_cout">1.5.1. Introducing, cout!</h4>
 <div class="paragraph"><p>The easiest way to quickly see how these functions work is to print a message to the console. Remember when we printed "Hello, World!" to the console in the introduction? We did that using a <tt>c++</tt> thing called <a href="http://www.cplusplus.com/reference/iostream/cout/">"cout"</a> (pronounced <em>c out</em>). The syntax for using it is a bit weird because it&#8217;s not technically a function (it&#8217;s actually an object, which we will talk more about in later chapters), but if you can get beyond the syntax, it&#8217;s actually very useful for debugging.</p></div>
-<div class="paragraph"><p>But first: you may be asking yourself: how will we see text output?  We are dealing with a GUI interface now. Luckily, XCode provdes a window where we can see anything text that your program outputs (also known as <a href="http://www.cplusplus.com/reference/clibrary/cstdio/stdout/">stdout</a>).</p></div>
+<div class="paragraph"><p>But first: you may be asking yourself: how will we see text output? We are dealing with a GUI interface now. Luckily, XCode provdes a window where we can see anything text that your program outputs (also known as <a href="http://www.cplusplus.com/reference/clibrary/cstdio/stdout/">stdout</a>).</p></div>
 <div class="paragraph"><p>So start by going to View&#8594;Debug Area&#8594;Activate Console, or press apple+shift+C</p></div>
 <div class="paragraph"><p><span class="image">
 <img src="images/activate-console.png" alt="Activate Console" />
@@ -1884,7 +1884,7 @@ http://www.gnu.org/software/src-highlite -->
     <span style="color: #FF0000">}</span>
 <span style="color: #FF0000">}</span></tt></pre></div></div>
 <div class="paragraph"><p>As we discovered, any time any key is pressed, the keyPressed() function is called. However, we want to be more selective than that. We want to be able to make certain things happen when the <em>w</em> key is pressed, and other things happen when the <em>a</em> key is pressed, etc. So, we need to add some <a href="http://www.cprogramming.com/tutorial/lesson2.html">if statements</a>. When the keyPressed function is called, the first thing that happens is we test if <em>key</em> is equal to 119.</p></div>
-<div class="paragraph"><p>Notice the double equals sign. This signifies that we are performing a comparison rather than an assignment. In other words, we don&#8217;t want to assign the value 119 to the variable <em>key</em>, we want to test whether key is equal to 119.  If this turns out to be true, than the code inside the curly brackets immediately following the if() is executed.</p></div>
+<div class="paragraph"><p>Notice the double equals sign. This signifies that we are performing a comparison rather than an assignment. In other words, we don&#8217;t want to assign the value 119 to the variable <em>key</em>, we want to test whether key is equal to 119. If this turns out to be true, than the code inside the curly brackets immediately following the if() is executed.</p></div>
 <div class="paragraph"><p>Your challenge is to complete the function to respond to the <em>s</em> and <em>d</em> keys.</p></div>
 <div class="admonitionblock">
 <table><tr>
@@ -1913,7 +1913,7 @@ http://www.gnu.org/software/src-highlite -->
 </div>
 <div class="sect2">
 <h3 id="_mighty_mouse">1.6. Mighty Mouse</h3>
-<div class="paragraph"><p>Keyboard interaction is great, but what about the mouse?  You might have noticed the following functions hanging out in testApp also:</p></div>
+<div class="paragraph"><p>Keyboard interaction is great, but what about the mouse? You might have noticed the following functions hanging out in testApp also:</p></div>
 <div class="listingblock">
 <div class="content"><!-- Generator: GNU source-highlight 3.0
 by Lorenzo Bettini
@@ -1997,7 +1997,646 @@ mouseMoved: 433, 367</tt></pre>
 <div class="paragraph"><p>There are a few important things to notice about this output. First, you will probably see a ton of "mouseMoved" messages. Indeed, this function is called whenever the mouse is moved so much as a single pixel, so be aware of this when adding code to mouseMoved. Next, notice that you see a "mousePressed" before every "mouseDragged" event, and then a bunch of "mouseDragged" messages, and then "mouseReleased" before it switches back to "mouseMoved".</p></div>
 <div class="sect3">
 <h4 id="_interacting_with_graphics">1.6.1. Interacting With Graphics</h4>
-<div class="paragraph"><p>So now we know how to make something happen when the user does any mouse business. But printing to the console is hardly the kind of interaction we want. When it comes to interacting with GUI applications, the mouse is used in a variety of ways: simple clicking, double-clicking, dragging, hovering, gestures, etc. One very basic interaction is "user clicks on something, something happens. Let&#8217;s see how we might accomplish this.</p></div>
+<div class="paragraph"><p>So now we know how to make something happen when the user does any mouse business. But printing to the console is hardly the kind of interaction we want. When it comes to interacting with GUI applications, the mouse is used in a variety of ways: simple clicking, double-clicking, dragging, hovering, gestures, etc. One very basic interaction is "user clicks on something, something happens." Let&#8217;s see how we might accomplish this.</p></div>
+<div class="paragraph"><p>Suppose, for instance, that we wanted our trusty circle to expand whenever the user clicks on it. Let&#8217;s start by setting up a new project called MouseInteraction2. It will start out very similar to our <em>MouseInteraction</em> project:</p></div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight 3.0
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><span style="color: #009900">int</span> myCircleX<span style="color: #990000">=</span><span style="color: #993399">200</span><span style="color: #990000">;</span>
+<span style="color: #009900">int</span> myCircleY<span style="color: #990000">=</span><span style="color: #993399">300</span><span style="color: #990000">;</span>
+<span style="color: #009900">int</span> myCircleRadius<span style="color: #990000">=</span><span style="color: #993399">100</span><span style="color: #990000">;</span>
+
+<span style="color: #009900">void</span> testApp<span style="color: #990000">::</span><span style="font-weight: bold"><span style="color: #000000">setup</span></span><span style="color: #990000">()</span><span style="color: #FF0000">{</span>
+<span style="color: #FF0000">}</span>
+
+<span style="color: #009900">void</span> testApp<span style="color: #990000">::</span><span style="font-weight: bold"><span style="color: #000000">update</span></span><span style="color: #990000">()</span><span style="color: #FF0000">{</span>
+<span style="color: #FF0000">}</span>
+
+<span style="color: #009900">void</span> testApp<span style="color: #990000">::</span><span style="font-weight: bold"><span style="color: #000000">draw</span></span><span style="color: #990000">()</span><span style="color: #FF0000">{</span>
+    <span style="font-weight: bold"><span style="color: #000000">ofSetColor</span></span><span style="color: #990000">(</span><span style="color: #993399">255</span><span style="color: #990000">,</span> <span style="color: #993399">0</span><span style="color: #990000">,</span> <span style="color: #993399">255</span><span style="color: #990000">);</span>
+    <span style="font-weight: bold"><span style="color: #000000">ofCircle</span></span><span style="color: #990000">(</span>myCircleX<span style="color: #990000">,</span> myCircleY<span style="color: #990000">,</span> myCircleRadius<span style="color: #990000">);</span>
+<span style="color: #FF0000">}</span></tt></pre></div></div>
+<div class="paragraph"><p>As you can see, we have added a new variable called <em>myCircleRadius</em>. It should be clear that, if we want the circle to grow, all we have to do is increase myCircleRadius. The trick will be to determine when this should happen.</p></div>
+<div class="paragraph"><p>It&#8217;s clear that it has something to do with the mousePressed function that we just discovered above. We know that mousePressed is called every time the user clicks the mouse, so if we simply drop <em>myCircleRadius++;</em> into the mousePressed function, we would be half way there. Try this out.</p></div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight 3.0
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><span style="color: #009900">void</span> testApp<span style="color: #990000">::</span><span style="font-weight: bold"><span style="color: #000000">mousePressed</span></span><span style="color: #990000">(</span><span style="color: #009900">int</span> x<span style="color: #990000">,</span> <span style="color: #009900">int</span> y<span style="color: #990000">,</span> <span style="color: #009900">int</span> button<span style="color: #990000">)</span><span style="color: #FF0000">{</span>
+  myCircleRadius<span style="color: #990000">++;</span>
+<span style="color: #FF0000">}</span></tt></pre></div></div>
+<div class="paragraph"><p>You should find that the circle grows every time you click the mouse, regardless of whether or not your clicked inside the circle. But our challenge is to only grow the circle when the use clicks <strong>inside</strong> of it. So how might we go about this?</p></div>
+<div class="paragraph"><p>Well, luckily we are dealing with a circle, which will make it significantly easier. Because if we can determine the distance between the center of the circle and the location of the mouse click, we can compare this distance to the radius, and if it is less than the radius, then the click was inside the circle. Take a look at the diagrams:</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="images/hit-test-01.png" alt="Hit Test 1" />
+</span></p></div>
+<div class="paragraph"><p>We know that the radius of the circle = 300, and we know that the mouse click is 230 pixels away from the center of the circle. So, was the mouse click inside the circle?</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="images/hit-test-02.png" alt="Hit Test 2" />
+</span></p></div>
+<div class="paragraph"><p>In this case, we know that the mouse click was 90 pixels from the center of the circle, so the click was clearly inside the circle.</p></div>
+<div class="paragraph"><p>So how do we measure this distance? openFrameworks provides a function called
+ofDist([x1], [y1], [x2], [y2]) that will save us from doing any basic trigonometry. All we have to do is give it our two coordinates.</p></div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight 3.0
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><span style="color: #009900">void</span> testApp<span style="color: #990000">::</span><span style="font-weight: bold"><span style="color: #000000">mousePressed</span></span><span style="color: #990000">(</span><span style="color: #009900">int</span> x<span style="color: #990000">,</span> <span style="color: #009900">int</span> y<span style="color: #990000">,</span> <span style="color: #009900">int</span> button<span style="color: #990000">)</span><span style="color: #FF0000">{</span>
+    <span style="color: #009900">float</span> distance <span style="color: #990000">=</span> <span style="font-weight: bold"><span style="color: #000000">ofDist</span></span><span style="color: #990000">(</span>myCircleX<span style="color: #990000">,</span> myCircleY<span style="color: #990000">,</span> x<span style="color: #990000">,</span> y<span style="color: #990000">);</span>
+    cout <span style="color: #990000">&lt;&lt;</span> distance <span style="color: #990000">&lt;&lt;</span> endl<span style="color: #990000">;</span>
+
+    myCircleRadius<span style="color: #990000">++;</span>
+<span style="color: #FF0000">}</span></tt></pre></div></div>
+<div class="paragraph"><p>The <em>cout</em> will allow us to check what kind of values we are getting from ofDist. Run your program now. Click around the screen and see what kind of values get printed in your console.</p></div>
+<div class="paragraph"><p>So the only thing left to do is compare <em>myCircleRadius</em> to <em>distance</em>, and we can do this using a simple if statement.</p></div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight 3.0
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><span style="color: #009900">void</span> testApp<span style="color: #990000">::</span><span style="font-weight: bold"><span style="color: #000000">mousePressed</span></span><span style="color: #990000">(</span><span style="color: #009900">int</span> x<span style="color: #990000">,</span> <span style="color: #009900">int</span> y<span style="color: #990000">,</span> <span style="color: #009900">int</span> button<span style="color: #990000">)</span><span style="color: #FF0000">{</span>
+    <span style="color: #009900">float</span> distance <span style="color: #990000">=</span> <span style="font-weight: bold"><span style="color: #000000">ofDist</span></span><span style="color: #990000">(</span>myCircleX<span style="color: #990000">,</span> myCircleY<span style="color: #990000">,</span> x<span style="color: #990000">,</span> y<span style="color: #990000">);</span>
+  <span style="font-weight: bold"><span style="color: #0000FF">if</span></span><span style="color: #990000">(</span>distance <span style="color: #990000">&lt;</span> myCircleRadius<span style="color: #990000">)</span>
+  <span style="color: #FF0000">{</span>
+    myCircleRadius<span style="color: #990000">++;</span>
+  <span style="color: #FF0000">}</span>
+<span style="color: #FF0000">}</span></tt></pre></div></div>
+<div class="paragraph"><p>This code says "first calculate the distance btween the center of the circle and the mouse click. Then compare <em>distance</em> to <em>myCircleRadius</em>. If (and only if) distance is LESS THAN myCircleRadius, increment myCircleRadius by 1."</p></div>
+<div class="paragraph"><p>Et voila!  You are interacting with graphics!</p></div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_technical_topics">1.7. Technical Topics</h3>
+<div class="paragraph"><p>In the example above, we looked at one of the most basic control structures: the <a href="http://www.cprogramming.com/tutorial/lesson2.html">if statement</a>. Control structures like the if statement allow you to alter the flow of your program based on criteria that you define. Control structures are not an openFrameworks "thing", but rather a feature of the <tt>c++</tt> language. Let&#8217;s take a moment to review a few basics of the <tt>c++</tt> language.</p></div>
+<div class="sect3">
+<h4 id="_variables">1.7.1. Variables</h4>
+<div class="paragraph"><p>In the "Adding Movement" section, we introduced the idea of using variables to represent values that change over the course of your program. We used 2 integers, or *int*s - <em>int myCircleX</em> and <em>int myCircleY</em> - to represent the location of a circle. When you declare a variable as an <em>int</em>, you are telling the computer "I only intend to put whole numbers into this variable."  This made sense in our example because we were moving a circle by a single pixel, so we didn&#8217;t need to worry about fractions.</p></div>
+<div class="paragraph"><p>But there will be times when you do need to have a variable that can hold a fraction, or something completely different, such as letters, words, even a location in memory. There are variable types for each of these situations. Here is a short list of some of them from <a href="http://www.cplusplus.com/doc/tutorial/variables/">cplusplus.com</a></p></div>
+<div class="paragraph"><p><span class="image">
+<img src="images/variable-types.png" alt="Variable Types" />
+</span></p></div>
+<div class="paragraph"><p>So, as you can see, our basic integer takes up 4 bytes in memory. This is a finite amount of memory, and therefore there is limited (but pretty huge!) range of values that it can hold: namely, -2,147,483,648 to 2,147,483,647. If you need to store higher (or lower) numbers, you&#8217;d have to use a <em>long int</em>, which (contrary to the diagram) can go up to 9,223,372,036,854,775,807 and down to -9,223,372,036,854,775,808.</p></div>
+<div class="paragraph"><p>It may be unintuitive to make such distinctions when dealing with variables. A number is a number, right? Why differentiate between a decimal number and a whole number? The reason has to do with how values are stored in your computer&#8217;s memory. Ultimately, by giving the programmer the responsibility of declaring what range and precision their variables need, the program can run that much more efficiently.</p></div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<img src="./images/icons/tip.png" alt="Tip" />
+</td>
+<td class="content">
+<div class="paragraph"><p>Compile and run this program to see information about how your computer treats different kinds of variables.</p></div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight 3.0
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><span style="font-weight: bold"><span style="color: #000080">#include</span></span> <span style="color: #FF0000">&lt;iostream&gt;</span>
+<span style="font-weight: bold"><span style="color: #000080">#include</span></span> <span style="color: #FF0000">&lt;limits.h&gt;</span>
+<span style="font-weight: bold"><span style="color: #000080">#include</span></span> <span style="color: #FF0000">&lt;float.h&gt;</span>
+<span style="font-weight: bold"><span style="color: #0000FF">using</span></span> <span style="font-weight: bold"><span style="color: #0000FF">namespace</span></span> std<span style="color: #990000">;</span>
+
+<span style="color: #009900">int</span> <span style="font-weight: bold"><span style="color: #000000">main</span></span> <span style="color: #990000">()</span>
+<span style="color: #FF0000">{</span>
+  cout <span style="color: #990000">&lt;&lt;</span> <span style="color: #FF0000">"type </span><span style="color: #CC33CC">\t\t</span><span style="color: #FF0000">size </span><span style="color: #CC33CC">\t</span><span style="color: #FF0000">min </span><span style="color: #CC33CC">\t\t\t</span><span style="color: #FF0000">max"</span> <span style="color: #990000">&lt;&lt;</span> endl<span style="color: #990000">;</span>
+  cout <span style="color: #990000">&lt;&lt;</span> <span style="color: #FF0000">"---------------------------------------------------------------"</span> <span style="color: #990000">&lt;&lt;</span> endl<span style="color: #990000">;</span>
+  cout <span style="color: #990000">&lt;&lt;</span> <span style="color: #FF0000">"bool</span><span style="color: #CC33CC">\t\t</span><span style="color: #FF0000">"</span> <span style="color: #990000">&lt;&lt;</span> <span style="font-weight: bold"><span style="color: #0000FF">sizeof</span></span><span style="color: #990000">(</span><span style="color: #009900">bool</span><span style="color: #990000">)</span> <span style="color: #990000">&lt;&lt;</span> endl<span style="color: #990000">;</span>
+  cout <span style="color: #990000">&lt;&lt;</span> <span style="color: #FF0000">"char</span><span style="color: #CC33CC">\t\t</span><span style="color: #FF0000">"</span> <span style="color: #990000">&lt;&lt;</span> <span style="font-weight: bold"><span style="color: #0000FF">sizeof</span></span><span style="color: #990000">(</span><span style="color: #009900">char</span><span style="color: #990000">)</span> <span style="color: #990000">&lt;&lt;</span> <span style="color: #FF0000">"</span><span style="color: #CC33CC">\t</span><span style="color: #FF0000">"</span> <span style="color: #990000">&lt;&lt;</span> CHAR_MIN <span style="color: #990000">&lt;&lt;</span> <span style="color: #FF0000">"</span><span style="color: #CC33CC">\t\t\t</span><span style="color: #FF0000">"</span> <span style="color: #990000">&lt;&lt;</span> CHAR_MAX <span style="color: #990000">&lt;&lt;</span> endl<span style="color: #990000">;</span>
+  cout <span style="color: #990000">&lt;&lt;</span> <span style="color: #FF0000">"unsigned char</span><span style="color: #CC33CC">\t</span><span style="color: #FF0000">"</span> <span style="color: #990000">&lt;&lt;</span> <span style="font-weight: bold"><span style="color: #0000FF">sizeof</span></span><span style="color: #990000">(</span><span style="color: #009900">unsigned</span> <span style="color: #009900">char</span><span style="color: #990000">)</span> <span style="color: #990000">&lt;&lt;</span> <span style="color: #FF0000">"</span><span style="color: #CC33CC">\t\t\t\t</span><span style="color: #FF0000">"</span> <span style="color: #990000">&lt;&lt;</span> UCHAR_MAX <span style="color: #990000">&lt;&lt;</span> endl<span style="color: #990000">;</span>
+  cout <span style="color: #990000">&lt;&lt;</span> <span style="color: #FF0000">"short</span><span style="color: #CC33CC">\t\t</span><span style="color: #FF0000">"</span> <span style="color: #990000">&lt;&lt;</span> <span style="font-weight: bold"><span style="color: #0000FF">sizeof</span></span><span style="color: #990000">(</span><span style="color: #009900">short</span><span style="color: #990000">)</span> <span style="color: #990000">&lt;&lt;</span> <span style="color: #FF0000">"</span><span style="color: #CC33CC">\t</span><span style="color: #FF0000">"</span> <span style="color: #990000">&lt;&lt;</span> INT_MIN <span style="color: #990000">&lt;&lt;</span> <span style="color: #FF0000">"</span><span style="color: #CC33CC">\t\t</span><span style="color: #FF0000">"</span> <span style="color: #990000">&lt;&lt;</span> INT_MAX <span style="color: #990000">&lt;&lt;</span> endl<span style="color: #990000">;</span>
+  cout <span style="color: #990000">&lt;&lt;</span> <span style="color: #FF0000">"int</span><span style="color: #CC33CC">\t\t</span><span style="color: #FF0000">"</span> <span style="color: #990000">&lt;&lt;</span> <span style="font-weight: bold"><span style="color: #0000FF">sizeof</span></span><span style="color: #990000">(</span><span style="color: #009900">int</span><span style="color: #990000">)</span> <span style="color: #990000">&lt;&lt;</span> <span style="color: #FF0000">"</span><span style="color: #CC33CC">\t</span><span style="color: #FF0000">"</span> <span style="color: #990000">&lt;&lt;</span> INT_MIN <span style="color: #990000">&lt;&lt;</span> <span style="color: #FF0000">"</span><span style="color: #CC33CC">\t\t</span><span style="color: #FF0000">"</span> <span style="color: #990000">&lt;&lt;</span> INT_MAX <span style="color: #990000">&lt;&lt;</span> endl<span style="color: #990000">;</span>
+  cout <span style="color: #990000">&lt;&lt;</span> <span style="color: #FF0000">"unsigned int</span><span style="color: #CC33CC">\t</span><span style="color: #FF0000">"</span> <span style="color: #990000">&lt;&lt;</span> <span style="font-weight: bold"><span style="color: #0000FF">sizeof</span></span><span style="color: #990000">(</span><span style="color: #009900">unsigned</span> <span style="color: #009900">int</span><span style="color: #990000">)</span> <span style="color: #990000">&lt;&lt;</span> <span style="color: #FF0000">"</span><span style="color: #CC33CC">\t\t\t\t</span><span style="color: #FF0000">"</span> <span style="color: #990000">&lt;&lt;</span> UINT_MAX <span style="color: #990000">&lt;&lt;</span> endl<span style="color: #990000">;</span>
+  cout <span style="color: #990000">&lt;&lt;</span> <span style="color: #FF0000">"float</span><span style="color: #CC33CC">\t\t</span><span style="color: #FF0000">"</span> <span style="color: #990000">&lt;&lt;</span> <span style="font-weight: bold"><span style="color: #0000FF">sizeof</span></span><span style="color: #990000">(</span><span style="color: #009900">float</span><span style="color: #990000">)</span> <span style="color: #990000">&lt;&lt;</span> <span style="color: #FF0000">"</span><span style="color: #CC33CC">\t</span><span style="color: #FF0000">"</span> <span style="color: #990000">&lt;&lt;</span> FLT_MIN <span style="color: #990000">&lt;&lt;</span> <span style="color: #FF0000">"</span><span style="color: #CC33CC">\t\t</span><span style="color: #FF0000">"</span> <span style="color: #990000">&lt;&lt;</span> FLT_MAX <span style="color: #990000">&lt;&lt;</span> endl<span style="color: #990000">;</span>
+  cout <span style="color: #990000">&lt;&lt;</span> <span style="color: #FF0000">"long</span><span style="color: #CC33CC">\t\t</span><span style="color: #FF0000">"</span> <span style="color: #990000">&lt;&lt;</span> <span style="font-weight: bold"><span style="color: #0000FF">sizeof</span></span><span style="color: #990000">(</span><span style="color: #009900">long</span><span style="color: #990000">)</span> <span style="color: #990000">&lt;&lt;</span> <span style="color: #FF0000">"</span><span style="color: #CC33CC">\t</span><span style="color: #FF0000">"</span> <span style="color: #990000">&lt;&lt;</span> LONG_MIN <span style="color: #990000">&lt;&lt;</span> <span style="color: #FF0000">"</span><span style="color: #CC33CC">\t</span><span style="color: #FF0000">"</span> <span style="color: #990000">&lt;&lt;</span> LONG_MAX <span style="color: #990000">&lt;&lt;</span> endl<span style="color: #990000">;</span>
+  cout <span style="color: #990000">&lt;&lt;</span> <span style="color: #FF0000">"double</span><span style="color: #CC33CC">\t\t</span><span style="color: #FF0000">"</span> <span style="color: #990000">&lt;&lt;</span> <span style="font-weight: bold"><span style="color: #0000FF">sizeof</span></span><span style="color: #990000">(</span><span style="color: #009900">double</span><span style="color: #990000">)</span> <span style="color: #990000">&lt;&lt;</span> <span style="color: #FF0000">"</span><span style="color: #CC33CC">\t</span><span style="color: #FF0000">"</span> <span style="color: #990000">&lt;&lt;</span> DBL_MIN <span style="color: #990000">&lt;&lt;</span> <span style="color: #FF0000">"</span><span style="color: #CC33CC">\t\t</span><span style="color: #FF0000">"</span> <span style="color: #990000">&lt;&lt;</span> DBL_MAX <span style="color: #990000">&lt;&lt;</span> endl<span style="color: #990000">;</span>
+  <span style="font-weight: bold"><span style="color: #0000FF">return</span></span> <span style="color: #993399">0</span><span style="color: #990000">;</span>
+<span style="color: #FF0000">}</span></tt></pre></div></div>
+</td>
+</tr></table>
+</div>
+<div class="paragraph"><p>There is one important kind of variable that is not covered in this chart: <em>string</em>. A string can hold a sequence of characters. &#8230; more to come &#8230;</p></div>
+</div>
+<div class="sect3">
+<h4 id="_loops">1.7.2. Loops</h4>
+<div class="paragraph"><p>Loops are perhaps one of the most important things to be comfortable with as a programmer. They are, arguably, the main advantage of using a computer: doing something over and over again very rapidly is the definition of what a computer is good at. There are a few different kinds of loops, and it is important to be familiar with all of them.</p></div>
+<div class="paragraph"><p>Suppose you want to a circle every 20 pixels across your window. One option would be to copy and paste ofCircle commands like this:</p></div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight 3.0
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><span style="color: #009900">void</span> testApp<span style="color: #990000">::</span><span style="font-weight: bold"><span style="color: #000000">draw</span></span><span style="color: #990000">()</span><span style="color: #FF0000">{</span>
+    <span style="font-weight: bold"><span style="color: #000000">ofCircle</span></span><span style="color: #990000">(</span><span style="color: #993399">20</span><span style="color: #990000">,</span> <span style="color: #993399">300</span><span style="color: #990000">,</span> <span style="color: #993399">10</span><span style="color: #990000">);</span>
+    <span style="font-weight: bold"><span style="color: #000000">ofCircle</span></span><span style="color: #990000">(</span><span style="color: #993399">40</span><span style="color: #990000">,</span> <span style="color: #993399">300</span><span style="color: #990000">,</span> <span style="color: #993399">10</span><span style="color: #990000">);</span>
+    <span style="font-weight: bold"><span style="color: #000000">ofCircle</span></span><span style="color: #990000">(</span><span style="color: #993399">60</span><span style="color: #990000">,</span> <span style="color: #993399">300</span><span style="color: #990000">,</span> <span style="color: #993399">10</span><span style="color: #990000">);</span>
+    <span style="font-weight: bold"><span style="color: #000000">ofCircle</span></span><span style="color: #990000">(</span><span style="color: #993399">80</span><span style="color: #990000">,</span> <span style="color: #993399">300</span><span style="color: #990000">,</span> <span style="color: #993399">10</span><span style="color: #990000">);</span>
+    <span style="font-weight: bold"><span style="color: #000000">ofCircle</span></span><span style="color: #990000">(</span><span style="color: #993399">100</span><span style="color: #990000">,</span> <span style="color: #993399">300</span><span style="color: #990000">,</span> <span style="color: #993399">10</span><span style="color: #990000">);</span>
+    <span style="font-weight: bold"><span style="color: #000000">ofCircle</span></span><span style="color: #990000">(</span><span style="color: #993399">120</span><span style="color: #990000">,</span> <span style="color: #993399">300</span><span style="color: #990000">,</span> <span style="color: #993399">10</span><span style="color: #990000">);</span>
+    <span style="font-style: italic"><span style="color: #9A1900">// repeat</span></span>
+    <span style="font-weight: bold"><span style="color: #000000">ofCircle</span></span><span style="color: #990000">(</span><span style="color: #993399">1020</span><span style="color: #990000">,</span> <span style="color: #993399">300</span><span style="color: #990000">,</span> <span style="color: #993399">10</span><span style="color: #990000">);</span>
+<span style="color: #FF0000">}</span></tt></pre></div></div>
+<div class="paragraph"><p>That would be over 50 lines of code - ugh. And what if you decided you wanted them every 30 pixels instead of every 20 pixels?  You&#8217;d have to go back and edit each line of code. And what if the size of your window changed?  This is clearly unacceptable. Consider this code:</p></div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight 3.0
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><span style="color: #009900">void</span> testApp<span style="color: #990000">::</span><span style="font-weight: bold"><span style="color: #000000">draw</span></span><span style="color: #990000">()</span><span style="color: #FF0000">{</span>
+  <span style="color: #009900">int</span> x <span style="color: #990000">=</span> <span style="color: #993399">10</span><span style="color: #990000">;</span>
+
+  <span style="font-weight: bold"><span style="color: #000000">ofCircle</span></span><span style="color: #990000">(</span>x<span style="color: #990000">,</span> <span style="color: #993399">300</span><span style="color: #990000">,</span> <span style="color: #993399">10</span><span style="color: #990000">);</span>
+  x <span style="color: #990000">+=</span> <span style="color: #993399">20</span><span style="color: #990000">;</span>
+  <span style="font-weight: bold"><span style="color: #000000">ofCircle</span></span><span style="color: #990000">(</span>x<span style="color: #990000">,</span> <span style="color: #993399">300</span><span style="color: #990000">,</span> <span style="color: #993399">10</span><span style="color: #990000">);</span>
+  x <span style="color: #990000">+=</span> <span style="color: #993399">20</span><span style="color: #990000">;</span>
+  <span style="font-weight: bold"><span style="color: #000000">ofCircle</span></span><span style="color: #990000">(</span>x<span style="color: #990000">,</span> <span style="color: #993399">300</span><span style="color: #990000">,</span> <span style="color: #993399">10</span><span style="color: #990000">);</span>
+  x <span style="color: #990000">+=</span> <span style="color: #993399">20</span><span style="color: #990000">;</span>
+  <span style="font-weight: bold"><span style="color: #000000">ofCircle</span></span><span style="color: #990000">(</span>x<span style="color: #990000">,</span> <span style="color: #993399">300</span><span style="color: #990000">,</span> <span style="color: #993399">10</span><span style="color: #990000">);</span>
+  x <span style="color: #990000">+=</span> <span style="color: #993399">20</span><span style="color: #990000">;</span>
+  <span style="font-style: italic"><span style="color: #9A1900">// copy and paste 47 more times</span></span>
+<span style="color: #FF0000">}</span></tt></pre></div></div>
+<div class="paragraph"><p>In some ways, this is even worse. We&#8217;ve turned one line of code per circle into 2 lines of code per circle. However, there is one very important difference: in this case, the 2 lines are identical every time. We have "abstracted" the task&#8201;&#8212;&#8201;that is, we have taken out the specifics and made it into a more general form.</p></div>
+<div class="paragraph"><p>So now, all that&#8217;s left to do is to tell the computer to do those 2 lines of code a bunch of times instead of us pasting it in ourselves. This is where loops come in.</p></div>
+<div class="sect4">
+<h5 id="_do_8230_while_loop">do&#8230;while loop</h5>
+<div class="paragraph"><p>All loops basically take the same form:</p></div>
+<div class="olist arabic"><ol class="arabic">
+<li>
+<p>
+Set up some initial values (initialization)
+</p>
+</li>
+<li>
+<p>
+Execute the body of the loop
+</p>
+</li>
+<li>
+<p>
+Decide whether to go back to step 2 or exit the loop
+</p>
+</li>
+</ol></div>
+<div class="paragraph"><p>The simplest loop is the do/while loop. As the name suggests, this loop allows you to ask the computer to "do" something "while" a condition is met. Using a do/while loop, we can easily draw 51 circles</p></div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight 3.0
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><span style="color: #009900">void</span> testApp<span style="color: #990000">::</span><span style="font-weight: bold"><span style="color: #000000">draw</span></span><span style="color: #990000">()</span><span style="color: #FF0000">{</span>
+    <span style="color: #009900">int</span> i <span style="color: #990000">=</span> <span style="color: #993399">0</span><span style="color: #990000">;</span>
+    <span style="color: #009900">int</span> x <span style="color: #990000">=</span> <span style="color: #993399">20</span><span style="color: #990000">;</span>
+    <span style="font-weight: bold"><span style="color: #0000FF">do</span></span> <span style="color: #FF0000">{</span>
+        <span style="font-weight: bold"><span style="color: #000000">ofCircle</span></span><span style="color: #990000">(</span>x<span style="color: #990000">,</span> <span style="color: #993399">300</span><span style="color: #990000">,</span> <span style="color: #993399">10</span><span style="color: #990000">);</span>
+        x<span style="color: #990000">+=</span><span style="color: #993399">20</span><span style="color: #990000">;</span>
+        i<span style="color: #990000">++;</span>
+    <span style="color: #FF0000">}</span> <span style="font-weight: bold"><span style="color: #0000FF">while</span></span><span style="color: #990000">(</span> i <span style="color: #990000">&lt;</span> <span style="color: #993399">51</span> <span style="color: #990000">);</span>
+<span style="color: #FF0000">}</span></tt></pre></div></div>
+<div class="paragraph"><p>So what just happened?  Let&#8217;s go through the code step by step as if we were the computer. I apologize that this is the most tedious thing you will ever read, but hopefully it will illustrate what is going on in the loop.</p></div>
+<div class="olist arabic"><ol class="arabic">
+<li>
+<p>
+Initialize a variable called i and set it equal to 0
+</p>
+</li>
+<li>
+<p>
+Initialize a variable called x and set it equal to 20
+</p>
+</li>
+<li>
+<p>
+Draw a circle at (20, 30) with a radius of 10
+</p>
+</li>
+<li>
+<p>
+Increment x by 20 (it now equals 40)
+</p>
+</li>
+<li>
+<p>
+Increment i by 1 (it now equals 1)
+</p>
+</li>
+<li>
+<p>
+Is 1 less than 51?
+</p>
+<div class="olist loweralpha"><ol class="loweralpha">
+<li>
+<p>
+Yes!  Go back to the beginning of the loop
+</p>
+</li>
+</ol></div>
+</li>
+<li>
+<p>
+Draw a circle at (40, 30) with a radius of 10
+</p>
+</li>
+<li>
+<p>
+Increment x by 20 (it now equals 60)
+</p>
+</li>
+<li>
+<p>
+Increment i by 1 (it now equals 2)
+</p>
+</li>
+<li>
+<p>
+Is 2 less than 51?
+</p>
+<div class="olist loweralpha"><ol class="loweralpha">
+<li>
+<p>
+Yes!  Go back to the beginning of the loop
+</p>
+</li>
+</ol></div>
+</li>
+<li>
+<p>
+Draw a circle at (60, 30) with a radius of 10
+</p>
+</li>
+<li>
+<p>
+Increment x by 20 (it now equals 80)
+</p>
+</li>
+<li>
+<p>
+Increment i by 1 (it now equals 3)
+</p>
+</li>
+<li>
+<p>
+Is 3 less than 51?
+</p>
+<div class="olist loweralpha"><ol class="loweralpha">
+<li>
+<p>
+Yes!  Go back to the beginning of the loop
+</p>
+</li>
+</ol></div>
+</li>
+<li>
+<p>
+[REPEAT 46 TIMES UNTIL i=50 and x=1000]
+</p>
+</li>
+<li>
+<p>
+Draw a circle at (1000, 30) with a radius of 10
+</p>
+</li>
+<li>
+<p>
+Increment x by 20 (it now equals 1020)
+</p>
+</li>
+<li>
+<p>
+Increment i by 1 (it now equals 51)
+</p>
+</li>
+<li>
+<p>
+Is 51 less than 51?
+</p>
+<div class="olist loweralpha"><ol class="loweralpha">
+<li>
+<p>
+NO!  Exit out of loop and continue on to whatever comes next
+</p>
+</li>
+</ol></div>
+</li>
+</ol></div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<img src="./images/icons/tip.png" alt="Tip" />
+</td>
+<td class="content">
+<div class="paragraph"><p>We could actually make this even a bit more efficient and make the <em>x</em> variable to double duty like this:</p></div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight 3.0
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><span style="color: #009900">int</span> x <span style="color: #990000">=</span> <span style="color: #993399">20</span><span style="color: #990000">;</span>
+<span style="font-weight: bold"><span style="color: #0000FF">do</span></span> <span style="color: #FF0000">{</span>
+  <span style="font-weight: bold"><span style="color: #000000">ofCircle</span></span><span style="color: #990000">(</span>x<span style="color: #990000">,</span> <span style="color: #993399">300</span><span style="color: #990000">,</span> <span style="color: #993399">10</span><span style="color: #990000">);</span>
+  x<span style="color: #990000">+=</span><span style="color: #993399">20</span><span style="color: #990000">;</span>
+<span style="color: #FF0000">}</span> <span style="font-weight: bold"><span style="color: #0000FF">while</span></span><span style="color: #990000">(</span>x <span style="color: #990000">&lt;</span> <span style="font-weight: bold"><span style="color: #000000">ofGetWidth</span></span><span style="color: #990000">());</span></tt></pre></div></div>
+<div class="paragraph"><p>This has the added advantage of being immune to changes in window size. Try making the window bigger and smaller&#8201;&#8212;&#8201;the circles will always be drawn to the end of the window.</p></div>
+</td>
+</tr></table>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_while_loop">while loop</h5>
+<div class="paragraph"><p>In a while loop, the <em>while</em> part is simply moved up to the top of the loop. So if we want to draw a string of circles with a while loop, it would look like this:</p></div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight 3.0
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><span style="color: #009900">int</span> i <span style="color: #990000">=</span> <span style="color: #993399">0</span><span style="color: #990000">;</span>
+<span style="color: #009900">int</span> x <span style="color: #990000">=</span> <span style="color: #993399">20</span><span style="color: #990000">;</span>
+<span style="font-weight: bold"><span style="color: #0000FF">while</span></span><span style="color: #990000">(</span>i <span style="color: #990000">&lt;</span> <span style="color: #993399">51</span><span style="color: #990000">)</span>
+<span style="color: #FF0000">{</span>
+  <span style="font-weight: bold"><span style="color: #000000">ofCircle</span></span><span style="color: #990000">(</span>x<span style="color: #990000">,</span> <span style="color: #993399">300</span><span style="color: #990000">,</span> <span style="color: #993399">10</span><span style="color: #990000">);</span>
+  x<span style="color: #990000">+=</span><span style="color: #993399">20</span><span style="color: #990000">;</span>
+  i<span style="color: #990000">++;</span>
+<span style="color: #FF0000">}</span></tt></pre></div></div>
+<div class="paragraph"><p>The only difference between a do&#8230;while loop and a while loop is that the the condition happens first, before the loop body runs. For example, suppose we edited our do&#8230;while loop like this:</p></div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight 3.0
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><span style="color: #009900">int</span> x <span style="color: #990000">=</span> <span style="color: #993399">10</span><span style="color: #990000">;</span>
+<span style="font-weight: bold"><span style="color: #0000FF">do</span></span> <span style="color: #FF0000">{</span>
+  <span style="font-weight: bold"><span style="color: #000000">ofCircle</span></span><span style="color: #990000">(</span>x<span style="color: #990000">,</span> <span style="color: #993399">300</span><span style="color: #990000">,</span> <span style="color: #993399">10</span><span style="color: #990000">);</span>
+  x <span style="color: #990000">+=</span> <span style="color: #993399">20</span><span style="color: #990000">;</span>
+<span style="color: #FF0000">}</span> <span style="font-weight: bold"><span style="color: #0000FF">while</span></span><span style="color: #990000">(</span> x <span style="color: #990000">&lt;</span> mouseX <span style="color: #990000">);</span></tt></pre></div></div>
+<div class="paragraph"><p>Notice how we&#8217;ve changed the condition so that the circles will be drawn until <em>x</em> is less than the x position of the mouse. Run this code and see what happens. Notice, in particular, that there is always 1 circle on the screen regardless of how far to the left the mouse goes. Now transform that into a while loop:</p></div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight 3.0
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><span style="color: #009900">int</span> x <span style="color: #990000">=</span> <span style="color: #993399">10</span><span style="color: #990000">;</span>
+<span style="font-weight: bold"><span style="color: #0000FF">while</span></span><span style="color: #990000">(</span> x <span style="color: #990000">&lt;</span> mouseX <span style="color: #990000">)</span>
+<span style="color: #FF0000">{</span>
+  <span style="font-weight: bold"><span style="color: #000000">ofCircle</span></span><span style="color: #990000">(</span>x<span style="color: #990000">,</span> <span style="color: #993399">300</span><span style="color: #990000">,</span> <span style="color: #993399">10</span><span style="color: #990000">);</span>
+  x <span style="color: #990000">+=</span> <span style="color: #993399">20</span><span style="color: #990000">;</span>
+<span style="color: #FF0000">}</span></tt></pre></div></div>
+<div class="paragraph"><p>Now, if you move your mouse beyond the left side of the window, nothing at all is drawn. This is because before the body of the loop is executed (namely the ofCircle draw command), the test is done. So if mouseX is less than x, no circles are drawn at all.</p></div>
+</div>
+<div class="sect4">
+<h5 id="_for_loop">for loop</h5>
+<div class="paragraph"><p>We&#8217;ve saved the best for last. The for loop is probably the one that you will use the most. This might be because it combines all 3 parts of a loop (initialization, condition, and incrementing) into one compact syntax. Let&#8217;s draw the same circles using a for loop:</p></div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight 3.0
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><span style="color: #009900">int</span> x <span style="color: #990000">=</span> <span style="color: #993399">20</span><span style="color: #990000">;</span>
+<span style="font-weight: bold"><span style="color: #0000FF">for</span></span><span style="color: #990000">(</span><span style="color: #009900">int</span> i<span style="color: #990000">=</span><span style="color: #993399">0</span><span style="color: #990000">;</span> i<span style="color: #990000">&lt;</span><span style="color: #993399">51</span><span style="color: #990000">;</span> i<span style="color: #990000">++)</span>
+<span style="color: #FF0000">{</span>
+  <span style="font-weight: bold"><span style="color: #000000">ofCircle</span></span><span style="color: #990000">(</span>x<span style="color: #990000">,</span> <span style="color: #993399">300</span><span style="color: #990000">,</span> <span style="color: #993399">10</span><span style="color: #990000">);</span>
+  x<span style="color: #990000">+=</span><span style="color: #993399">20</span><span style="color: #990000">;</span>
+<span style="color: #FF0000">}</span></tt></pre></div></div>
+<div class="paragraph"><p>The syntax of the for loop can be a little daunting at first, but let&#8217;s take it apart piece by piece. The first part is initialization: "int i=0;"  Pretty straightforward: we now have an integer called i that we have set to 0. The next part is the condition: "i&lt;51". In other words, we want the loop to continue so long as i is less than 51. And lastly,  the increment: "i++". After every iteration of the loop, we will increment i by 1.</p></div>
+<div class="paragraph"><p>We saw each of these things in the other kind of loops. THe only difference here is that they are all smushed into one line.</p></div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_arrays">1.7.3. Arrays</h4>
+<div class="paragraph"><p>Another strength of computers is that they are encyclopedic: that is, they can keep track of a huge number of things at a time. Suppose we want to draw six thousand moving particles?  We know from the loop section that it is trivial to do something over and over again, but so far, we have only used loops to achieve a relatively consistent pattern. If we want do draw tons of particles, each with their own position, things get a little more complicated.</p></div>
+<div class="imageblock">
+<div class="content">
+<img src="images/Arrays01.png" alt="Arrays!" width="500" />
+</div>
+<div class="title">Figure 1. 50000 particles!</div>
+</div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight 3.0
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><span style="color: #009900">float</span> circle1x<span style="color: #990000">;</span>
+<span style="color: #009900">float</span> circle1y<span style="color: #990000">;</span>
+<span style="color: #009900">float</span> circle1r<span style="color: #990000">;</span>
+<span style="color: #009900">float</span> circle2x<span style="color: #990000">;</span>
+<span style="color: #009900">float</span> circle2y<span style="color: #990000">;</span>
+<span style="color: #009900">float</span> circle2r<span style="color: #990000">;</span>
+<span style="color: #009900">float</span> circle3x<span style="color: #990000">;</span>
+<span style="color: #009900">float</span> circle3y<span style="color: #990000">;</span>
+<span style="color: #009900">float</span> circle3r<span style="color: #990000">;</span>
+
+<span style="color: #009900">void</span> testApp<span style="color: #990000">::</span><span style="font-weight: bold"><span style="color: #000000">setup</span></span><span style="color: #990000">()</span><span style="color: #FF0000">{</span>
+    <span style="font-weight: bold"><span style="color: #000000">ofSetFrameRate</span></span><span style="color: #990000">(</span><span style="color: #993399">24</span><span style="color: #990000">);</span>
+
+    circle1x <span style="color: #990000">=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(</span><span style="color: #993399">0</span><span style="color: #990000">,</span> <span style="font-weight: bold"><span style="color: #000000">ofGetWidth</span></span><span style="color: #990000">());</span>
+    circle1y <span style="color: #990000">=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(</span><span style="color: #993399">0</span><span style="color: #990000">,</span> <span style="font-weight: bold"><span style="color: #000000">ofGetHeight</span></span><span style="color: #990000">());</span>
+    circle1r <span style="color: #990000">=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(</span><span style="color: #993399">10</span><span style="color: #990000">,</span> <span style="color: #993399">40</span><span style="color: #990000">);</span>
+
+    circle2x <span style="color: #990000">=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(</span><span style="color: #993399">0</span><span style="color: #990000">,</span> <span style="font-weight: bold"><span style="color: #000000">ofGetWidth</span></span><span style="color: #990000">());</span>
+    circle2y <span style="color: #990000">=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(</span><span style="color: #993399">0</span><span style="color: #990000">,</span> <span style="font-weight: bold"><span style="color: #000000">ofGetHeight</span></span><span style="color: #990000">());</span>
+    circle2r <span style="color: #990000">=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(</span><span style="color: #993399">10</span><span style="color: #990000">,</span> <span style="color: #993399">40</span><span style="color: #990000">);</span>
+
+    circle3x <span style="color: #990000">=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(</span><span style="color: #993399">0</span><span style="color: #990000">,</span> <span style="font-weight: bold"><span style="color: #000000">ofGetWidth</span></span><span style="color: #990000">());</span>
+    circle3y <span style="color: #990000">=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(</span><span style="color: #993399">0</span><span style="color: #990000">,</span> <span style="font-weight: bold"><span style="color: #000000">ofGetHeight</span></span><span style="color: #990000">());</span>
+    circle3r <span style="color: #990000">=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(</span><span style="color: #993399">10</span><span style="color: #990000">,</span> <span style="color: #993399">40</span><span style="color: #990000">);</span>
+
+<span style="color: #FF0000">}</span>
+
+<span style="color: #009900">void</span> testApp<span style="color: #990000">::</span><span style="font-weight: bold"><span style="color: #000000">update</span></span><span style="color: #990000">()</span><span style="color: #FF0000">{</span>
+    circle1x <span style="color: #990000">+=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(-</span><span style="color: #993399">1</span><span style="color: #990000">,</span><span style="color: #993399">1</span><span style="color: #990000">);</span>
+    circle1y <span style="color: #990000">+=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(-</span><span style="color: #993399">1</span><span style="color: #990000">,</span><span style="color: #993399">1</span><span style="color: #990000">);</span>
+
+    circle2x <span style="color: #990000">+=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(-</span><span style="color: #993399">1</span><span style="color: #990000">,</span><span style="color: #993399">1</span><span style="color: #990000">);</span>
+    circle2y <span style="color: #990000">+=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(-</span><span style="color: #993399">1</span><span style="color: #990000">,</span><span style="color: #993399">1</span><span style="color: #990000">);</span>
+
+    circle3x <span style="color: #990000">+=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(-</span><span style="color: #993399">1</span><span style="color: #990000">,</span><span style="color: #993399">1</span><span style="color: #990000">);</span>
+    circle3y <span style="color: #990000">+=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(-</span><span style="color: #993399">1</span><span style="color: #990000">,</span><span style="color: #993399">1</span><span style="color: #990000">);</span>
+<span style="color: #FF0000">}</span>
+
+<span style="color: #009900">void</span> testApp<span style="color: #990000">::</span><span style="font-weight: bold"><span style="color: #000000">draw</span></span><span style="color: #990000">()</span><span style="color: #FF0000">{</span>
+    <span style="font-weight: bold"><span style="color: #000000">ofCircle</span></span><span style="color: #990000">(</span>circle1x<span style="color: #990000">,</span> circle1y<span style="color: #990000">,</span> circle1r<span style="color: #990000">);</span>
+
+    <span style="font-weight: bold"><span style="color: #000000">ofCircle</span></span><span style="color: #990000">(</span>circle2x<span style="color: #990000">,</span> circle2y<span style="color: #990000">,</span> circle2r<span style="color: #990000">);</span>
+
+    <span style="font-weight: bold"><span style="color: #000000">ofCircle</span></span><span style="color: #990000">(</span>circle3x<span style="color: #990000">,</span> circle3y<span style="color: #990000">,</span> circle3r<span style="color: #990000">);</span>
+<span style="color: #FF0000">}</span></tt></pre></div></div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<img src="./images/icons/tip.png" alt="Tip" />
+</td>
+<td class="content">Notice the use of ofRandom(). This function will return a random number. It takes 2 arguments: the minimum possible value and the maximum possible value. What I am saying in this code is "give me a number between 0 and the width of the screen."</td>
+</tr></table>
+</div>
+<div class="paragraph"><p>Technically this works, but we have only drawn 3 circles, and already the code is getting unwieldy. We want to draw 1000! We clearly have a bunch of variables that are used in very similar ways. Why not group, say, all of the x coordinates into a single set, and all of the y coordinates, etc.?</p></div>
+<div class="paragraph"><p>These sets are called arrays. Check out the following code:</p></div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight 3.0
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><span style="color: #009900">float</span> circleX<span style="color: #990000">[</span><span style="color: #993399">3</span><span style="color: #990000">];</span>
+<span style="color: #009900">float</span> circleY<span style="color: #990000">[</span><span style="color: #993399">3</span><span style="color: #990000">];</span>
+<span style="color: #009900">float</span> circleRad<span style="color: #990000">[</span><span style="color: #993399">3</span><span style="color: #990000">];</span>
+
+<span style="color: #009900">void</span> testApp<span style="color: #990000">::</span><span style="font-weight: bold"><span style="color: #000000">setup</span></span><span style="color: #990000">()</span><span style="color: #FF0000">{</span>
+    <span style="font-weight: bold"><span style="color: #000000">ofSetFrameRate</span></span><span style="color: #990000">(</span><span style="color: #993399">24</span><span style="color: #990000">);</span>
+
+    circleX<span style="color: #990000">[</span><span style="color: #993399">0</span><span style="color: #990000">]</span> <span style="color: #990000">=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(</span><span style="color: #993399">0</span><span style="color: #990000">,</span> <span style="font-weight: bold"><span style="color: #000000">ofGetWidth</span></span><span style="color: #990000">());</span>
+    circleY<span style="color: #990000">[</span><span style="color: #993399">0</span><span style="color: #990000">]</span> <span style="color: #990000">=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(</span><span style="color: #993399">0</span><span style="color: #990000">,</span> <span style="font-weight: bold"><span style="color: #000000">ofGetHeight</span></span><span style="color: #990000">());</span>
+    circleRad<span style="color: #990000">[</span><span style="color: #993399">0</span><span style="color: #990000">]</span> <span style="color: #990000">=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(</span><span style="color: #993399">10</span><span style="color: #990000">,</span> <span style="color: #993399">40</span><span style="color: #990000">);</span>
+
+    circleX<span style="color: #990000">[</span><span style="color: #993399">1</span><span style="color: #990000">]</span> <span style="color: #990000">=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(</span><span style="color: #993399">0</span><span style="color: #990000">,</span> <span style="font-weight: bold"><span style="color: #000000">ofGetWidth</span></span><span style="color: #990000">());</span>
+    circleY<span style="color: #990000">[</span><span style="color: #993399">1</span><span style="color: #990000">]</span> <span style="color: #990000">=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(</span><span style="color: #993399">0</span><span style="color: #990000">,</span> <span style="font-weight: bold"><span style="color: #000000">ofGetHeight</span></span><span style="color: #990000">());</span>
+    circleRad<span style="color: #990000">[</span><span style="color: #993399">1</span><span style="color: #990000">]</span> <span style="color: #990000">=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(</span><span style="color: #993399">10</span><span style="color: #990000">,</span> <span style="color: #993399">40</span><span style="color: #990000">);</span>
+
+    circleX<span style="color: #990000">[</span><span style="color: #993399">2</span><span style="color: #990000">]</span> <span style="color: #990000">=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(</span><span style="color: #993399">0</span><span style="color: #990000">,</span> <span style="font-weight: bold"><span style="color: #000000">ofGetWidth</span></span><span style="color: #990000">());</span>
+    circleY<span style="color: #990000">[</span><span style="color: #993399">2</span><span style="color: #990000">]</span> <span style="color: #990000">=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(</span><span style="color: #993399">0</span><span style="color: #990000">,</span> <span style="font-weight: bold"><span style="color: #000000">ofGetHeight</span></span><span style="color: #990000">());</span>
+    circleRad<span style="color: #990000">[</span><span style="color: #993399">2</span><span style="color: #990000">]</span> <span style="color: #990000">=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(</span><span style="color: #993399">10</span><span style="color: #990000">,</span> <span style="color: #993399">40</span><span style="color: #990000">);</span>
+<span style="color: #FF0000">}</span>
+
+<span style="color: #009900">void</span> testApp<span style="color: #990000">::</span><span style="font-weight: bold"><span style="color: #000000">update</span></span><span style="color: #990000">()</span><span style="color: #FF0000">{</span>
+
+    circleX<span style="color: #990000">[</span><span style="color: #993399">0</span><span style="color: #990000">]</span> <span style="color: #990000">+=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(-</span><span style="color: #993399">1</span><span style="color: #990000">,</span><span style="color: #993399">1</span><span style="color: #990000">);</span>
+    circleY<span style="color: #990000">[</span><span style="color: #993399">0</span><span style="color: #990000">]</span> <span style="color: #990000">+=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(-</span><span style="color: #993399">1</span><span style="color: #990000">,</span><span style="color: #993399">1</span><span style="color: #990000">);</span>
+
+    circleX<span style="color: #990000">[</span><span style="color: #993399">1</span><span style="color: #990000">]</span> <span style="color: #990000">+=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(-</span><span style="color: #993399">1</span><span style="color: #990000">,</span><span style="color: #993399">1</span><span style="color: #990000">);</span>
+    circleY<span style="color: #990000">[</span><span style="color: #993399">1</span><span style="color: #990000">]</span> <span style="color: #990000">+=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(-</span><span style="color: #993399">1</span><span style="color: #990000">,</span><span style="color: #993399">1</span><span style="color: #990000">);</span>
+
+    circleX<span style="color: #990000">[</span><span style="color: #993399">2</span><span style="color: #990000">]</span> <span style="color: #990000">+=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(-</span><span style="color: #993399">1</span><span style="color: #990000">,</span><span style="color: #993399">1</span><span style="color: #990000">);</span>
+    circleY<span style="color: #990000">[</span><span style="color: #993399">2</span><span style="color: #990000">]</span> <span style="color: #990000">+=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(-</span><span style="color: #993399">1</span><span style="color: #990000">,</span><span style="color: #993399">1</span><span style="color: #990000">);</span>
+<span style="color: #FF0000">}</span>
+
+<span style="color: #009900">void</span> testApp<span style="color: #990000">::</span><span style="font-weight: bold"><span style="color: #000000">draw</span></span><span style="color: #990000">()</span><span style="color: #FF0000">{</span>
+
+    <span style="font-weight: bold"><span style="color: #000000">ofCircle</span></span><span style="color: #990000">(</span>circleX<span style="color: #990000">[</span><span style="color: #993399">0</span><span style="color: #990000">],</span> circleY<span style="color: #990000">[</span><span style="color: #993399">0</span><span style="color: #990000">],</span> circleRad<span style="color: #990000">[</span><span style="color: #993399">0</span><span style="color: #990000">]);</span>
+    <span style="font-weight: bold"><span style="color: #000000">ofCircle</span></span><span style="color: #990000">(</span>circleX<span style="color: #990000">[</span><span style="color: #993399">1</span><span style="color: #990000">],</span> circleY<span style="color: #990000">[</span><span style="color: #993399">1</span><span style="color: #990000">],</span> circleRad<span style="color: #990000">[</span><span style="color: #993399">1</span><span style="color: #990000">]);</span>
+    <span style="font-weight: bold"><span style="color: #000000">ofCircle</span></span><span style="color: #990000">(</span>circleX<span style="color: #990000">[</span><span style="color: #993399">2</span><span style="color: #990000">],</span> circleY<span style="color: #990000">[</span><span style="color: #993399">2</span><span style="color: #990000">],</span> circleRad<span style="color: #990000">[</span><span style="color: #993399">2</span><span style="color: #990000">]);</span>
+<span style="color: #FF0000">}</span></tt></pre></div></div>
+<div class="paragraph"><p>As you can see, we&#8217;ve replaced int circle1x, int circle2x, and int circle3x with simply int circleX[3]. Now circleX is an "array" that can hold up to 3 integers, rather than just 1. Read a little further, and you will see that, in order to assign a value to one of the ints in the array, you use the square brackets, like this: circleX[0] = 50;</p></div>
+<div class="paragraph"><p>Down in the draw function, you can see that we use the same syntax to use the values that we have previously assigned to a particular slot in the array.</p></div>
+<div class="paragraph"><p>But this is still kind of a mess. One sign that you might not be utilizing loops as much as possible is if you see patterns in your code&#8201;&#8212;&#8201;that is, similar sequences of code over and over again. So let&#8217;s try to clean this up even more using some <em>for</em> loops.</p></div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight 3.0
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><span style="color: #009900">float</span> circleX<span style="color: #990000">[</span><span style="color: #993399">3</span><span style="color: #990000">];</span>
+<span style="color: #009900">float</span> circleY<span style="color: #990000">[</span><span style="color: #993399">3</span><span style="color: #990000">];</span>
+<span style="color: #009900">float</span> circleRad<span style="color: #990000">[</span><span style="color: #993399">3</span><span style="color: #990000">];</span>
+
+<span style="color: #009900">void</span> testApp<span style="color: #990000">::</span><span style="font-weight: bold"><span style="color: #000000">setup</span></span><span style="color: #990000">()</span><span style="color: #FF0000">{</span>
+    <span style="font-weight: bold"><span style="color: #000000">ofSetFrameRate</span></span><span style="color: #990000">(</span><span style="color: #993399">24</span><span style="color: #990000">);</span>
+
+    <span style="font-weight: bold"><span style="color: #0000FF">for</span></span><span style="color: #990000">(</span><span style="color: #009900">int</span> i<span style="color: #990000">=</span><span style="color: #993399">0</span><span style="color: #990000">;</span> i<span style="color: #990000">&lt;</span><span style="color: #993399">3</span><span style="color: #990000">;</span> i<span style="color: #990000">++)</span>
+    <span style="color: #FF0000">{</span>
+        circleX<span style="color: #990000">[</span>i<span style="color: #990000">]</span> <span style="color: #990000">=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(</span><span style="color: #993399">0</span><span style="color: #990000">,</span> <span style="font-weight: bold"><span style="color: #000000">ofGetWidth</span></span><span style="color: #990000">());</span>
+        circleY<span style="color: #990000">[</span>i<span style="color: #990000">]</span> <span style="color: #990000">=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(</span><span style="color: #993399">0</span><span style="color: #990000">,</span> <span style="font-weight: bold"><span style="color: #000000">ofGetHeight</span></span><span style="color: #990000">());</span>
+        circleRad<span style="color: #990000">[</span>i<span style="color: #990000">]</span> <span style="color: #990000">=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(</span><span style="color: #993399">10</span><span style="color: #990000">,</span> <span style="color: #993399">40</span><span style="color: #990000">);</span>
+    <span style="color: #FF0000">}</span>
+<span style="color: #FF0000">}</span>
+
+<span style="color: #009900">void</span> testApp<span style="color: #990000">::</span><span style="font-weight: bold"><span style="color: #000000">update</span></span><span style="color: #990000">()</span><span style="color: #FF0000">{</span>
+
+    <span style="font-weight: bold"><span style="color: #0000FF">for</span></span><span style="color: #990000">(</span><span style="color: #009900">int</span> i<span style="color: #990000">=</span><span style="color: #993399">0</span><span style="color: #990000">;</span> i<span style="color: #990000">&lt;</span><span style="color: #993399">3</span><span style="color: #990000">;</span> i<span style="color: #990000">++)</span>
+    <span style="color: #FF0000">{</span>
+        circleX<span style="color: #990000">[</span>i<span style="color: #990000">]</span> <span style="color: #990000">+=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(-</span><span style="color: #993399">1</span><span style="color: #990000">,</span><span style="color: #993399">1</span><span style="color: #990000">);</span>
+        circleY<span style="color: #990000">[</span>i<span style="color: #990000">]</span> <span style="color: #990000">+=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(-</span><span style="color: #993399">1</span><span style="color: #990000">,</span><span style="color: #993399">1</span><span style="color: #990000">);</span>
+    <span style="color: #FF0000">}</span>
+<span style="color: #FF0000">}</span>
+
+<span style="color: #009900">void</span> testApp<span style="color: #990000">::</span><span style="font-weight: bold"><span style="color: #000000">draw</span></span><span style="color: #990000">()</span><span style="color: #FF0000">{</span>
+
+    <span style="font-weight: bold"><span style="color: #0000FF">for</span></span><span style="color: #990000">(</span><span style="color: #009900">int</span> i<span style="color: #990000">=</span><span style="color: #993399">0</span><span style="color: #990000">;</span> i<span style="color: #990000">&lt;</span><span style="color: #993399">3</span><span style="color: #990000">;</span> i<span style="color: #990000">++)</span>
+    <span style="color: #FF0000">{</span>
+        <span style="font-weight: bold"><span style="color: #000000">ofCircle</span></span><span style="color: #990000">(</span>circleX<span style="color: #990000">[</span>i<span style="color: #990000">],</span> circleY<span style="color: #990000">[</span>i<span style="color: #990000">],</span> circleRad<span style="color: #990000">[</span>i<span style="color: #990000">]);</span>
+    <span style="color: #FF0000">}</span>
+<span style="color: #FF0000">}</span></tt></pre></div></div>
+<div class="paragraph"><p>Now, instead of putting hard-coded numbers between the square brackets, we use the <em>i</em> variable of our for loop.</p></div>
+<div class="sect4">
+<h5 id="_define">#define</h5>
+<div class="paragraph"><p>A wise person once said: the primary virtue of a programer is laziness. Suppose you wanted to change the number of circles that appear on the screen from 3 to 500. Obviously, the first step would be to change circleX[3] to circleX[500], and likewise circleY and circleRad. Oh, but that&#8217;s not all. You&#8217;d still have to go through every "for" loop and change i&lt;3 to i&lt;50. That&#8217;s a lot of work!</p></div>
+<div class="paragraph"><p>It would be great if we could use a variable to keep track of how many items we have in our array! It might look something like this:</p></div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight 3.0
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><span style="color: #009900">int</span> num <span style="color: #990000">=</span> <span style="color: #993399">500</span><span style="color: #990000">;</span>
+<span style="color: #009900">float</span> circleX<span style="color: #990000">[</span>num<span style="color: #990000">];</span>
+<span style="color: #009900">float</span> circleY<span style="color: #990000">[</span>num<span style="color: #990000">];</span>
+<span style="color: #009900">float</span> circleRad<span style="color: #990000">[</span>num<span style="color: #990000">];</span></tt></pre></div></div>
+<div class="paragraph"><p>Unfortunately, this isn&#8217;t possible. You can&#8217;t use a variable to declare a variable.</p></div>
+<div class="paragraph"><p>Instead, we will use a new thing called a #define (pronounced: "pound define"). Take a look at this:</p></div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight 3.0
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><span style="font-weight: bold"><span style="color: #000080">#define</span></span> NUM_CIRCLES <span style="color: #993399">500</span>
+
+<span style="color: #009900">float</span> circleX<span style="color: #990000">[</span>NUM_CIRCLES<span style="color: #990000">];</span>
+<span style="color: #009900">float</span> circleY<span style="color: #990000">[</span>NUM_CIRCLES<span style="color: #990000">];</span>
+<span style="color: #009900">float</span> circleRad<span style="color: #990000">[</span>NUM_CIRCLES<span style="color: #990000">];</span>
+<span style="color: #009900">int</span> circleR<span style="color: #990000">[</span>NUM_CIRCLES<span style="color: #990000">];</span>
+<span style="color: #009900">int</span> circleG<span style="color: #990000">[</span>NUM_CIRCLES<span style="color: #990000">];</span>
+<span style="color: #009900">int</span> circleB<span style="color: #990000">[</span>NUM_CIRCLES<span style="color: #990000">];</span>
+
+<span style="color: #009900">void</span> testApp<span style="color: #990000">::</span><span style="font-weight: bold"><span style="color: #000000">setup</span></span><span style="color: #990000">()</span><span style="color: #FF0000">{</span>
+    <span style="font-weight: bold"><span style="color: #000000">ofSetFrameRate</span></span><span style="color: #990000">(</span><span style="color: #993399">24</span><span style="color: #990000">);</span>
+
+    <span style="font-weight: bold"><span style="color: #0000FF">for</span></span><span style="color: #990000">(</span><span style="color: #009900">int</span> i<span style="color: #990000">=</span><span style="color: #993399">0</span><span style="color: #990000">;</span> i<span style="color: #990000">&lt;</span>NUM_CIRCLES<span style="color: #990000">;</span> i<span style="color: #990000">++)</span>
+    <span style="color: #FF0000">{</span>
+        circleX<span style="color: #990000">[</span>i<span style="color: #990000">]</span> <span style="color: #990000">=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(</span><span style="color: #993399">0</span><span style="color: #990000">,</span> <span style="font-weight: bold"><span style="color: #000000">ofGetWidth</span></span><span style="color: #990000">());</span>
+        circleY<span style="color: #990000">[</span>i<span style="color: #990000">]</span> <span style="color: #990000">=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(</span><span style="color: #993399">0</span><span style="color: #990000">,</span> <span style="font-weight: bold"><span style="color: #000000">ofGetHeight</span></span><span style="color: #990000">());</span>
+        circleRad<span style="color: #990000">[</span>i<span style="color: #990000">]</span> <span style="color: #990000">=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(</span><span style="color: #993399">10</span><span style="color: #990000">,</span> <span style="color: #993399">40</span><span style="color: #990000">);</span>
+
+        circleR<span style="color: #990000">[</span>i<span style="color: #990000">]</span> <span style="color: #990000">=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(</span><span style="color: #993399">0</span><span style="color: #990000">,</span> <span style="color: #993399">255</span><span style="color: #990000">);</span>
+        circleG<span style="color: #990000">[</span>i<span style="color: #990000">]</span> <span style="color: #990000">=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(</span><span style="color: #993399">0</span><span style="color: #990000">,</span> <span style="color: #993399">255</span><span style="color: #990000">);</span>
+        circleB<span style="color: #990000">[</span>i<span style="color: #990000">]</span> <span style="color: #990000">=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(</span><span style="color: #993399">0</span><span style="color: #990000">,</span> <span style="color: #993399">255</span><span style="color: #990000">);</span>
+    <span style="color: #FF0000">}</span>
+<span style="color: #FF0000">}</span>
+
+<span style="color: #009900">void</span> testApp<span style="color: #990000">::</span><span style="font-weight: bold"><span style="color: #000000">update</span></span><span style="color: #990000">()</span><span style="color: #FF0000">{</span>
+
+    <span style="font-weight: bold"><span style="color: #0000FF">for</span></span><span style="color: #990000">(</span><span style="color: #009900">int</span> i<span style="color: #990000">=</span><span style="color: #993399">0</span><span style="color: #990000">;</span> i<span style="color: #990000">&lt;</span>NUM_CIRCLES<span style="color: #990000">;</span> i<span style="color: #990000">++)</span>
+    <span style="color: #FF0000">{</span>
+        circleX<span style="color: #990000">[</span>i<span style="color: #990000">]</span> <span style="color: #990000">+=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(-</span><span style="color: #993399">1</span><span style="color: #990000">,</span><span style="color: #993399">1</span><span style="color: #990000">);</span>
+        circleY<span style="color: #990000">[</span>i<span style="color: #990000">]</span> <span style="color: #990000">+=</span> <span style="font-weight: bold"><span style="color: #000000">ofRandom</span></span><span style="color: #990000">(-</span><span style="color: #993399">1</span><span style="color: #990000">,</span><span style="color: #993399">1</span><span style="color: #990000">);</span>
+    <span style="color: #FF0000">}</span>
+<span style="color: #FF0000">}</span>
+
+<span style="color: #009900">void</span> testApp<span style="color: #990000">::</span><span style="font-weight: bold"><span style="color: #000000">draw</span></span><span style="color: #990000">()</span><span style="color: #FF0000">{</span>
+
+    <span style="font-weight: bold"><span style="color: #0000FF">for</span></span><span style="color: #990000">(</span><span style="color: #009900">int</span> i<span style="color: #990000">=</span><span style="color: #993399">0</span><span style="color: #990000">;</span> i<span style="color: #990000">&lt;</span>NUM_CIRCLES<span style="color: #990000">;</span> i<span style="color: #990000">++)</span>
+    <span style="color: #FF0000">{</span>
+        <span style="font-weight: bold"><span style="color: #000000">ofSetColor</span></span><span style="color: #990000">(</span>circleR<span style="color: #990000">[</span>i<span style="color: #990000">],</span> circleG<span style="color: #990000">[</span>i<span style="color: #990000">],</span> circleB<span style="color: #990000">[</span>i<span style="color: #990000">]);</span>
+        <span style="font-weight: bold"><span style="color: #000000">ofCircle</span></span><span style="color: #990000">(</span>circleX<span style="color: #990000">[</span>i<span style="color: #990000">],</span> circleY<span style="color: #990000">[</span>i<span style="color: #990000">],</span> circleRad<span style="color: #990000">[</span>i<span style="color: #990000">]);</span>
+    <span style="color: #FF0000">}</span>
+<span style="color: #FF0000">}</span></tt></pre></div></div>
+<div class="paragraph"><p>At the very top, notice the line "#define NUM_CIRCLES 500". This isn&#8217;t technically a line of <tt>c++</tt> code, but rather a message to your compiler. It tells the compiler "before you start compiling code, anywhere you see NUM_CIRCLES, replace it with 500". That&#8217;s it! A #define is one of a couple messages that you can send to the compiler (or, more accurately, the preprocessor), known more broadly as <a href="http://www.cplusplus.com/doc/tutorial/preprocessor/">preprocessor directives</a>. We will talk more about them at a later date., but for now, all you need to know is that #define is a very simple find/replace procedure.</p></div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_functions">1.7.4. Functions</h4>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight 3.0
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><span style="color: #009900">void</span> <span style="font-weight: bold"><span style="color: #000000">drawStar</span></span><span style="color: #990000">(</span><span style="color: #009900">float</span> xpos<span style="color: #990000">,</span> <span style="color: #009900">float</span> ypos<span style="color: #990000">,</span> <span style="color: #009900">float</span> radius<span style="color: #990000">,</span> <span style="color: #009900">int</span> npts<span style="color: #990000">)</span>
+<span style="color: #FF0000">{</span>
+    <span style="color: #009900">bool</span> useInner<span style="color: #990000">=</span><span style="font-weight: bold"><span style="color: #0000FF">false</span></span><span style="color: #990000">;</span>
+    <span style="font-weight: bold"><span style="color: #000000">ofBeginShape</span></span><span style="color: #990000">();</span>
+    <span style="font-weight: bold"><span style="color: #0000FF">for</span></span><span style="color: #990000">(</span><span style="color: #009900">int</span> i<span style="color: #990000">=</span><span style="color: #993399">0</span><span style="color: #990000">;</span> i<span style="color: #990000">&lt;</span><span style="color: #993399">360</span><span style="color: #990000">;</span> i<span style="color: #990000">+=</span><span style="color: #993399">360</span><span style="color: #990000">/</span>npts<span style="color: #990000">)</span>
+    <span style="color: #FF0000">{</span>
+        <span style="color: #009900">int</span> r <span style="color: #990000">=</span> useInner <span style="color: #990000">?</span> radius<span style="color: #990000">*.</span><span style="color: #993399">6</span> <span style="color: #990000">:</span> radius<span style="color: #990000">;</span>
+        <span style="color: #009900">int</span> x <span style="color: #990000">=</span> xpos <span style="color: #990000">+</span> <span style="font-weight: bold"><span style="color: #000000">cos</span></span><span style="color: #990000">(</span> <span style="font-weight: bold"><span style="color: #000000">ofDegToRad</span></span><span style="color: #990000">(</span>i<span style="color: #990000">)</span> <span style="color: #990000">)</span> <span style="color: #990000">*</span> r<span style="color: #990000">;</span>
+        <span style="color: #009900">int</span> y <span style="color: #990000">=</span> ypos <span style="color: #990000">+</span> <span style="font-weight: bold"><span style="color: #000000">sin</span></span><span style="color: #990000">(</span> <span style="font-weight: bold"><span style="color: #000000">ofDegToRad</span></span><span style="color: #990000">(</span>i<span style="color: #990000">)</span> <span style="color: #990000">)</span> <span style="color: #990000">*</span> r<span style="color: #990000">;</span>
+        <span style="font-weight: bold"><span style="color: #000000">ofVertex</span></span><span style="color: #990000">(</span>x<span style="color: #990000">,</span> y<span style="color: #990000">);</span>
+        useInner <span style="color: #990000">=</span> <span style="color: #990000">!</span>useInner<span style="color: #990000">;</span>
+    <span style="color: #FF0000">}</span>
+    <span style="font-weight: bold"><span style="color: #000000">ofEndShape</span></span><span style="color: #990000">();</span>
+<span style="color: #FF0000">}</span></tt></pre></div></div>
 </div>
 </div>
 </div>
