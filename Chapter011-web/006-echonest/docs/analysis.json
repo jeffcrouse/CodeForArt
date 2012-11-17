@@ -1,0 +1,5924 @@
+{
+  "meta": {
+    "analyzer_version": "3.1.3",
+    "detailed_status": "OK",
+    "filename": "\/tmp\/tmpo96Jad\/5a9f1de27e36dfbaaeffb06219e99d37.mp3",
+    "artist": "M.I.A.",
+    "album": "Arular",
+    "title": "One For The Head Skit",
+    "genre": "Hip-Hop",
+    "bitrate": 212,
+    "sample_rate": 44100,
+    "seconds": 29,
+    "status_code": 0,
+    "timestamp": 1353104267,
+    "analysis_time": 3.45296
+  },
+  "track": {
+    "num_samples": 651210,
+    "duration": 29.53333,
+    "sample_md5": "1590878b242580ad163010eac7b5b7a8",
+    "decoder": "mpg123",
+    "offset_seconds": 0,
+    "window_seconds": 0,
+    "analysis_sample_rate": 22050,
+    "analysis_channels": 1,
+    "end_of_fade_in": 0.40658,
+    "start_of_fade_out": 29.53333,
+    "loudness": -7.607,
+    "tempo": 114.426,
+    "tempo_confidence": 0.108,
+    "time_signature": 4,
+    "time_signature_confidence": 1,
+    "key": 0,
+    "key_confidence": 0,
+    "mode": 1,
+    "mode_confidence": 0,
+    "codestring": "eJw1ltuxJCEMQ1MhBPDb-Se2Rz13f6bKNBhblsTM8-icu-eevZa1XXt84mwW316-U3dOuZvlTTtdc2yix6L3vGuhgzc9qs977Hi3x7PKzwuOvludmdV13ny7Y1_eqGN3Lmvunuv32GPLtrG8SxgVJ3N632Qca7snOZGli204W249HRyz1c9Xlor0d-NQ8du7Tj9Gqs6NcZXlSSrKmrfsfscp6TwvK9ZOXKeHiSQeO8FN1PyWHrZOpPrgjgKtiBNzVYc7ueqeWH58wY3CTpLmvL5g6dQMRqF7zTvC-VxXJ_Y9IMuTMz-01rtHuD9BNu1zH2Hc-ytkq-NUZdEYyK1y922qtnrRQXf8CDIai7h1up-dmnkOAnxd9TnOBdv3MH7AC8BbITEa_8Sk9_U6k5ylhyq1fIY6NPGo4eYzHx_qgX__fdBYMvqB-YoPKoJ197PiQ9N1mr-EYkrvBaYMjNEvLfRrKBkakOihhsNvfVTjNKNcKOGKXcefbWWbgM21PxJbP2J64DvTBs08Qlm1-R2GA9JPrPgVBzc-7oph8XZb51-BP7dN-K72CxxQcgSj-uyVqnzcb11CX1TJKdbeFwcJxpDX-9hvxYy8_eaFLEeV0yBT4eBSgJsuRGlQbynAxZdfgd9-B9ijOaAU2PW8bYRf5V6nQF8GByPollSoD80cs-5lGuwPMUgEo44xyTNJQC5Lelbcki-iKA-oL5XC5iEtJCSMT74PTMPJjxKhkYEwEOi7YFnm0BlKVI_0FbCjOxhAuVbhEx4jjXH8_vQw45pgyWo2ACwkfqE2AuwhVTVQswLIKrNjpSwV1MyxW2bUopvd-2CSAGzxzSYvRNZn8Y27aDe5mCpQRva7-8EpS4PPy91X7fSKvLFYyntUM_In5Ep-Wv2Mq9B0OdqIJ8soiedr5ykWH-GIClI1I8ti0INVKv_sZyXOGEvUZNP9_AHv2anSJMRQ1XtTJzAw-lFDF4kQawBSyLKkuPvriMLbaPiTM3y6cugQMiIQ_LqDtolNHgK-mZCPOJRPhHRqJs6fI-_KsolFYDrC7jAYYhE4KHUTM8DA75cP9e1nC5KIdOjFHex_-o3hWcCa32f4V_WmNEdscjzIPtQjj7cnAYTzCrieAPNSv1hAzXVi8ff3UBkGaiZPbPSfMOOK-nIyvVxC_dBV637qXMRDDKOkYGMiBaHMkeRvAmK9dojyTJJRdiuDjJSpBLUsFbkoT8d5rYWwf87asBXTkKlKAjgZmxumsGBfQgRkIo2F3FUcY2Tu36MnE2o8yCEZjywJaQmFugoC7f8t8aYeUfnPU1oOS5oQRXD-ZI34kwA-HvCU8ykNLI9aDd5PLNOVSRYWceUeJifGH4LSaPWSj1cFl_kgLJkwDYbsVt8lgpJ-5UqC5ns9k9kxB-KfKfNqldGZLBARoLKu90EpUdA6D-fqydIfkIMksTB5mknc_wAEDq4N",
+    "code_version": 3.15,
+    "echoprintstring": "eJzdmVmOJbmORLekWdRyqIH7X0IfMYC-qACu6iP6fbxGApYZLneK4mA0RYYQYgoPSPkFubyghhf08wKxF-zxgqMPiFFecB3_DqW-oOcXaHzBmQ9Itb-glxdc89_hxvor5DxfIPUFo71glRdYfMDfKva8oO0XDH2BtQfEu_l3qPEFOl-w9QEp9BfcbvkK-TbEdyjtBbf0vgK-veBfivL_Wwb_JUctv-CZwTT3A_4lv88MZk0P-FN-31PjnV8ZL7iH_g6nPuBfsj_mC9Z5gRfXN0g3j9_hFtd3eHd3GC_I9QVu4Cuc9YB_qY13d_9LbcQXdHnBuzZ2fsCfFMWbN0Rf4IX5DdLl2e_wF2b4b6yNd_Z1PSBeGv4Ob034zuAN9ldIN9jf4YrKr5CTvuA9u9-67j2DbT_gPzkX_tD7f-nuv2T_T_2bXmD9Afla-A7dXnBF5VcoQR7wH8z-n7i9POBP98G_ZP8999-18b7x_aVyanrBf6hyJOWW8mpz75RT12EytGuSM0vqs8wlFrUMa0mPr0KQbebdajSJfZfWF-la9-8yS5Suq-dRQ1EU-K67F4kxnjNTkhV0JpVg2Y26PTfFpytUiWP3MeTHXpbNWNOs-jF6zi7d3XUDZctYbsXddVMj9bPdXbfiHnxM1XMuEeOzv9Jr1eqv-Kpb_tjjgEdnjmXrXGr-hbWVovuy9-pNJC48r8b0Lieq9H1S2N3KnmPFgc0wg1RKS0qfo9jpeuMWSq_FGOqEqU6MFN9jsYcNDHTJu0qaq06Ps3vq5-j1TDP4M62apng-ksUWhuWwEglFZcZmUrJNj3gKMysB3a3HqEtUZl6xVvFzTIqgzo7AiEFay33mWrqk8isLfgR_2Z38FavZx-wnx2nuhseqrSzTv_Bo1PumH9ojXmNre9tYYaZT1gd-vPrnsw-01Q8FSLD3LN12tL5HOSXnqfhSNMWSY6g5nLjq2V3K0kyMk-ZCUKVTfcRo0a-nlSLWNKex06lj2xZpZ5NSi7utUtkjzBYpIzff-1hbSNAk55sQLjkydlxpWkUdNBrC6pGfbxVbJS3D11mjWy40WvBVzs0W13JpsRLktadbJqk0YzmCa9uW-_zxtCWWNey5zokk7BoNaqfwiUkT3fxB4vRMfbl_burMVrOtWouc3oxLDPm9vnzcWCQu-bd5ttB_7XtMcLQMGRwui-_r5_BvYyhzfsDP8evZB9Iw4rWrbWZEJDunQyu1hdoRZy21JMXMdguLym9ClfHNGG2ndeD3GKfmEUMzUhIidX1bYZdD0URqMY6xT-H67wU9V686KbdsKcZyeuzDV2fDbF27SOt2i2qZcrQSBm2nRIYVuoabYt601aGLrz3CiyFVemxkNwoFdyLR02nXuZMpo1BqnxPnRH88_TiZT8-Vho5hp1jb_6FXfVYqncYfaZVg7tWgZYMfX9cZ6l6Z0YS-r3s1S-nbvUp1jzg7gfZI3rtud6_2lmkf8G9_PfsAmdyzw2BLWgmnNG2jpZETXDd7Mlt0JaynWUKDQfpap8Oltw3oLnhpVDhoQkW6e9o5J0mmmI1LdpSpSqprncqXOW5ZGeaclg8RknWv9j0Y7VQWtChUsS7qPumo2uHEoTtiJmjq6VIdRkwOP2ZOP7QxGmNsEW6p8DN0YmsymYreeWmQU6QNdyMAhL3W4fsOGubnCLCH2Ql9HRoOJoLl4BMld2l0Ej1y0C2aGmcfv33eYyXtMLZK7sd9JnyhERkueXNHfl6rQs8co2TGmbRQSlI0xGD8Gee9gyDluRcHECYyDRDGWTGTGUYLrNQa3Mgeqg3Gwk04Lh8JZeUeKAT33kPnMWDIrEwKYz5aqNN_rhoG7QO--uvZB1KrpzIu4aoJlx0qYk5WNFrmGBECvkcQJM9snDtYVYKIm8gCGA5eZliRlMh9qRQbOUZm6JUgTJaDdGDkq2AJ3j2DVjmXMX_MG-ORQUi5Mxezxowj-9TV_duEDEn5TDqlJkip3UFH3w44B-stIW-QiNDyDr1CtRaOEllmG8QbBgNkp951wmGnW2OCiyxaknEZBsUOMxudZsvIuyjM1oZxYqOq7r2yoVyMQl0TOTiZK9d7JsOlCoHJSSaaJJyRKSJ6qDFQE3lDHxlBHXOtfSaDxGboM00kA8VdCw0dyp3u7N_ghIFaoBEDZQTfI8oOWi5SBnEITAzHC6P8dlaIVokU-RmVGSk5lB-vWNbYBQEBEVx9QTqxXe3XqlL56QO--uvZB6KMRpvO2hgCO2qiIhOqUqpu9AfBQ6bgL1HKWBKlsWJqkFtZA5lcUAEwMx4a84py99XEydzKvryHIFC2EmN2pFGRotA1o50WQC_g3Z5RIW2IoZ96i85IT6iDMDXUWWWSG9MfGUKR0maM08p82sxBZEW6spe6lUkjJPN9-6LnUqEDCf-BQPTqhkXVXk85cN7cDtaCfIVqoLECM6O4GyVTakYNDn9POjwQB-cQBre4B6mtsNxAkJiDvyJczJlBizK-e8Re78u0n3-WFgXXToJwxkZ_jzZUYEv9iVVDr_tncDXq8rrBtL08y26_LE-pdj7gln89-wCF2neFdC-3KfpvIUQESmmXsOrVQfGWQh7p_rce9IzP8G5D3iVSsKlWBDg0EI_FjPptBY8YOBroyuO_6mKIXV1xSMgpY97fq1A-E1KAluCaVkPbaKO9O8lARRHdwL9aK1fionVHVEYXYy8hT08cjF7KAQpaCfqk07rFKnQaE6NpwbTwlYVCg816M4eCKzAXpF3Rx7gROwxOcW-IiIpIyOvhDrkvdHaiRkqreFB0TQvdzwGPTfUjILaiJQQ7pNLjj89Bm5p7da_45eNVhtBSQWpQ1X21CCWj9XB-djrDveLygVrwXzpdD_yoWcpuzB8L_srVhuar_q2_AtlxYSPoy19pBQ7_gO_769kHsE1HodNRnqGia5AHAtUOGmeswQGR6DDHvS7QozR3ZYhl5s2sKBQ9EFmlbiLqmmAposQm_IR0HJjjFizxXuwqsli5uVpnfkLCDQ6nGxOjktvX6GjHMmjGMrhoHKRoQx0yx6kqrr6jC4koaGvCh0qrt1IyS7GOxNXhjHtfuVNicRAKBqO5cwNJZSGqMg4uuKHmn2NxP1xsgu3ekRTnGHeRsWb-6jM3O4jtf31mejNT_unzyXN-9zlAENz0uFn9-DypZwR-FrR6Hz8-390YYqWjphEne2yabhr5QUnq3pH7sd7wKcoiMlsSOggGPWgMLhOrcE0vAbYzf68XrdW_9fP66seKr3K9QM1fA_7eup59wFd_PfvA_wAcOC1k",
+    "echoprint_version": 4.12,
+    "synchstring": "eJy9WleSJLGtvAqPUCTo6v4Xe0iD6lFIH08KhWJ6esvQgEAiYWbHeNbTop3Z2333ajNveuTXyJ-Vv5Hfi3ejbf_77__c2XYu_NxcfLQ-n3zWn3ZO6-tt67R4W899-9gaESt_n7Z0NW5LMc_b5m53tJmPdktp94NlL6fngMXnK6efNk6bA59cNe8GZ2yMzaPm_hEtt5wtl8a44OPARw-xBHZv461vHkXDOz65RA7ty_M8tfbFmPFn1b8r6Vv7_PPzP99e6t_5jNzrpeznjwClCqy8ZOGd0s_UMOySNzv1gW-8gMnxSkOg0_wHN6lpvtA8PL-YzVEj32JELp9ggmpyRf2k3nnWR8DCPKzUN8cdQe3Jm8s3NCMH5LIXRxhhYZfm30YL57AAKOe_UkUQJ7Vhrp0We_hgl3ZlQ47NlbBxTvkPdP7_-qRr3UYsLELjbGA2rbThC8B_aihNl3LOC1znc3wmcKuL0_E8jxz5sMMDTuAiqIf0JDyZuMitEuRrYmRqPuEALQ6sPIiOVEJqPDpkuDh9xz3Q-3LCQ2_fUBl9h_46CC0ilzC6-Bfqx7uOm66lNALeAVUvvh88txxVF_WNJ_-Dz7f78w-SAES0SZ5tGvLQiIgDol8i_iU5vvSAbf8Jg5Ljlw6KZz28zMkJB4o6hKl85tA1pp_QL5bcKPwMP4d7bV71yWlb2H95Cf5s9IEB4WLyuajI5kxwgbWGjMwxl3YNOinRkacG4V4oIcf7e9AZfTN1M-Aio9czDQaEX-KocxHpc_7UnnruT0A72Obp7TwA1eRhBy7pFoniDhoA_NoKIPGlYomwzgVoDCCbKE0XwqSDnQcDQW6Q6IcfvQsLHADy0JWSy97yqagni54Ft0-Z4GdPDTyMOUMY3lAXbik7BOy4TWVgOqdBC_BbBszgd25EXUP-RZpi3FlBAyz6DHaTNIyPowgcvjoR1HD9wFRAR4f0GSsXKXViiIc_NRD4xLgH5nr2ptzy94HwmFPy-iVuANc8KwzAG8YNgnM6amO1ZIsrfid9gvaj8oAJK06toGxBv5QFdEqD8rDk_03Z8Ab4zVgOQ8K18mtNGX_C2SIYMvBaqMFweiHmL2YAiw8XBjGmw00WcbUoIl0Qfr754OEZp2-pOTAPtfJn1clYd3QgkoSeAIe4ORT0ofCUQoKJUWYrjEIcjJVIWG4NO4PH8gBe65Rg-BpmRKy2iyY3xby4DkSJ2u6fBkBlG_tig-UjYqTelmUnjRNQMoP1JqcxPIlDNr2u85aRnRRGYjswxKKbYjZBlNp8H7J8MABdhicBnA6CyDWB3_RJPO-IXGc4xh16ZUp9gyh9GFo6nsMJGJcG43hXXANG6EFGWWAcTTGpkqDup548BjPs99Tx6WphqzLZfRiapXi-JbywkvZUcvAy1-w2ZiJnyQtezmbOgT3DK3Y_W8wY16g96BSTsMB6xCCp70UiINYIJ92I8Zu5MonuOI0RLaarZEZ8r1gG4fZCNbC0DHggwWWYIUNurpa8FkxKlSvS4VLMS4lgU8Vt-DEUO0CS4IWXrMwoNIi_IG-DIxloxlUOcEjJfBrcHnJsYANpD8F7GQa2bZ4gSjl11E1oBUNOMi6oGIDpPONikAnqOJ8O5lLJ8jkQhQBTvX2pvt1VdbyEHyke-z2U-GV6yDwK8emQOjk1F75wxlguGlIlRwkjzrBoCJjvCIZpupeJ5IS-kOpZa_k1qWdC8TJP4zRdphpwwTwA9jlH1LdoUizFIDO5w2QMAaKpNGx76zoMy8nAzSTPdwV6iGGizc_oSvqZHNPTt3M0eLhqGI5mdoJjM1igvFpOjkZ31hJQbH-OQzdLsVQlS6MMJgvK29Ry2kUOPzrU_sxnMvR0FZ33qzh-peZ06qWIyizHCdL8omxY0PnNXEyaJkvXcETW-_mtUTuE96m4_bv6vXWo-5PujT_r_p1T379C-ff-9zsUJBDV_8cf7Tv--ytP4AaJYZ78BZMxcwLoEDlg2m0g0anBId0VxSCPo5qg_xEQJCqik1ktQc3KQ4kRAoIQTObZKiWDOYrLkq768TEQXuW8-4uA2yXK1mJb6WWoalFd83AW12c-wN00pfCvJJ50SQ4CQWsGx3XWD5fjFTFZSBHsQwlJIwP3kLomZ8rJh2Vhoq8kfwm80M9gKosNiKjunLTreGxVdORy0sits0ngwSR9LPtFH5b0-eqfoOfz0OwVKAmbJKPBjH9Sz9TaIPuhxJzaOyTVVTqkQqjrbLWXVaHO0pwO7bAXTfFalTTiaa4ml0L1YHdD_t2nBFQXIVypviazQ9WzVcDylAdj7FdCT6pUR-CWa7JxsqieQd7uzKBZkVS1GxKvM69czNhGGGZDmN6Sq5O8h5M9dTTcZeuGPlWhkobpRrC4kMVoajVciL_OUn6RMsNkCeg78Z6PTb9N5MoI7Bo2y6Z1iXFWAUH7ME6T0kV37AKsI43QUMP4765_OeNj6sdpz1ve9Ct5OYdnog-ziGQOM6XT91PoMEOUIXMcYzBz1J_jUDHMqm-B5FVqQsDzOqSy_pg4qmohFxkhFv-qgUEJFDnGMWn315bobwWdK9wd58hG-21VavuHPDCZy74_trc6qtT_ooH0OU7FhjxcF6BZ-wOoTL-LoFj3qk_LEtO6KBMZqX2ox9mP3IXve_whz8aQzWzOiQHbBC69FxW3y6lnU3Gn3LPk7-yMykhTwa5HcVb5uNt2Uzpw84FNjWBWTFNPmW-48SQrAipDChgmO1P3cG3rfNmcPUwesuCWae-HQrY5J5uk4a6VXLBrXPl1F3S50_UOJMyuvmYIt48_deZldnBsY5RR74v4pZJGL5cmevMMFr0P9YI6yWy5a_zWnJDDzn_YVfbWK7Woo14uLTiU33GUWlae_0tuujqIjd2YilsUZgg1an2HxDXehzpJKuHj22mJ_uwIWkuRNOT7bDI4NIsPnYOqr-TWMHF1KjwNBZveotjLND_F6jzCsocedpCdjl0Ze7i7N9TU8M50_G1EX0NGfUyterzgUAoybPPBY79tFLacAdnq4fqtqVPUrsPpEf4Z09QmEPVZ069W_MzJlJtPw4wsJztNSe5w9R7qmJvSx2pf-2a4W1ntWwaet1L9X6dxlrEGOwlX-vTBxF3XllomxtMqcDIuvTxgf8UzKtZnq4Aer5mDllYR39zRG0VDNG5lFFbDVPA_TlTYnEJ2pWBWk78so860Su_fO5GXGZKVnhpL5UxHPaZT7HgMwrCjc1rpjU2d1SrNwvsr5ZPTXlXo0eWQYXoNDjO_K2VQWXG-SkuvlMooJPZC3neY8-UfXWtS2ZKts_Ee9XeOTfjYDSu_IcH94owS8WH1qtnMsszBjZlPN0HX32-K4MNLHSFlWZlXQVjZI5Mfe-_-0n6vHWqtvUXjn35Ew4__5lQl2LEe7jeWCO50FE55yyu3BzPfLt2Nbm8etUh39ozJbHEstYVe71a_t9ja4WGYfw_jybVc_fBGniEOmY7Ddarg39iM6qIT5w76ulKhw120r6p5HJfF15VH9A8Vx1mZh1IJL-UO-RfdvF9ni2ELfH74xVYnCNGizOecNnb7VdP8q6CHfuAyIY3yBf2dUKX7Fb_37rxiVZls9xPnfXl4-zXSlVrrD32FhVUkPoqHeimKEUSsOEw8u0naOM67j6utZWqI5qTG1PhTSRdLjspPxy91-zx1il1DTRbXgZY8_EewUdFptdf2tZepIA8h9TZlLdd_kI1KycdbrqfJ87NSZZP3OzABcCvYL8fDp_y-6F6l8yh1SxdKHcJksg2gsRzDVR2TcUInXYLvLnJZDhJd3ZzQ37Fcjr_OIo9w95YjWqplIrpGbX_b6xS00vdwBHf-NiTE-ahaaYPQ-7i2UPy5VL6sPqIUqrO78tlfg6e_n4lvq8DyF5Q_KOq_SFRn6vxxJjlsGK7zmx2uYgjDMme03_-4EHV8GZxm3Z-jVYupu6qq9pS46FVIW5-EtxXDD_fYDPNRsNeG8X8HR9HZ",
+    "synch_version": 1
+  },
+  "bars": [
+    {
+      "start": 0.93591,
+      "duration": 2.09768,
+      "confidence": 0.038
+    },
+    {
+      "start": 3.03359,
+      "duration": 2.10018,
+      "confidence": 0.042
+    },
+    {
+      "start": 5.13377,
+      "duration": 2.09666,
+      "confidence": 0.151
+    },
+    {
+      "start": 7.23043,
+      "duration": 2.09573,
+      "confidence": 0.111
+    },
+    {
+      "start": 9.32616,
+      "duration": 2.09737,
+      "confidence": 0.031
+    },
+    {
+      "start": 11.42353,
+      "duration": 2.10064,
+      "confidence": 0.088
+    },
+    {
+      "start": 13.52417,
+      "duration": 2.09736,
+      "confidence": 0.13
+    },
+    {
+      "start": 15.62153,
+      "duration": 2.0983,
+      "confidence": 0.053
+    },
+    {
+      "start": 17.71983,
+      "duration": 2.10064,
+      "confidence": 0.142
+    },
+    {
+      "start": 19.82047,
+      "duration": 2.09853,
+      "confidence": 0.194
+    },
+    {
+      "start": 21.91901,
+      "duration": 2.09455,
+      "confidence": 0.03
+    },
+    {
+      "start": 24.01356,
+      "duration": 2.09455,
+      "confidence": 0
+    }
+  ],
+  "beats": [
+    {
+      "start": 0.4153,
+      "duration": 0.52061,
+      "confidence": 0.971
+    },
+    {
+      "start": 0.93591,
+      "duration": 0.52335,
+      "confidence": 0.593
+    },
+    {
+      "start": 1.45926,
+      "duration": 0.5253,
+      "confidence": 0.637
+    },
+    {
+      "start": 1.98455,
+      "duration": 0.52452,
+      "confidence": 0.706
+    },
+    {
+      "start": 2.50907,
+      "duration": 0.52452,
+      "confidence": 0.869
+    },
+    {
+      "start": 3.03359,
+      "duration": 0.52545,
+      "confidence": 0.801
+    },
+    {
+      "start": 3.55904,
+      "duration": 0.52592,
+      "confidence": 0.75
+    },
+    {
+      "start": 4.08497,
+      "duration": 0.52475,
+      "confidence": 0.728
+    },
+    {
+      "start": 4.60972,
+      "duration": 0.52405,
+      "confidence": 0.795
+    },
+    {
+      "start": 5.13377,
+      "duration": 0.52428,
+      "confidence": 0.702
+    },
+    {
+      "start": 5.65805,
+      "duration": 0.52428,
+      "confidence": 0.732
+    },
+    {
+      "start": 6.18233,
+      "duration": 0.52405,
+      "confidence": 0.746
+    },
+    {
+      "start": 6.70638,
+      "duration": 0.52405,
+      "confidence": 0.784
+    },
+    {
+      "start": 7.23043,
+      "duration": 0.52405,
+      "confidence": 0.78
+    },
+    {
+      "start": 7.75448,
+      "duration": 0.52335,
+      "confidence": 0.864
+    },
+    {
+      "start": 8.27783,
+      "duration": 0.52358,
+      "confidence": 0.689
+    },
+    {
+      "start": 8.80141,
+      "duration": 0.52475,
+      "confidence": 0.709
+    },
+    {
+      "start": 9.32616,
+      "duration": 0.52499,
+      "confidence": 0.575
+    },
+    {
+      "start": 9.85115,
+      "duration": 0.52405,
+      "confidence": 0.622
+    },
+    {
+      "start": 10.37519,
+      "duration": 0.52381,
+      "confidence": 0.724
+    },
+    {
+      "start": 10.89901,
+      "duration": 0.52452,
+      "confidence": 0.847
+    },
+    {
+      "start": 11.42353,
+      "duration": 0.52569,
+      "confidence": 0.763
+    },
+    {
+      "start": 11.94922,
+      "duration": 0.52569,
+      "confidence": 0.732
+    },
+    {
+      "start": 12.4749,
+      "duration": 0.52452,
+      "confidence": 0.713
+    },
+    {
+      "start": 12.99942,
+      "duration": 0.52475,
+      "confidence": 0.817
+    },
+    {
+      "start": 13.52417,
+      "duration": 0.52498,
+      "confidence": 0.729
+    },
+    {
+      "start": 14.04916,
+      "duration": 0.52428,
+      "confidence": 0.745
+    },
+    {
+      "start": 14.57344,
+      "duration": 0.52381,
+      "confidence": 0.738
+    },
+    {
+      "start": 15.09725,
+      "duration": 0.52428,
+      "confidence": 0.76
+    },
+    {
+      "start": 15.62153,
+      "duration": 0.52522,
+      "confidence": 0.724
+    },
+    {
+      "start": 16.14675,
+      "duration": 0.52498,
+      "confidence": 0.845
+    },
+    {
+      "start": 16.67174,
+      "duration": 0.52358,
+      "confidence": 0.701
+    },
+    {
+      "start": 17.19532,
+      "duration": 0.52452,
+      "confidence": 0.799
+    },
+    {
+      "start": 17.71983,
+      "duration": 0.52662,
+      "confidence": 0.68
+    },
+    {
+      "start": 18.24646,
+      "duration": 0.52592,
+      "confidence": 0.63
+    },
+    {
+      "start": 18.77238,
+      "duration": 0.52428,
+      "confidence": 0.565
+    },
+    {
+      "start": 19.29666,
+      "duration": 0.52381,
+      "confidence": 0.785
+    },
+    {
+      "start": 19.82047,
+      "duration": 0.52522,
+      "confidence": 0.703
+    },
+    {
+      "start": 20.34569,
+      "duration": 0.52616,
+      "confidence": 0.67
+    },
+    {
+      "start": 20.87185,
+      "duration": 0.52452,
+      "confidence": 0.555
+    },
+    {
+      "start": 21.39636,
+      "duration": 0.52264,
+      "confidence": 0.629
+    },
+    {
+      "start": 21.91901,
+      "duration": 0.52358,
+      "confidence": 0.63
+    },
+    {
+      "start": 22.44259,
+      "duration": 0.52475,
+      "confidence": 0.564
+    },
+    {
+      "start": 22.96734,
+      "duration": 0.52358,
+      "confidence": 0.496
+    },
+    {
+      "start": 23.49091,
+      "duration": 0.52264,
+      "confidence": 0.775
+    },
+    {
+      "start": 24.01356,
+      "duration": 0.52335,
+      "confidence": 0.695
+    },
+    {
+      "start": 24.5369,
+      "duration": 0.52498,
+      "confidence": 0.653
+    },
+    {
+      "start": 25.06189,
+      "duration": 0.52613,
+      "confidence": 0.549
+    },
+    {
+      "start": 25.58802,
+      "duration": 0.52441,
+      "confidence": 0.609
+    },
+    {
+      "start": 26.11243,
+      "duration": 0.52378,
+      "confidence": 0.541
+    },
+    {
+      "start": 26.63621,
+      "duration": 0.52539,
+      "confidence": 0.452
+    },
+    {
+      "start": 27.1616,
+      "duration": 0.51933,
+      "confidence": 0.696
+    },
+    {
+      "start": 27.68092,
+      "duration": 0.51933,
+      "confidence": 0.137
+    }
+  ],
+  "tatums": [
+    {
+      "start": 0.4153,
+      "duration": 0.26031,
+      "confidence": 0.971
+    },
+    {
+      "start": 0.6756,
+      "duration": 0.26031,
+      "confidence": 0.971
+    },
+    {
+      "start": 0.93591,
+      "duration": 0.26167,
+      "confidence": 0.593
+    },
+    {
+      "start": 1.19758,
+      "duration": 0.26167,
+      "confidence": 0.593
+    },
+    {
+      "start": 1.45926,
+      "duration": 0.26265,
+      "confidence": 0.637
+    },
+    {
+      "start": 1.72191,
+      "duration": 0.26265,
+      "confidence": 0.637
+    },
+    {
+      "start": 1.98455,
+      "duration": 0.26226,
+      "confidence": 0.706
+    },
+    {
+      "start": 2.24681,
+      "duration": 0.26226,
+      "confidence": 0.706
+    },
+    {
+      "start": 2.50907,
+      "duration": 0.26226,
+      "confidence": 0.869
+    },
+    {
+      "start": 2.77133,
+      "duration": 0.26226,
+      "confidence": 0.869
+    },
+    {
+      "start": 3.03359,
+      "duration": 0.26273,
+      "confidence": 0.801
+    },
+    {
+      "start": 3.29632,
+      "duration": 0.26273,
+      "confidence": 0.801
+    },
+    {
+      "start": 3.55904,
+      "duration": 0.26296,
+      "confidence": 0.75
+    },
+    {
+      "start": 3.82201,
+      "duration": 0.26296,
+      "confidence": 0.75
+    },
+    {
+      "start": 4.08497,
+      "duration": 0.26238,
+      "confidence": 0.728
+    },
+    {
+      "start": 4.34734,
+      "duration": 0.26238,
+      "confidence": 0.728
+    },
+    {
+      "start": 4.60972,
+      "duration": 0.26202,
+      "confidence": 0.795
+    },
+    {
+      "start": 4.87174,
+      "duration": 0.26202,
+      "confidence": 0.795
+    },
+    {
+      "start": 5.13377,
+      "duration": 0.26214,
+      "confidence": 0.702
+    },
+    {
+      "start": 5.39591,
+      "duration": 0.26214,
+      "confidence": 0.702
+    },
+    {
+      "start": 5.65805,
+      "duration": 0.26214,
+      "confidence": 0.732
+    },
+    {
+      "start": 5.92019,
+      "duration": 0.26214,
+      "confidence": 0.732
+    },
+    {
+      "start": 6.18233,
+      "duration": 0.26202,
+      "confidence": 0.746
+    },
+    {
+      "start": 6.44436,
+      "duration": 0.26202,
+      "confidence": 0.746
+    },
+    {
+      "start": 6.70638,
+      "duration": 0.26202,
+      "confidence": 0.784
+    },
+    {
+      "start": 6.96841,
+      "duration": 0.26202,
+      "confidence": 0.784
+    },
+    {
+      "start": 7.23043,
+      "duration": 0.26202,
+      "confidence": 0.78
+    },
+    {
+      "start": 7.49246,
+      "duration": 0.26202,
+      "confidence": 0.78
+    },
+    {
+      "start": 7.75448,
+      "duration": 0.26167,
+      "confidence": 0.864
+    },
+    {
+      "start": 8.01615,
+      "duration": 0.26167,
+      "confidence": 0.864
+    },
+    {
+      "start": 8.27783,
+      "duration": 0.26179,
+      "confidence": 0.689
+    },
+    {
+      "start": 8.53962,
+      "duration": 0.26179,
+      "confidence": 0.689
+    },
+    {
+      "start": 8.80141,
+      "duration": 0.26238,
+      "confidence": 0.709
+    },
+    {
+      "start": 9.06378,
+      "duration": 0.26238,
+      "confidence": 0.709
+    },
+    {
+      "start": 9.32616,
+      "duration": 0.26249,
+      "confidence": 0.575
+    },
+    {
+      "start": 9.58865,
+      "duration": 0.26249,
+      "confidence": 0.575
+    },
+    {
+      "start": 9.85115,
+      "duration": 0.26202,
+      "confidence": 0.622
+    },
+    {
+      "start": 10.11317,
+      "duration": 0.26202,
+      "confidence": 0.622
+    },
+    {
+      "start": 10.37519,
+      "duration": 0.26191,
+      "confidence": 0.724
+    },
+    {
+      "start": 10.6371,
+      "duration": 0.26191,
+      "confidence": 0.724
+    },
+    {
+      "start": 10.89901,
+      "duration": 0.26226,
+      "confidence": 0.847
+    },
+    {
+      "start": 11.16127,
+      "duration": 0.26226,
+      "confidence": 0.847
+    },
+    {
+      "start": 11.42353,
+      "duration": 0.26284,
+      "confidence": 0.763
+    },
+    {
+      "start": 11.68637,
+      "duration": 0.26284,
+      "confidence": 0.763
+    },
+    {
+      "start": 11.94922,
+      "duration": 0.26284,
+      "confidence": 0.732
+    },
+    {
+      "start": 12.21206,
+      "duration": 0.26284,
+      "confidence": 0.732
+    },
+    {
+      "start": 12.4749,
+      "duration": 0.26226,
+      "confidence": 0.713
+    },
+    {
+      "start": 12.73716,
+      "duration": 0.26226,
+      "confidence": 0.713
+    },
+    {
+      "start": 12.99942,
+      "duration": 0.26238,
+      "confidence": 0.817
+    },
+    {
+      "start": 13.2618,
+      "duration": 0.26238,
+      "confidence": 0.817
+    },
+    {
+      "start": 13.52417,
+      "duration": 0.26249,
+      "confidence": 0.729
+    },
+    {
+      "start": 13.78666,
+      "duration": 0.26249,
+      "confidence": 0.729
+    },
+    {
+      "start": 14.04916,
+      "duration": 0.26214,
+      "confidence": 0.745
+    },
+    {
+      "start": 14.3113,
+      "duration": 0.26214,
+      "confidence": 0.745
+    },
+    {
+      "start": 14.57344,
+      "duration": 0.26191,
+      "confidence": 0.738
+    },
+    {
+      "start": 14.83534,
+      "duration": 0.26191,
+      "confidence": 0.738
+    },
+    {
+      "start": 15.09725,
+      "duration": 0.26214,
+      "confidence": 0.76
+    },
+    {
+      "start": 15.35939,
+      "duration": 0.26214,
+      "confidence": 0.76
+    },
+    {
+      "start": 15.62153,
+      "duration": 0.26261,
+      "confidence": 0.724
+    },
+    {
+      "start": 15.88414,
+      "duration": 0.26261,
+      "confidence": 0.724
+    },
+    {
+      "start": 16.14675,
+      "duration": 0.26249,
+      "confidence": 0.845
+    },
+    {
+      "start": 16.40924,
+      "duration": 0.26249,
+      "confidence": 0.845
+    },
+    {
+      "start": 16.67174,
+      "duration": 0.26179,
+      "confidence": 0.701
+    },
+    {
+      "start": 16.93353,
+      "duration": 0.26179,
+      "confidence": 0.701
+    },
+    {
+      "start": 17.19532,
+      "duration": 0.26226,
+      "confidence": 0.799
+    },
+    {
+      "start": 17.45757,
+      "duration": 0.26226,
+      "confidence": 0.799
+    },
+    {
+      "start": 17.71983,
+      "duration": 0.26331,
+      "confidence": 0.68
+    },
+    {
+      "start": 17.98314,
+      "duration": 0.26331,
+      "confidence": 0.68
+    },
+    {
+      "start": 18.24646,
+      "duration": 0.26296,
+      "confidence": 0.63
+    },
+    {
+      "start": 18.50942,
+      "duration": 0.26296,
+      "confidence": 0.63
+    },
+    {
+      "start": 18.77238,
+      "duration": 0.26214,
+      "confidence": 0.565
+    },
+    {
+      "start": 19.03452,
+      "duration": 0.26214,
+      "confidence": 0.565
+    },
+    {
+      "start": 19.29666,
+      "duration": 0.26191,
+      "confidence": 0.785
+    },
+    {
+      "start": 19.55857,
+      "duration": 0.26191,
+      "confidence": 0.785
+    },
+    {
+      "start": 19.82047,
+      "duration": 0.26261,
+      "confidence": 0.703
+    },
+    {
+      "start": 20.08308,
+      "duration": 0.26261,
+      "confidence": 0.703
+    },
+    {
+      "start": 20.34569,
+      "duration": 0.26308,
+      "confidence": 0.67
+    },
+    {
+      "start": 20.60877,
+      "duration": 0.26308,
+      "confidence": 0.67
+    },
+    {
+      "start": 20.87185,
+      "duration": 0.26226,
+      "confidence": 0.555
+    },
+    {
+      "start": 21.13411,
+      "duration": 0.26226,
+      "confidence": 0.555
+    },
+    {
+      "start": 21.39636,
+      "duration": 0.26132,
+      "confidence": 0.629
+    },
+    {
+      "start": 21.65768,
+      "duration": 0.26132,
+      "confidence": 0.629
+    },
+    {
+      "start": 21.91901,
+      "duration": 0.26179,
+      "confidence": 0.63
+    },
+    {
+      "start": 22.1808,
+      "duration": 0.26179,
+      "confidence": 0.63
+    },
+    {
+      "start": 22.44259,
+      "duration": 0.26238,
+      "confidence": 0.564
+    },
+    {
+      "start": 22.70496,
+      "duration": 0.26238,
+      "confidence": 0.564
+    },
+    {
+      "start": 22.96734,
+      "duration": 0.26179,
+      "confidence": 0.496
+    },
+    {
+      "start": 23.22913,
+      "duration": 0.26179,
+      "confidence": 0.496
+    },
+    {
+      "start": 23.49091,
+      "duration": 0.26132,
+      "confidence": 0.775
+    },
+    {
+      "start": 23.75224,
+      "duration": 0.26132,
+      "confidence": 0.775
+    },
+    {
+      "start": 24.01356,
+      "duration": 0.26167,
+      "confidence": 0.695
+    },
+    {
+      "start": 24.27523,
+      "duration": 0.26167,
+      "confidence": 0.695
+    },
+    {
+      "start": 24.5369,
+      "duration": 0.26249,
+      "confidence": 0.653
+    },
+    {
+      "start": 24.79939,
+      "duration": 0.26249,
+      "confidence": 0.653
+    },
+    {
+      "start": 25.06189,
+      "duration": 0.26306,
+      "confidence": 0.549
+    },
+    {
+      "start": 25.32495,
+      "duration": 0.26306,
+      "confidence": 0.549
+    },
+    {
+      "start": 25.58802,
+      "duration": 0.2622,
+      "confidence": 0.609
+    },
+    {
+      "start": 25.85022,
+      "duration": 0.2622,
+      "confidence": 0.609
+    },
+    {
+      "start": 26.11243,
+      "duration": 0.26189,
+      "confidence": 0.541
+    },
+    {
+      "start": 26.37432,
+      "duration": 0.26189,
+      "confidence": 0.541
+    },
+    {
+      "start": 26.63621,
+      "duration": 0.26269,
+      "confidence": 0.452
+    },
+    {
+      "start": 26.8989,
+      "duration": 0.26269,
+      "confidence": 0.452
+    },
+    {
+      "start": 27.1616,
+      "duration": 0.25966,
+      "confidence": 0.696
+    },
+    {
+      "start": 27.42126,
+      "duration": 0.25966,
+      "confidence": 0.696
+    },
+    {
+      "start": 27.68092,
+      "duration": 0.25966,
+      "confidence": 0.137
+    },
+    {
+      "start": 27.94059,
+      "duration": 0.25966,
+      "confidence": 0.137
+    }
+  ],
+  "sections": [
+    {
+      "start": 0,
+      "duration": 16.67174,
+      "confidence": 1
+    },
+    {
+      "start": 16.67174,
+      "duration": 12.8616,
+      "confidence": 0.494
+    }
+  ],
+  "segments": [
+    {
+      "start": 0,
+      "duration": 0.40658,
+      "confidence": 0,
+      "loudness_start": -60,
+      "loudness_max_time": 0,
+      "loudness_max": -60,
+      "pitches": [
+        1,
+        0.969,
+        0.904,
+        0.77,
+        0.674,
+        0.59,
+        0.493,
+        0.472,
+        0.428,
+        0.395,
+        0.405,
+        0.419
+      ],
+      "timbre": [
+        0,
+        171.13,
+        9.469,
+        -28.48,
+        57.491,
+        -50.067,
+        14.833,
+        5.359,
+        -27.228,
+        0.973,
+        -10.64,
+        -7.228
+      ]
+    },
+    {
+      "start": 0.40658,
+      "duration": 0.24422,
+      "confidence": 1,
+      "loudness_start": -60,
+      "loudness_max_time": 0.01858,
+      "loudness_max": -11.646,
+      "pitches": [
+        0.497,
+        0.32,
+        0.071,
+        0.166,
+        0.511,
+        1,
+        0.211,
+        0.123,
+        0.125,
+        0.098,
+        0.107,
+        0.101
+      ],
+      "timbre": [
+        43.924,
+        -78.574,
+        -32.827,
+        4.848,
+        2.278,
+        -43.913,
+        -17.101,
+        1.914,
+        -27.474,
+        18.438,
+        14.864,
+        -5.151
+      ]
+    },
+    {
+      "start": 0.65079,
+      "duration": 0.15052,
+      "confidence": 0.836,
+      "loudness_start": -21.678,
+      "loudness_max_time": 0.02941,
+      "loudness_max": -9.891,
+      "pitches": [
+        1,
+        0.464,
+        0.427,
+        0.43,
+        0.372,
+        0.359,
+        0.332,
+        0.363,
+        0.235,
+        0.227,
+        0.115,
+        0.033
+      ],
+      "timbre": [
+        42.486,
+        82.579,
+        56.988,
+        90.294,
+        56.016,
+        20.618,
+        -12.607,
+        -82.621,
+        -3.244,
+        -30.372,
+        16.971,
+        -20.67
+      ]
+    },
+    {
+      "start": 0.80132,
+      "duration": 0.23664,
+      "confidence": 0.863,
+      "loudness_start": -22.142,
+      "loudness_max_time": 0.01942,
+      "loudness_max": -11.361,
+      "pitches": [
+        0.109,
+        0.109,
+        0.046,
+        0.089,
+        1,
+        0.569,
+        0.227,
+        0.158,
+        0.139,
+        0.253,
+        0.309,
+        0.081
+      ],
+      "timbre": [
+        43.698,
+        -88.892,
+        13.756,
+        25.955,
+        37.564,
+        -53.921,
+        -38.868,
+        25.586,
+        -27.224,
+        2.599,
+        23.937,
+        -7.226
+      ]
+    },
+    {
+      "start": 1.03796,
+      "duration": 0.13383,
+      "confidence": 0.969,
+      "loudness_start": -23.169,
+      "loudness_max_time": 0.03623,
+      "loudness_max": -8.8,
+      "pitches": [
+        1,
+        0.593,
+        0.49,
+        0.511,
+        0.484,
+        0.401,
+        0.359,
+        0.354,
+        0.289,
+        0.84,
+        0.274,
+        0.058
+      ],
+      "timbre": [
+        43.494,
+        52.032,
+        49.298,
+        57.741,
+        56.314,
+        53.096,
+        2.495,
+        -65.039,
+        -15.656,
+        -56.777,
+        9.814,
+        -6.661
+      ]
+    },
+    {
+      "start": 1.17179,
+      "duration": 0.21655,
+      "confidence": 0.788,
+      "loudness_start": -21.394,
+      "loudness_max_time": 0.03813,
+      "loudness_max": -10.002,
+      "pitches": [
+        1,
+        0.537,
+        0.086,
+        0.097,
+        0.657,
+        0.758,
+        0.338,
+        0.242,
+        0.188,
+        0.126,
+        0.097,
+        0.099
+      ],
+      "timbre": [
+        44.468,
+        -103.549,
+        -4.654,
+        10.844,
+        35.036,
+        -5.345,
+        3.42,
+        1.99,
+        -40.429,
+        21.595,
+        27.137,
+        -13.374
+      ]
+    },
+    {
+      "start": 1.38834,
+      "duration": 0.44667,
+      "confidence": 1,
+      "loudness_start": -20.76,
+      "loudness_max_time": 0.05987,
+      "loudness_max": -4.378,
+      "pitches": [
+        0.14,
+        0.076,
+        0.094,
+        0.222,
+        0.54,
+        1,
+        0.249,
+        0.137,
+        0.185,
+        0.162,
+        0.205,
+        0.119
+      ],
+      "timbre": [
+        43.433,
+        -42.389,
+        26.681,
+        11.684,
+        25.987,
+        23.952,
+        18.823,
+        2.406,
+        -30.567,
+        -31.632,
+        -30.278,
+        5.829
+      ]
+    },
+    {
+      "start": 1.83501,
+      "duration": 0.25986,
+      "confidence": 1,
+      "loudness_start": -22.982,
+      "loudness_max_time": 0.02891,
+      "loudness_max": -3.012,
+      "pitches": [
+        0.158,
+        0.117,
+        0.076,
+        0.112,
+        1,
+        0.754,
+        0.353,
+        0.251,
+        0.23,
+        0.352,
+        0.127,
+        0.094
+      ],
+      "timbre": [
+        46.333,
+        -13.226,
+        -21.339,
+        104.511,
+        56.033,
+        22.59,
+        -23.901,
+        -54.106,
+        -20.409,
+        10.399,
+        61.629,
+        -8.188
+      ]
+    },
+    {
+      "start": 2.09488,
+      "duration": 0.12803,
+      "confidence": 0.233,
+      "loudness_start": -23.054,
+      "loudness_max_time": 0.0293,
+      "loudness_max": -20.121,
+      "pitches": [
+        0.133,
+        0.002,
+        0.002,
+        0.003,
+        0.032,
+        1,
+        0.056,
+        0.003,
+        0.004,
+        0.036,
+        0.004,
+        0.002
+      ],
+      "timbre": [
+        37.973,
+        -83.283,
+        80.26,
+        21.882,
+        55.675,
+        -29.55,
+        2.078,
+        -33.865,
+        -42.352,
+        -23.495,
+        13.213,
+        -3.59
+      ]
+    },
+    {
+      "start": 2.2229,
+      "duration": 0.26653,
+      "confidence": 1,
+      "loudness_start": -23.425,
+      "loudness_max_time": 0.03387,
+      "loudness_max": -3.678,
+      "pitches": [
+        0.15,
+        0.167,
+        0.073,
+        0.535,
+        1,
+        0.736,
+        0.397,
+        0.284,
+        0.219,
+        0.139,
+        0.184,
+        0.102
+      ],
+      "timbre": [
+        45.348,
+        -33.182,
+        -24.194,
+        97.543,
+        59.008,
+        44.354,
+        -8.199,
+        -59.476,
+        -22.037,
+        -12.367,
+        48.272,
+        -15.133
+      ]
+    },
+    {
+      "start": 2.48943,
+      "duration": 0.26245,
+      "confidence": 1,
+      "loudness_start": -24.311,
+      "loudness_max_time": 0.03031,
+      "loudness_max": -2.943,
+      "pitches": [
+        0.338,
+        0.271,
+        0.135,
+        0.314,
+        0.491,
+        1,
+        0.248,
+        0.137,
+        0.137,
+        0.113,
+        0.126,
+        0.108
+      ],
+      "timbre": [
+        47.105,
+        -44.733,
+        -31.238,
+        90.603,
+        7.353,
+        27.835,
+        22.146,
+        -26.766,
+        -32.563,
+        -9.509,
+        19.753,
+        7.208
+      ]
+    },
+    {
+      "start": 2.75188,
+      "duration": 0.13873,
+      "confidence": 1,
+      "loudness_start": -23.36,
+      "loudness_max_time": 0.02599,
+      "loudness_max": -6.991,
+      "pitches": [
+        1,
+        0.312,
+        0.247,
+        0.247,
+        0.242,
+        0.21,
+        0.193,
+        0.301,
+        0.139,
+        0.134,
+        0.069,
+        0.058
+      ],
+      "timbre": [
+        44.025,
+        8.442,
+        -4.135,
+        107.944,
+        58.388,
+        22.347,
+        7.061,
+        -97.298,
+        -8.384,
+        -19.472,
+        17.665,
+        -1.181
+      ]
+    },
+    {
+      "start": 2.89061,
+      "duration": 0.20902,
+      "confidence": 0.854,
+      "loudness_start": -23.791,
+      "loudness_max_time": 0.02766,
+      "loudness_max": -11.123,
+      "pitches": [
+        0.542,
+        0.178,
+        0.062,
+        0.111,
+        1,
+        0.683,
+        0.332,
+        0.277,
+        0.184,
+        0.117,
+        0.091,
+        0.088
+      ],
+      "timbre": [
+        43.682,
+        -108.904,
+        -7.094,
+        14.779,
+        53.146,
+        -40.395,
+        -15.566,
+        23.365,
+        -31.439,
+        20.225,
+        54.551,
+        -11.027
+      ]
+    },
+    {
+      "start": 3.09964,
+      "duration": 0.17433,
+      "confidence": 0.899,
+      "loudness_start": -21.336,
+      "loudness_max_time": 0.07277,
+      "loudness_max": -8.072,
+      "pitches": [
+        0.662,
+        0.34,
+        0.286,
+        1,
+        0.357,
+        0.293,
+        0.267,
+        0.278,
+        0.177,
+        0.182,
+        0.303,
+        0.069
+      ],
+      "timbre": [
+        42.165,
+        -8.173,
+        68.936,
+        -27.733,
+        51.264,
+        11.287,
+        -5.94,
+        11.091,
+        -4.002,
+        -44.865,
+        -47.302,
+        13.948
+      ]
+    },
+    {
+      "start": 3.27397,
+      "duration": 0.21465,
+      "confidence": 0.842,
+      "loudness_start": -22.482,
+      "loudness_max_time": 0.03482,
+      "loudness_max": -9.943,
+      "pitches": [
+        1,
+        0.52,
+        0.077,
+        0.088,
+        0.675,
+        0.729,
+        0.306,
+        0.219,
+        0.173,
+        0.115,
+        0.088,
+        0.088
+      ],
+      "timbre": [
+        44.285,
+        -108.091,
+        -12.71,
+        15.18,
+        40.468,
+        -5.821,
+        4.212,
+        6.493,
+        -38.275,
+        18.402,
+        40.387,
+        -20.759
+      ]
+    },
+    {
+      "start": 3.48862,
+      "duration": 0.45234,
+      "confidence": 0.977,
+      "loudness_start": -20.76,
+      "loudness_max_time": 0.07332,
+      "loudness_max": -3.339,
+      "pitches": [
+        0.145,
+        0.077,
+        0.093,
+        0.216,
+        0.55,
+        1,
+        0.243,
+        0.135,
+        0.183,
+        0.246,
+        0.128,
+        0.117
+      ],
+      "timbre": [
+        43.282,
+        -35.917,
+        16.452,
+        16.03,
+        26.69,
+        -19.143,
+        8.538,
+        -15.163,
+        -30.536,
+        5.66,
+        -22.541,
+        11.39
+      ]
+    },
+    {
+      "start": 3.94095,
+      "duration": 0.37741,
+      "confidence": 1,
+      "loudness_start": -23.039,
+      "loudness_max_time": 0.02125,
+      "loudness_max": -3.151,
+      "pitches": [
+        0.871,
+        0.174,
+        0.154,
+        0.185,
+        1,
+        0.711,
+        0.336,
+        0.3,
+        0.226,
+        0.264,
+        0.468,
+        0.214
+      ],
+      "timbre": [
+        46.884,
+        8.3,
+        0.111,
+        109.527,
+        42.059,
+        -56.361,
+        -52.396,
+        -32.035,
+        -24.783,
+        45.734,
+        32.257,
+        -1.796
+      ]
+    },
+    {
+      "start": 4.31837,
+      "duration": 0.25696,
+      "confidence": 1,
+      "loudness_start": -23.072,
+      "loudness_max_time": 0.03598,
+      "loudness_max": -3.303,
+      "pitches": [
+        0.329,
+        0.194,
+        0.089,
+        0.117,
+        1,
+        0.792,
+        0.434,
+        0.299,
+        0.237,
+        0.153,
+        0.195,
+        0.115
+      ],
+      "timbre": [
+        45.328,
+        11.111,
+        0.826,
+        91.891,
+        64.666,
+        47.493,
+        -26.031,
+        -50.016,
+        -20.448,
+        4.277,
+        49.649,
+        -16.484
+      ]
+    },
+    {
+      "start": 4.57533,
+      "duration": 0.27125,
+      "confidence": 0.913,
+      "loudness_start": -23.277,
+      "loudness_max_time": 0.03836,
+      "loudness_max": -12.093,
+      "pitches": [
+        0.332,
+        0.266,
+        0.063,
+        0.2,
+        0.467,
+        1,
+        0.273,
+        0.148,
+        0.146,
+        0.152,
+        0.112,
+        0.117
+      ],
+      "timbre": [
+        43.259,
+        -58.316,
+        -11.912,
+        -2.903,
+        21.621,
+        9.426,
+        8.596,
+        -7.964,
+        -19.733,
+        -13.028,
+        15.186,
+        -0.475
+      ]
+    },
+    {
+      "start": 4.84658,
+      "duration": 0.13977,
+      "confidence": 0.91,
+      "loudness_start": -21.724,
+      "loudness_max_time": 0.02651,
+      "loudness_max": -8.448,
+      "pitches": [
+        0.707,
+        0.402,
+        0.37,
+        0.373,
+        0.337,
+        1,
+        0.324,
+        0.303,
+        0.216,
+        0.226,
+        0.111,
+        0.042
+      ],
+      "timbre": [
+        43.423,
+        37.354,
+        28.259,
+        93.736,
+        51.251,
+        19.177,
+        -10.353,
+        -98.352,
+        -14.444,
+        -20.309,
+        17.606,
+        -0.772
+      ]
+    },
+    {
+      "start": 4.98635,
+      "duration": 0.20345,
+      "confidence": 0.901,
+      "loudness_start": -22.917,
+      "loudness_max_time": 0.02827,
+      "loudness_max": -10.082,
+      "pitches": [
+        0.199,
+        0.156,
+        0.062,
+        0.113,
+        0.986,
+        1,
+        0.359,
+        0.251,
+        0.194,
+        0.127,
+        0.094,
+        0.072
+      ],
+      "timbre": [
+        44.497,
+        -98.02,
+        10.332,
+        24.387,
+        47.416,
+        -22.974,
+        -21.565,
+        32.988,
+        -30.769,
+        16.286,
+        55.733,
+        -15.95
+      ]
+    },
+    {
+      "start": 5.1898,
+      "duration": 0.17429,
+      "confidence": 0.847,
+      "loudness_start": -21.931,
+      "loudness_max_time": 0.07832,
+      "loudness_max": -8.797,
+      "pitches": [
+        0.921,
+        0.423,
+        0.338,
+        0.372,
+        0.443,
+        0.446,
+        0.411,
+        0.368,
+        0.238,
+        0.257,
+        1,
+        0.141
+      ],
+      "timbre": [
+        42.401,
+        51.592,
+        110.316,
+        -18.843,
+        62.152,
+        6.578,
+        -29.466,
+        1.447,
+        -5.916,
+        -29.318,
+        -34.82,
+        13.055
+      ]
+    },
+    {
+      "start": 5.36408,
+      "duration": 0.2195,
+      "confidence": 0.764,
+      "loudness_start": -20.865,
+      "loudness_max_time": 0.04116,
+      "loudness_max": -10.655,
+      "pitches": [
+        1,
+        0.552,
+        0.093,
+        0.098,
+        0.662,
+        0.558,
+        0.349,
+        0.248,
+        0.193,
+        0.232,
+        0.102,
+        0.104
+      ],
+      "timbre": [
+        44.009,
+        -84.6,
+        -5.936,
+        3.779,
+        32.513,
+        -1.12,
+        -4.7,
+        1.041,
+        -26.776,
+        13.496,
+        19.309,
+        -17.4
+      ]
+    },
+    {
+      "start": 5.58358,
+      "duration": 0.32014,
+      "confidence": 1,
+      "loudness_start": -20.98,
+      "loudness_max_time": 0.08502,
+      "loudness_max": -2.821,
+      "pitches": [
+        0.163,
+        0.114,
+        0.091,
+        0.243,
+        0.504,
+        1,
+        0.285,
+        0.146,
+        0.153,
+        0.156,
+        0.151,
+        0.14
+      ],
+      "timbre": [
+        43.383,
+        -60.228,
+        13.751,
+        -17.138,
+        25.823,
+        14.868,
+        29.817,
+        -9.94,
+        -34.388,
+        -20.105,
+        -36.372,
+        4.152
+      ]
+    },
+    {
+      "start": 5.90372,
+      "duration": 0.12036,
+      "confidence": 0.389,
+      "loudness_start": -22.185,
+      "loudness_max_time": 0.02564,
+      "loudness_max": -17.447,
+      "pitches": [
+        0.085,
+        0.048,
+        0.093,
+        1,
+        0.141,
+        0.025,
+        0.023,
+        0.082,
+        0.022,
+        0.024,
+        0.199,
+        0.035
+      ],
+      "timbre": [
+        40.088,
+        -80.577,
+        48.644,
+        25.699,
+        61.978,
+        -31.348,
+        12.025,
+        -37.046,
+        -42.01,
+        -1.217,
+        -4.026,
+        -1.243
+      ]
+    },
+    {
+      "start": 6.02408,
+      "duration": 0.39025,
+      "confidence": 1,
+      "loudness_start": -22.944,
+      "loudness_max_time": 0.03406,
+      "loudness_max": -3.167,
+      "pitches": [
+        0.169,
+        0.087,
+        0.215,
+        1,
+        0.874,
+        0.63,
+        0.34,
+        0.294,
+        0.194,
+        0.164,
+        0.239,
+        0.103
+      ],
+      "timbre": [
+        46.021,
+        -20.6,
+        -23.479,
+        91.929,
+        61.585,
+        37.427,
+        -11.331,
+        -44.634,
+        -6.445,
+        -14.085,
+        55.444,
+        -11.201
+      ]
+    },
+    {
+      "start": 6.41433,
+      "duration": 0.26109,
+      "confidence": 1,
+      "loudness_start": -23.089,
+      "loudness_max_time": 0.03745,
+      "loudness_max": -3.095,
+      "pitches": [
+        0.712,
+        0.199,
+        0.087,
+        0.118,
+        1,
+        0.777,
+        0.433,
+        0.38,
+        0.236,
+        0.15,
+        0.133,
+        0.109
+      ],
+      "timbre": [
+        45.273,
+        -37.069,
+        -32.658,
+        86.909,
+        66.357,
+        52.655,
+        3.06,
+        -51.986,
+        -10.571,
+        -26.645,
+        37.416,
+        -14.457
+      ]
+    },
+    {
+      "start": 6.67542,
+      "duration": 0.40635,
+      "confidence": 1,
+      "loudness_start": -23.68,
+      "loudness_max_time": 0.04184,
+      "loudness_max": -2.89,
+      "pitches": [
+        0.123,
+        0.078,
+        0.072,
+        0.374,
+        0.675,
+        1,
+        0.638,
+        0.219,
+        0.109,
+        0.113,
+        0.117,
+        0.09
+      ],
+      "timbre": [
+        46.547,
+        -45.329,
+        -19.053,
+        52.595,
+        28.595,
+        67.923,
+        27.99,
+        -9.554,
+        -14.418,
+        -34.933,
+        19.266,
+        2.546
+      ]
+    },
+    {
+      "start": 7.08177,
+      "duration": 0.20227,
+      "confidence": 1,
+      "loudness_start": -22.903,
+      "loudness_max_time": 0.02616,
+      "loudness_max": -3.174,
+      "pitches": [
+        0.421,
+        0.324,
+        0.085,
+        0.124,
+        0.95,
+        1,
+        0.374,
+        0.249,
+        0.207,
+        0.144,
+        0.124,
+        0.154
+      ],
+      "timbre": [
+        47.879,
+        -18.002,
+        -37.146,
+        78.9,
+        46.042,
+        -23.256,
+        -20.637,
+        -46.963,
+        -28.345,
+        36.455,
+        62.181,
+        -11.295
+      ]
+    },
+    {
+      "start": 7.28404,
+      "duration": 0.18594,
+      "confidence": 0.039,
+      "loudness_start": -19.357,
+      "loudness_max_time": 0.02689,
+      "loudness_max": -15.604,
+      "pitches": [
+        0.606,
+        0.527,
+        0.072,
+        0.058,
+        0.155,
+        0.076,
+        0.165,
+        0.107,
+        0.057,
+        1,
+        0.059,
+        0.077
+      ],
+      "timbre": [
+        41.967,
+        2.835,
+        60.87,
+        28.449,
+        32.098,
+        -23.104,
+        -16.606,
+        -25.853,
+        9.746,
+        -15.055,
+        -9.209,
+        7.241
+      ]
+    },
+    {
+      "start": 7.46998,
+      "duration": 0.2161,
+      "confidence": 1,
+      "loudness_start": -22.63,
+      "loudness_max_time": 0.02727,
+      "loudness_max": -3.482,
+      "pitches": [
+        0.289,
+        0.224,
+        0.079,
+        0.125,
+        1,
+        0.752,
+        0.408,
+        0.294,
+        0.226,
+        0.149,
+        0.287,
+        0.105
+      ],
+      "timbre": [
+        47.759,
+        4.567,
+        -12.099,
+        105.423,
+        45.987,
+        -50.196,
+        -38.698,
+        -45.422,
+        -34.622,
+        41.799,
+        17.766,
+        -1.634
+      ]
+    },
+    {
+      "start": 7.68608,
+      "duration": 0.30181,
+      "confidence": 1,
+      "loudness_start": -22.809,
+      "loudness_max_time": 0.07176,
+      "loudness_max": -2.892,
+      "pitches": [
+        0.556,
+        0.498,
+        0.288,
+        0.499,
+        0.92,
+        1,
+        0.61,
+        0.347,
+        0.366,
+        0.271,
+        0.224,
+        0.296
+      ],
+      "timbre": [
+        42.681,
+        4.711,
+        70.974,
+        5.029,
+        51.234,
+        10.616,
+        -3.418,
+        -26.303,
+        -30.787,
+        -4.322,
+        -49.242,
+        20.385
+      ]
+    },
+    {
+      "start": 7.98789,
+      "duration": 0.14435,
+      "confidence": 1,
+      "loudness_start": -22.515,
+      "loudness_max_time": 0.03042,
+      "loudness_max": -8.107,
+      "pitches": [
+        1,
+        0.391,
+        0.218,
+        0.133,
+        0.168,
+        0.209,
+        0.196,
+        0.376,
+        0.254,
+        0.356,
+        0.661,
+        0.874
+      ],
+      "timbre": [
+        46.32,
+        30.649,
+        62.831,
+        33.627,
+        47.615,
+        65.464,
+        3.626,
+        -44.32,
+        -35.153,
+        -20.148,
+        -6.034,
+        -3.621
+      ]
+    },
+    {
+      "start": 8.13224,
+      "duration": 0.2673,
+      "confidence": 0.347,
+      "loudness_start": -18.344,
+      "loudness_max_time": 0.02605,
+      "loudness_max": -10.503,
+      "pitches": [
+        0.206,
+        0.402,
+        0.398,
+        0.258,
+        1,
+        0.582,
+        0.262,
+        0.189,
+        0.169,
+        0.309,
+        0.376,
+        0.134
+      ],
+      "timbre": [
+        44.664,
+        -86.318,
+        5.885,
+        18.04,
+        29.082,
+        -40.503,
+        -32.605,
+        33.938,
+        -17.945,
+        7.503,
+        33.544,
+        -5.129
+      ]
+    },
+    {
+      "start": 8.39955,
+      "duration": 0.09841,
+      "confidence": 0.921,
+      "loudness_start": -21.154,
+      "loudness_max_time": 0.00883,
+      "loudness_max": -7.435,
+      "pitches": [
+        0.499,
+        0.373,
+        0.308,
+        0.196,
+        0.252,
+        0.252,
+        0.255,
+        0.288,
+        0.251,
+        1,
+        0.303,
+        0.322
+      ],
+      "timbre": [
+        47.073,
+        51.785,
+        53.025,
+        49.901,
+        68.17,
+        -50.482,
+        -21.196,
+        -47.83,
+        -32.541,
+        7.441,
+        -16.008,
+        19.236
+      ]
+    },
+    {
+      "start": 8.49796,
+      "duration": 0.14503,
+      "confidence": 0.307,
+      "loudness_start": -16.418,
+      "loudness_max_time": 0.04891,
+      "loudness_max": -10.107,
+      "pitches": [
+        0.52,
+        0.624,
+        0.782,
+        0.644,
+        0.812,
+        0.754,
+        0.928,
+        1,
+        0.757,
+        0.526,
+        0.72,
+        0.439
+      ],
+      "timbre": [
+        45.156,
+        -122.999,
+        -25.256,
+        1.394,
+        25.546,
+        -15.643,
+        -16.438,
+        -23.04,
+        -33.555,
+        -15.046,
+        -13.402,
+        -5.68
+      ]
+    },
+    {
+      "start": 8.64299,
+      "duration": 0.1473,
+      "confidence": 0.75,
+      "loudness_start": -19.636,
+      "loudness_max_time": 0.0292,
+      "loudness_max": -9.524,
+      "pitches": [
+        0.218,
+        0.191,
+        0.203,
+        0.181,
+        0.252,
+        0.653,
+        0.271,
+        0.296,
+        0.273,
+        1,
+        0.839,
+        0.358
+      ],
+      "timbre": [
+        46.001,
+        -35.921,
+        11.15,
+        29.088,
+        48.364,
+        9.599,
+        1.198,
+        -33.623,
+        -7.444,
+        -43.93,
+        -5.988,
+        -0.376
+      ]
+    },
+    {
+      "start": 8.79029,
+      "duration": 0.24875,
+      "confidence": 0.715,
+      "loudness_start": -18.005,
+      "loudness_max_time": 0.06443,
+      "loudness_max": -8.82,
+      "pitches": [
+        0.384,
+        0.297,
+        0.071,
+        0.175,
+        0.507,
+        1,
+        0.221,
+        0.138,
+        0.131,
+        0.101,
+        0.164,
+        0.107
+      ],
+      "timbre": [
+        45.525,
+        -58.979,
+        -30.361,
+        11.737,
+        11.835,
+        -19.778,
+        0.874,
+        4.335,
+        -20.258,
+        -13.762,
+        -9.214,
+        12.874
+      ]
+    },
+    {
+      "start": 9.03905,
+      "duration": 0.15075,
+      "confidence": 0.889,
+      "loudness_start": -21.874,
+      "loudness_max_time": 0.03047,
+      "loudness_max": -9.575,
+      "pitches": [
+        0.945,
+        0.61,
+        0.543,
+        0.543,
+        0.536,
+        0.443,
+        0.418,
+        0.481,
+        0.306,
+        1,
+        0.173,
+        0.067
+      ],
+      "timbre": [
+        43.287,
+        56.812,
+        44.269,
+        85.63,
+        58.785,
+        30.15,
+        -9.831,
+        -86.919,
+        -7.188,
+        -37.215,
+        15.376,
+        1.231
+      ]
+    },
+    {
+      "start": 9.1898,
+      "duration": 0.20263,
+      "confidence": 0.88,
+      "loudness_start": -22.254,
+      "loudness_max_time": 0.01914,
+      "loudness_max": -10.835,
+      "pitches": [
+        0.154,
+        0.117,
+        0.045,
+        0.095,
+        1,
+        0.613,
+        0.262,
+        0.174,
+        0.157,
+        0.285,
+        0.086,
+        0.072
+      ],
+      "timbre": [
+        45.231,
+        -82.017,
+        3.863,
+        7.82,
+        35.85,
+        -50.703,
+        -34.729,
+        28.48,
+        -16.476,
+        5.311,
+        33.683,
+        -4.721
+      ]
+    },
+    {
+      "start": 9.39243,
+      "duration": 0.16916,
+      "confidence": 0.711,
+      "loudness_start": -16.873,
+      "loudness_max_time": 0.06992,
+      "loudness_max": -7.637,
+      "pitches": [
+        0.828,
+        0.343,
+        0.274,
+        0.299,
+        0.344,
+        1,
+        0.373,
+        0.31,
+        0.19,
+        0.217,
+        0.217,
+        0.091
+      ],
+      "timbre": [
+        44.918,
+        47.207,
+        66.865,
+        8.69,
+        48.272,
+        1.691,
+        -25.824,
+        -22.657,
+        8.119,
+        -23.911,
+        -46.322,
+        11.666
+      ]
+    },
+    {
+      "start": 9.56159,
+      "duration": 0.21497,
+      "confidence": 0.779,
+      "loudness_start": -21.066,
+      "loudness_max_time": 0.036,
+      "loudness_max": -9.887,
+      "pitches": [
+        1,
+        0.552,
+        0.086,
+        0.318,
+        0.665,
+        0.547,
+        0.337,
+        0.263,
+        0.183,
+        0.119,
+        0.127,
+        0.101
+      ],
+      "timbre": [
+        44.617,
+        -99.634,
+        -13.089,
+        7.557,
+        47.386,
+        -0.703,
+        3.455,
+        1.486,
+        -26.161,
+        14.083,
+        18.157,
+        -9.169
+      ]
+    },
+    {
+      "start": 9.77655,
+      "duration": 0.31837,
+      "confidence": 1,
+      "loudness_start": -21.224,
+      "loudness_max_time": 0.06093,
+      "loudness_max": -4.009,
+      "pitches": [
+        0.163,
+        0.112,
+        0.112,
+        0.349,
+        0.517,
+        1,
+        0.283,
+        0.162,
+        0.162,
+        0.16,
+        0.154,
+        0.142
+      ],
+      "timbre": [
+        44.379,
+        -63.752,
+        4.639,
+        -0.891,
+        32.87,
+        33.873,
+        34.828,
+        -10.106,
+        -23.913,
+        -37.825,
+        -47.341,
+        10.281
+      ]
+    },
+    {
+      "start": 10.09492,
+      "duration": 0.1161,
+      "confidence": 0.307,
+      "loudness_start": -21.267,
+      "loudness_max_time": 0.05647,
+      "loudness_max": -17.52,
+      "pitches": [
+        1,
+        0.163,
+        0.039,
+        0.018,
+        0.075,
+        0.013,
+        0.014,
+        0.237,
+        0.025,
+        0.019,
+        0.021,
+        0.147
+      ],
+      "timbre": [
+        40.619,
+        -61.352,
+        33.686,
+        8.997,
+        65.356,
+        -26.348,
+        13.825,
+        -31.194,
+        -24.718,
+        -14.75,
+        -18.014,
+        0.464
+      ]
+    },
+    {
+      "start": 10.21102,
+      "duration": 0.39365,
+      "confidence": 1,
+      "loudness_start": -22.756,
+      "loudness_max_time": 0.04002,
+      "loudness_max": -3.255,
+      "pitches": [
+        0.728,
+        0.172,
+        0.142,
+        0.697,
+        1,
+        0.82,
+        0.43,
+        0.447,
+        0.241,
+        0.19,
+        0.247,
+        0.153
+      ],
+      "timbre": [
+        45.19,
+        -20.97,
+        -13.337,
+        55.813,
+        64.214,
+        59.852,
+        -2.026,
+        -25.421,
+        6.057,
+        -47.302,
+        36.777,
+        -6.484
+      ]
+    },
+    {
+      "start": 10.60467,
+      "duration": 0.27442,
+      "confidence": 1,
+      "loudness_start": -22.595,
+      "loudness_max_time": 0.04108,
+      "loudness_max": -3.515,
+      "pitches": [
+        0.248,
+        0.197,
+        0.099,
+        0.123,
+        1,
+        0.849,
+        0.458,
+        0.322,
+        0.249,
+        0.166,
+        0.131,
+        0.119
+      ],
+      "timbre": [
+        45.117,
+        -28.383,
+        -9.481,
+        70.601,
+        63.327,
+        58.264,
+        -7.56,
+        -44.05,
+        -9.493,
+        -36.069,
+        29.676,
+        -16.119
+      ]
+    },
+    {
+      "start": 10.87909,
+      "duration": 0.25424,
+      "confidence": 1,
+      "loudness_start": -22.87,
+      "loudness_max_time": 0.02973,
+      "loudness_max": -2.689,
+      "pitches": [
+        0.339,
+        0.275,
+        0.071,
+        0.187,
+        0.496,
+        1,
+        0.248,
+        0.158,
+        0.142,
+        0.175,
+        0.114,
+        0.109
+      ],
+      "timbre": [
+        47.858,
+        -26.284,
+        -19.928,
+        85.28,
+        5.369,
+        30.079,
+        17.421,
+        -7.772,
+        -26.034,
+        -17.372,
+        15.998,
+        15.116
+      ]
+    },
+    {
+      "start": 11.13333,
+      "duration": 0.14503,
+      "confidence": 0.9,
+      "loudness_start": -22.426,
+      "loudness_max_time": 0.0319,
+      "loudness_max": -8.84,
+      "pitches": [
+        1,
+        0.565,
+        0.485,
+        0.474,
+        0.453,
+        0.454,
+        0.401,
+        0.468,
+        0.299,
+        0.319,
+        0.66,
+        0.191
+      ],
+      "timbre": [
+        43.033,
+        57.723,
+        53.992,
+        79.517,
+        55.428,
+        39.759,
+        -12.295,
+        -77.454,
+        2.846,
+        -50.549,
+        17.762,
+        -7.103
+      ]
+    },
+    {
+      "start": 11.27837,
+      "duration": 0.27374,
+      "confidence": 0.922,
+      "loudness_start": -22.317,
+      "loudness_max_time": 0.02603,
+      "loudness_max": -10.349,
+      "pitches": [
+        0.477,
+        0.211,
+        0.079,
+        0.117,
+        1,
+        0.621,
+        0.308,
+        0.249,
+        0.169,
+        0.139,
+        0.294,
+        0.156
+      ],
+      "timbre": [
+        45.659,
+        -52.187,
+        27.418,
+        1.485,
+        43.715,
+        -31.819,
+        -31.584,
+        48.438,
+        -4.446,
+        14.371,
+        60.559,
+        -16.986
+      ]
+    },
+    {
+      "start": 11.55211,
+      "duration": 0.10395,
+      "confidence": 0.614,
+      "loudness_start": -16.377,
+      "loudness_max_time": 0.00825,
+      "loudness_max": -8.471,
+      "pitches": [
+        1,
+        0.569,
+        0.457,
+        0.451,
+        0.327,
+        0.338,
+        0.287,
+        0.283,
+        0.219,
+        0.222,
+        0.163,
+        0.019
+      ],
+      "timbre": [
+        44.332,
+        58.909,
+        49.155,
+        82.122,
+        25.261,
+        -83.149,
+        -22.506,
+        -72.593,
+        -32.275,
+        50.23,
+        -32.596,
+        -13.417
+      ]
+    },
+    {
+      "start": 11.65605,
+      "duration": 0.22136,
+      "confidence": 0.795,
+      "loudness_start": -20.572,
+      "loudness_max_time": 0.0406,
+      "loudness_max": -10.242,
+      "pitches": [
+        1,
+        0.497,
+        0.084,
+        0.087,
+        0.59,
+        0.494,
+        0.307,
+        0.227,
+        0.172,
+        0.111,
+        0.098,
+        0.101
+      ],
+      "timbre": [
+        44.375,
+        -76.296,
+        -3.226,
+        2.169,
+        30.903,
+        4.797,
+        -6.818,
+        4.445,
+        -21.203,
+        14.188,
+        16.91,
+        -18.406
+      ]
+    },
+    {
+      "start": 11.87741,
+      "duration": 0.30032,
+      "confidence": 0.975,
+      "loudness_start": -20.114,
+      "loudness_max_time": 0.07315,
+      "loudness_max": -3.755,
+      "pitches": [
+        0.139,
+        0.113,
+        0.087,
+        0.247,
+        0.529,
+        1,
+        0.288,
+        0.157,
+        0.15,
+        0.32,
+        0.151,
+        0.135
+      ],
+      "timbre": [
+        44.524,
+        -31.769,
+        1.861,
+        4.759,
+        16.574,
+        2.045,
+        20.711,
+        -32.445,
+        -29.968,
+        -0.615,
+        -42.847,
+        14.963
+      ]
+    },
+    {
+      "start": 12.17773,
+      "duration": 0.13569,
+      "confidence": 0.382,
+      "loudness_start": -21.505,
+      "loudness_max_time": 0.07903,
+      "loudness_max": -17.399,
+      "pitches": [
+        0.252,
+        0.046,
+        0.046,
+        0.047,
+        0.153,
+        1,
+        0.217,
+        0.094,
+        0.063,
+        0.069,
+        0.038,
+        0.039
+      ],
+      "timbre": [
+        40.871,
+        -44.82,
+        10.501,
+        -21.206,
+        15.949,
+        -18.718,
+        16.549,
+        -15.904,
+        -19.165,
+        -29.822,
+        -7.917,
+        -18.802
+      ]
+    },
+    {
+      "start": 12.31342,
+      "duration": 0.38857,
+      "confidence": 1,
+      "loudness_start": -21.845,
+      "loudness_max_time": 0.03522,
+      "loudness_max": -3.43,
+      "pitches": [
+        0.495,
+        0.16,
+        0.09,
+        0.113,
+        0.757,
+        1,
+        0.381,
+        0.291,
+        0.177,
+        0.194,
+        0.944,
+        0.374
+      ],
+      "timbre": [
+        46.282,
+        -6.277,
+        -35.273,
+        58.238,
+        37.194,
+        46.349,
+        -10.88,
+        -31.656,
+        5.956,
+        -24.817,
+        40.024,
+        -17.563
+      ]
+    },
+    {
+      "start": 12.702,
+      "duration": 0.2727,
+      "confidence": 1,
+      "loudness_start": -21.114,
+      "loudness_max_time": 0.03946,
+      "loudness_max": -2.88,
+      "pitches": [
+        0.182,
+        0.19,
+        0.09,
+        0.113,
+        1,
+        0.741,
+        0.421,
+        0.287,
+        0.241,
+        0.916,
+        0.148,
+        0.106
+      ],
+      "timbre": [
+        45.624,
+        -21.813,
+        -38.377,
+        54.809,
+        37.964,
+        57.019,
+        -6.502,
+        -43.242,
+        -2.99,
+        -30.36,
+        17.32,
+        -24.736
+      ]
+    },
+    {
+      "start": 12.97469,
+      "duration": 0.24989,
+      "confidence": 0.98,
+      "loudness_start": -21.778,
+      "loudness_max_time": 0.07629,
+      "loudness_max": -6.08,
+      "pitches": [
+        0.243,
+        0.172,
+        0.043,
+        0.129,
+        0.345,
+        1,
+        0.177,
+        0.109,
+        0.095,
+        0.07,
+        0.073,
+        0.071
+      ],
+      "timbre": [
+        45.684,
+        -57.884,
+        -40.189,
+        2.509,
+        10.319,
+        14.275,
+        12.789,
+        0.814,
+        -19.062,
+        -13.279,
+        -20.8,
+        8.107
+      ]
+    },
+    {
+      "start": 13.22458,
+      "duration": 0.14961,
+      "confidence": 0.998,
+      "loudness_start": -21.958,
+      "loudness_max_time": 0.0401,
+      "loudness_max": -6.869,
+      "pitches": [
+        0.287,
+        0.209,
+        0.242,
+        1,
+        0.372,
+        0.123,
+        0.127,
+        0.151,
+        0.128,
+        0.135,
+        0.247,
+        0.046
+      ],
+      "timbre": [
+        44.149,
+        4.159,
+        -14.953,
+        45.655,
+        23.372,
+        59.857,
+        20.02,
+        -58.622,
+        4.69,
+        -68.865,
+        -18.825,
+        -11.525
+      ]
+    },
+    {
+      "start": 13.3742,
+      "duration": 0.20304,
+      "confidence": 0.921,
+      "loudness_start": -22.036,
+      "loudness_max_time": 0.03122,
+      "loudness_max": -10.794,
+      "pitches": [
+        0.159,
+        0.153,
+        0.118,
+        0.598,
+        1,
+        0.677,
+        0.358,
+        0.265,
+        0.192,
+        0.12,
+        0.205,
+        0.076
+      ],
+      "timbre": [
+        45.391,
+        -79.865,
+        -17.391,
+        0.457,
+        33.565,
+        -10.093,
+        -11.211,
+        22.736,
+        -9.687,
+        2.475,
+        37.741,
+        -4.914
+      ]
+    },
+    {
+      "start": 13.57723,
+      "duration": 0.18567,
+      "confidence": 0.679,
+      "loudness_start": -17.055,
+      "loudness_max_time": 0.07888,
+      "loudness_max": -6.456,
+      "pitches": [
+        0.527,
+        0.396,
+        1,
+        0.58,
+        0.345,
+        0.245,
+        0.279,
+        0.211,
+        0.138,
+        0.378,
+        0.26,
+        0.074
+      ],
+      "timbre": [
+        46.232,
+        46.267,
+        23.124,
+        11.087,
+        14.546,
+        -5.165,
+        -7.584,
+        -23.183,
+        19.105,
+        -17.913,
+        -53.757,
+        -2.119
+      ]
+    },
+    {
+      "start": 13.7629,
+      "duration": 0.21592,
+      "confidence": 0.786,
+      "loudness_start": -21.272,
+      "loudness_max_time": 0.03117,
+      "loudness_max": -10.174,
+      "pitches": [
+        1,
+        0.401,
+        0.053,
+        0.055,
+        0.474,
+        0.352,
+        0.195,
+        0.207,
+        0.111,
+        0.071,
+        0.055,
+        0.099
+      ],
+      "timbre": [
+        44.88,
+        -87.12,
+        -26.775,
+        24.164,
+        34.277,
+        -24.052,
+        -11.14,
+        11.383,
+        -23.165,
+        23.959,
+        14.078,
+        1.774
+      ]
+    },
+    {
+      "start": 13.97882,
+      "duration": 0.30567,
+      "confidence": 1,
+      "loudness_start": -20.521,
+      "loudness_max_time": 0.0804,
+      "loudness_max": -2.586,
+      "pitches": [
+        0.151,
+        0.096,
+        0.072,
+        0.453,
+        0.562,
+        1,
+        0.295,
+        0.149,
+        0.147,
+        0.144,
+        0.175,
+        0.147
+      ],
+      "timbre": [
+        44.107,
+        -50.633,
+        -25.583,
+        -22.01,
+        31.309,
+        14.594,
+        35.645,
+        -19.219,
+        -27.033,
+        -34.487,
+        -34.007,
+        12.621
+      ]
+    },
+    {
+      "start": 14.28449,
+      "duration": 0.1224,
+      "confidence": 0.457,
+      "loudness_start": -21.74,
+      "loudness_max_time": 0.06471,
+      "loudness_max": -16.719,
+      "pitches": [
+        0.256,
+        0.044,
+        0.052,
+        0.038,
+        0.166,
+        1,
+        0.198,
+        0.037,
+        0.019,
+        0.033,
+        0.018,
+        0.037
+      ],
+      "timbre": [
+        41.126,
+        -41.065,
+        7.717,
+        -12.397,
+        21.287,
+        -14.986,
+        20.971,
+        -23.556,
+        -23.352,
+        -20.656,
+        -16.682,
+        -15.318
+      ]
+    },
+    {
+      "start": 14.40689,
+      "duration": 0.13574,
+      "confidence": 1,
+      "loudness_start": -21.934,
+      "loudness_max_time": 0.03815,
+      "loudness_max": -3.35,
+      "pitches": [
+        0.423,
+        0.314,
+        0.337,
+        0.348,
+        0.563,
+        0.918,
+        1,
+        0.762,
+        0.527,
+        0.354,
+        0.28,
+        0.198
+      ],
+      "timbre": [
+        47.13,
+        -43.974,
+        -43.92,
+        38.624,
+        29.486,
+        71.799,
+        -15.464,
+        -62.101,
+        2.402,
+        -29.669,
+        11.565,
+        -10.757
+      ]
+    },
+    {
+      "start": 14.54263,
+      "duration": 0.24789,
+      "confidence": 0.148,
+      "loudness_start": -19.924,
+      "loudness_max_time": 0.02824,
+      "loudness_max": -14.924,
+      "pitches": [
+        0.051,
+        0.018,
+        0.008,
+        0.008,
+        0.116,
+        0.035,
+        0.029,
+        0.029,
+        0.035,
+        1,
+        0.101,
+        0.025
+      ],
+      "timbre": [
+        42.873,
+        -28.046,
+        5.666,
+        2.917,
+        30.369,
+        -28.314,
+        5.055,
+        -19.335,
+        12.145,
+        -42.733,
+        -6.235,
+        -11.563
+      ]
+    },
+    {
+      "start": 14.79052,
+      "duration": 0.28476,
+      "confidence": 1,
+      "loudness_start": -21.534,
+      "loudness_max_time": 0.05048,
+      "loudness_max": -3.469,
+      "pitches": [
+        0.245,
+        0.214,
+        0.124,
+        0.136,
+        1,
+        0.928,
+        0.523,
+        0.363,
+        0.275,
+        0.175,
+        0.843,
+        0.171
+      ],
+      "timbre": [
+        44.622,
+        -30.035,
+        -20.277,
+        27.461,
+        33.661,
+        58.204,
+        -6.965,
+        -24.125,
+        2.773,
+        -51.591,
+        -11.437,
+        -17.803
+      ]
+    },
+    {
+      "start": 15.07528,
+      "duration": 0.40018,
+      "confidence": 1,
+      "loudness_start": -20.938,
+      "loudness_max_time": 0.02909,
+      "loudness_max": -2.484,
+      "pitches": [
+        0.496,
+        0.077,
+        0.064,
+        0.13,
+        0.643,
+        1,
+        0.677,
+        0.257,
+        0.097,
+        0.096,
+        0.075,
+        0.078
+      ],
+      "timbre": [
+        48.331,
+        -24.797,
+        -29.982,
+        85.536,
+        13.013,
+        21.352,
+        8.566,
+        -2.473,
+        -16.768,
+        6.254,
+        21.386,
+        5.225
+      ]
+    },
+    {
+      "start": 15.47546,
+      "duration": 0.18059,
+      "confidence": 1,
+      "loudness_start": -20.829,
+      "loudness_max_time": 0.0212,
+      "loudness_max": -2.998,
+      "pitches": [
+        0.27,
+        0.144,
+        0.102,
+        0.148,
+        1,
+        0.881,
+        0.573,
+        0.468,
+        0.207,
+        0.157,
+        0.549,
+        0.066
+      ],
+      "timbre": [
+        48.634,
+        -10.48,
+        -41.617,
+        64.832,
+        29.92,
+        -67.316,
+        -39.715,
+        -37.546,
+        -22.333,
+        50.424,
+        30.776,
+        -0.161
+      ]
+    },
+    {
+      "start": 15.65605,
+      "duration": 0.20236,
+      "confidence": 0.546,
+      "loudness_start": -17.084,
+      "loudness_max_time": 0.0597,
+      "loudness_max": -11.776,
+      "pitches": [
+        0.37,
+        0.374,
+        0.041,
+        0.035,
+        0.164,
+        0.06,
+        0.153,
+        0.057,
+        0.054,
+        1,
+        0.092,
+        0.027
+      ],
+      "timbre": [
+        45.627,
+        12.25,
+        14.876,
+        10.962,
+        27.876,
+        -2.139,
+        -16.83,
+        -25.533,
+        43.484,
+        -14.744,
+        -19.121,
+        4.936
+      ]
+    },
+    {
+      "start": 15.85841,
+      "duration": 0.21556,
+      "confidence": 0.998,
+      "loudness_start": -21.564,
+      "loudness_max_time": 0.02638,
+      "loudness_max": -3.691,
+      "pitches": [
+        0.293,
+        0.165,
+        0.055,
+        0.092,
+        0.713,
+        1,
+        0.315,
+        0.212,
+        0.165,
+        0.136,
+        0.084,
+        0.068
+      ],
+      "timbre": [
+        48.107,
+        -12.145,
+        -52.446,
+        95.75,
+        44.139,
+        -54.66,
+        -36.244,
+        -51.382,
+        -13.946,
+        37.358,
+        0.15,
+        2.828
+      ]
+    },
+    {
+      "start": 16.07397,
+      "duration": 0.30113,
+      "confidence": 1,
+      "loudness_start": -22.459,
+      "loudness_max_time": 0.07178,
+      "loudness_max": -3.026,
+      "pitches": [
+        0.44,
+        0.46,
+        0.304,
+        0.491,
+        0.882,
+        1,
+        0.608,
+        0.321,
+        0.368,
+        0.266,
+        0.49,
+        0.32
+      ],
+      "timbre": [
+        44.179,
+        -32.874,
+        -0.034,
+        4.649,
+        44.633,
+        1.983,
+        20.224,
+        -33.974,
+        -10.576,
+        -19.757,
+        -51.394,
+        19.141
+      ]
+    },
+    {
+      "start": 16.3751,
+      "duration": 0.14018,
+      "confidence": 1,
+      "loudness_start": -22.897,
+      "loudness_max_time": 0.03179,
+      "loudness_max": -5.808,
+      "pitches": [
+        0.599,
+        0.406,
+        0.208,
+        0.133,
+        0.318,
+        0.207,
+        0.2,
+        0.299,
+        0.287,
+        1,
+        0.685,
+        0.747
+      ],
+      "timbre": [
+        47.64,
+        -3.816,
+        19.979,
+        20.37,
+        44.023,
+        68.786,
+        15.316,
+        -26.664,
+        -16.034,
+        -37.233,
+        8.777,
+        -4.186
+      ]
+    },
+    {
+      "start": 16.51528,
+      "duration": 0.12181,
+      "confidence": 0.382,
+      "loudness_start": -18.481,
+      "loudness_max_time": 0.03652,
+      "loudness_max": -10.294,
+      "pitches": [
+        0.285,
+        0.375,
+        0.484,
+        0.521,
+        0.727,
+        1,
+        0.806,
+        0.599,
+        0.537,
+        0.619,
+        0.241,
+        0.158
+      ],
+      "timbre": [
+        45.195,
+        -128.724,
+        -45.12,
+        18.624,
+        24.783,
+        -13.446,
+        -28.848,
+        -14.253,
+        -2.272,
+        4.73,
+        -0.412,
+        14.94
+      ]
+    },
+    {
+      "start": 16.6371,
+      "duration": 0.15651,
+      "confidence": 0.357,
+      "loudness_start": -20.749,
+      "loudness_max_time": 0.04738,
+      "loudness_max": -15.058,
+      "pitches": [
+        0.344,
+        0.028,
+        0.018,
+        0.024,
+        0.106,
+        1,
+        0.135,
+        0.054,
+        0.033,
+        0.117,
+        0.026,
+        0.029
+      ],
+      "timbre": [
+        42.954,
+        -19.331,
+        1.157,
+        -26.309,
+        59.707,
+        -28.346,
+        -15.637,
+        -10.76,
+        45.703,
+        -25.092,
+        9.866,
+        6.955
+      ]
+    },
+    {
+      "start": 16.79361,
+      "duration": 0.11601,
+      "confidence": 0.844,
+      "loudness_start": -18.555,
+      "loudness_max_time": 0.00304,
+      "loudness_max": -6.338,
+      "pitches": [
+        0.561,
+        0.217,
+        0.232,
+        0.143,
+        0.294,
+        1,
+        0.252,
+        0.178,
+        0.257,
+        0.35,
+        0.249,
+        0.144
+      ],
+      "timbre": [
+        47.548,
+        8.468,
+        2.877,
+        46.176,
+        44.782,
+        -69.739,
+        -12.752,
+        -48.696,
+        -20.877,
+        14.093,
+        -35.858,
+        12.432
+      ]
+    },
+    {
+      "start": 16.90961,
+      "duration": 0.12209,
+      "confidence": 0.303,
+      "loudness_start": -16.538,
+      "loudness_max_time": 0.02576,
+      "loudness_max": -10.083,
+      "pitches": [
+        0.346,
+        0.477,
+        0.625,
+        0.957,
+        1,
+        0.872,
+        0.699,
+        0.763,
+        0.575,
+        0.226,
+        0.422,
+        0.206
+      ],
+      "timbre": [
+        44.313,
+        -137.065,
+        -56.541,
+        14.705,
+        37.551,
+        -43.485,
+        -32.756,
+        -17.293,
+        -19.111,
+        23.96,
+        10.241,
+        -8.99
+      ]
+    },
+    {
+      "start": 17.0317,
+      "duration": 0.1473,
+      "confidence": 0.851,
+      "loudness_start": -20.758,
+      "loudness_max_time": 0.02986,
+      "loudness_max": -8.694,
+      "pitches": [
+        0.163,
+        0.179,
+        0.22,
+        1,
+        0.438,
+        0.227,
+        0.23,
+        0.363,
+        0.246,
+        0.893,
+        0.999,
+        0.33
+      ],
+      "timbre": [
+        45.947,
+        -51.995,
+        -23.249,
+        29.418,
+        51.161,
+        15.429,
+        -6.174,
+        -22.683,
+        8.794,
+        -38.216,
+        -11.93,
+        -5.787
+      ]
+    },
+    {
+      "start": 17.179,
+      "duration": 0.24277,
+      "confidence": 0.951,
+      "loudness_start": -19.763,
+      "loudness_max_time": 0.06656,
+      "loudness_max": -5.18,
+      "pitches": [
+        0.402,
+        0.216,
+        0.379,
+        0.807,
+        1,
+        0.716,
+        0.349,
+        0.314,
+        0.218,
+        0.274,
+        0.323,
+        0.322
+      ],
+      "timbre": [
+        45.812,
+        -54.904,
+        -53.232,
+        26.979,
+        42.331,
+        17.392,
+        1.424,
+        -0.951,
+        9.204,
+        -14.214,
+        -47.25,
+        17.686
+      ]
+    },
+    {
+      "start": 17.42177,
+      "duration": 0.15683,
+      "confidence": 1,
+      "loudness_start": -23.695,
+      "loudness_max_time": 0.03176,
+      "loudness_max": -7.602,
+      "pitches": [
+        1,
+        0.193,
+        0.127,
+        0.134,
+        0.455,
+        0.273,
+        0.231,
+        0.434,
+        0.114,
+        0.095,
+        0.077,
+        0.166
+      ],
+      "timbre": [
+        44.425,
+        29.531,
+        -41.861,
+        20.137,
+        73.679,
+        60.976,
+        -18.423,
+        -46.506,
+        19.369,
+        -58.183,
+        -2.66,
+        -22.61
+      ]
+    },
+    {
+      "start": 17.57859,
+      "duration": 0.10975,
+      "confidence": 0.857,
+      "loudness_start": -22.479,
+      "loudness_max_time": 0.04003,
+      "loudness_max": -10.457,
+      "pitches": [
+        0.611,
+        0.344,
+        0.274,
+        0.399,
+        0.827,
+        1,
+        0.624,
+        0.556,
+        0.339,
+        0.166,
+        0.138,
+        0.14
+      ],
+      "timbre": [
+        45.946,
+        -98.447,
+        -41.601,
+        0.165,
+        23.847,
+        -24.156,
+        -55.741,
+        -10.365,
+        9.837,
+        -0.253,
+        10.78,
+        -3.994
+      ]
+    },
+    {
+      "start": 17.68834,
+      "duration": 0.09234,
+      "confidence": 0.421,
+      "loudness_start": -18.467,
+      "loudness_max_time": 0.02982,
+      "loudness_max": -10.868,
+      "pitches": [
+        1,
+        0.896,
+        0.405,
+        0.431,
+        0.531,
+        0.665,
+        0.387,
+        0.415,
+        0.344,
+        0.501,
+        0.518,
+        0.33
+      ],
+      "timbre": [
+        45.85,
+        1.562,
+        22.103,
+        -22.608,
+        32.981,
+        -24.481,
+        -16.751,
+        2.471,
+        29.156,
+        -24.149,
+        31.133,
+        -13.642
+      ]
+    },
+    {
+      "start": 17.78068,
+      "duration": 0.18032,
+      "confidence": 0.581,
+      "loudness_start": -14.065,
+      "loudness_max_time": 0.10057,
+      "loudness_max": -6.965,
+      "pitches": [
+        0.136,
+        0.116,
+        0.123,
+        1,
+        0.315,
+        0.197,
+        0.211,
+        0.225,
+        0.121,
+        0.114,
+        0.297,
+        0.116
+      ],
+      "timbre": [
+        48.699,
+        68.893,
+        30.894,
+        -15.531,
+        36.936,
+        -10.798,
+        -36.642,
+        -2.701,
+        36.741,
+        1.67,
+        -42.492,
+        -3.144
+      ]
+    },
+    {
+      "start": 17.961,
+      "duration": 0.23909,
+      "confidence": 0.595,
+      "loudness_start": -19.996,
+      "loudness_max_time": 0.03431,
+      "loudness_max": -9.881,
+      "pitches": [
+        0.329,
+        0.194,
+        0.048,
+        0.075,
+        0.697,
+        1,
+        0.23,
+        0.169,
+        0.135,
+        0.164,
+        0.18,
+        0.179
+      ],
+      "timbre": [
+        45.262,
+        -94.679,
+        -41.75,
+        22.399,
+        39.054,
+        -19.369,
+        -28.326,
+        -5.455,
+        -6.331,
+        29.441,
+        6.696,
+        -1.831
+      ]
+    },
+    {
+      "start": 18.20009,
+      "duration": 0.16662,
+      "confidence": 1,
+      "loudness_start": -20.513,
+      "loudness_max_time": 0.02304,
+      "loudness_max": -3.026,
+      "pitches": [
+        0.411,
+        1,
+        0.691,
+        0.694,
+        0.959,
+        0.942,
+        0.683,
+        0.216,
+        0.326,
+        0.41,
+        0.328,
+        0.273
+      ],
+      "timbre": [
+        48.604,
+        -32.039,
+        -50.513,
+        72.819,
+        6.684,
+        7.808,
+        32.578,
+        -23.972,
+        -39.122,
+        6.655,
+        31.424,
+        17.283
+      ]
+    },
+    {
+      "start": 18.36671,
+      "duration": 0.13374,
+      "confidence": 0.851,
+      "loudness_start": -17.31,
+      "loudness_max_time": 0.00289,
+      "loudness_max": -6.143,
+      "pitches": [
+        0.208,
+        0.192,
+        0.083,
+        0.089,
+        0.278,
+        0.171,
+        0.135,
+        0.161,
+        0.213,
+        1,
+        0.335,
+        0.182
+      ],
+      "timbre": [
+        48.896,
+        47.733,
+        39.492,
+        54.248,
+        24.487,
+        -49.005,
+        -11.514,
+        -13.983,
+        -39.911,
+        -6.065,
+        -38.159,
+        -11.553
+      ]
+    },
+    {
+      "start": 18.50045,
+      "duration": 0.10998,
+      "confidence": 0.149,
+      "loudness_start": -18.015,
+      "loudness_max_time": 0.00406,
+      "loudness_max": -8.852,
+      "pitches": [
+        0.979,
+        0.493,
+        0.448,
+        0.409,
+        0.345,
+        1,
+        0.615,
+        0.291,
+        0.142,
+        0.192,
+        0.795,
+        0.645
+      ],
+      "timbre": [
+        44.591,
+        22.975,
+        -9.781,
+        58.644,
+        33.943,
+        -74.32,
+        -14.162,
+        -78.684,
+        -27.549,
+        40.801,
+        -40.306,
+        27.658
+      ]
+    },
+    {
+      "start": 18.61043,
+      "duration": 0.27946,
+      "confidence": 1,
+      "loudness_start": -21.323,
+      "loudness_max_time": 0.03165,
+      "loudness_max": -3.742,
+      "pitches": [
+        0.915,
+        0.403,
+        0.145,
+        0.153,
+        1,
+        0.816,
+        0.42,
+        0.449,
+        0.231,
+        0.25,
+        0.719,
+        0.615
+      ],
+      "timbre": [
+        49.585,
+        17.966,
+        -17.873,
+        46.648,
+        38.965,
+        39.375,
+        -14.205,
+        4.437,
+        4.633,
+        -4.235,
+        27.249,
+        5.399
+      ]
+    },
+    {
+      "start": 18.88989,
+      "duration": 0.10449,
+      "confidence": 0.669,
+      "loudness_start": -17.704,
+      "loudness_max_time": 0.00814,
+      "loudness_max": -8.369,
+      "pitches": [
+        1,
+        0.416,
+        0.251,
+        0.19,
+        0.143,
+        0.17,
+        0.206,
+        0.438,
+        0.133,
+        0.097,
+        0.074,
+        0.306
+      ],
+      "timbre": [
+        44.227,
+        6.229,
+        -7.613,
+        76.841,
+        5.755,
+        -80.879,
+        -16.875,
+        -75.296,
+        -34.285,
+        41.386,
+        -27.088,
+        20.975
+      ]
+    },
+    {
+      "start": 18.99438,
+      "duration": 0.13297,
+      "confidence": 0.819,
+      "loudness_start": -21.934,
+      "loudness_max_time": 0.04254,
+      "loudness_max": -9.881,
+      "pitches": [
+        0.523,
+        0.398,
+        0.367,
+        0.36,
+        0.597,
+        0.985,
+        1,
+        0.872,
+        0.511,
+        0.335,
+        0.27,
+        0.24
+      ],
+      "timbre": [
+        44.008,
+        -123.067,
+        -30.531,
+        1.988,
+        47.564,
+        16.074,
+        2.06,
+        -31.698,
+        -30.149,
+        10.556,
+        -5.582,
+        9.394
+      ]
+    },
+    {
+      "start": 19.12735,
+      "duration": 0.14948,
+      "confidence": 0.16,
+      "loudness_start": -20.349,
+      "loudness_max_time": 0.0417,
+      "loudness_max": -15.041,
+      "pitches": [
+        0.225,
+        0.11,
+        0.105,
+        0.078,
+        0.106,
+        0.282,
+        0.108,
+        0.237,
+        0.186,
+        0.964,
+        1,
+        0.259
+      ],
+      "timbre": [
+        42.468,
+        -106.373,
+        -23.467,
+        -14.686,
+        36.615,
+        -46.451,
+        16.058,
+        -10.548,
+        -6.082,
+        -26.201,
+        -4.081,
+        26.455
+      ]
+    },
+    {
+      "start": 19.27683,
+      "duration": 0.23914,
+      "confidence": 1,
+      "loudness_start": -19.117,
+      "loudness_max_time": 0.02026,
+      "loudness_max": -3.502,
+      "pitches": [
+        0.277,
+        0.2,
+        0.103,
+        0.307,
+        1,
+        0.578,
+        0.253,
+        0.222,
+        0.134,
+        0.744,
+        0.207,
+        0.242
+      ],
+      "timbre": [
+        48.488,
+        -13.537,
+        -28.427,
+        107.363,
+        1.386,
+        -7.575,
+        12.324,
+        -7.97,
+        -15.162,
+        -7.063,
+        -26.534,
+        35.625
+      ]
+    },
+    {
+      "start": 19.51596,
+      "duration": 0.1639,
+      "confidence": 1,
+      "loudness_start": -23.356,
+      "loudness_max_time": 0.03711,
+      "loudness_max": -8.308,
+      "pitches": [
+        1,
+        0.201,
+        0.22,
+        0.266,
+        0.45,
+        0.887,
+        0.397,
+        0.308,
+        0.166,
+        0.316,
+        0.141,
+        0.175
+      ],
+      "timbre": [
+        44.006,
+        33.643,
+        -20.301,
+        16.314,
+        69.093,
+        61.172,
+        18.383,
+        -36.863,
+        26.736,
+        -75.191,
+        -0.473,
+        -3.25
+      ]
+    },
+    {
+      "start": 19.67986,
+      "duration": 0.10313,
+      "confidence": 0.881,
+      "loudness_start": -21.723,
+      "loudness_max_time": 0.03926,
+      "loudness_max": -9.713,
+      "pitches": [
+        0.436,
+        0.276,
+        0.239,
+        0.355,
+        0.735,
+        1,
+        0.471,
+        0.347,
+        0.267,
+        0.167,
+        0.107,
+        0.079
+      ],
+      "timbre": [
+        46.967,
+        -94.406,
+        -37.545,
+        3.683,
+        25.087,
+        -33.915,
+        -52.855,
+        -11.369,
+        19.072,
+        -10.499,
+        -3.195,
+        4.341
+      ]
+    },
+    {
+      "start": 19.78299,
+      "duration": 0.15737,
+      "confidence": 0.343,
+      "loudness_start": -17.921,
+      "loudness_max_time": 0.03206,
+      "loudness_max": -10.621,
+      "pitches": [
+        0.814,
+        0.592,
+        0.54,
+        0.296,
+        0.498,
+        0.498,
+        0.67,
+        0.488,
+        0.245,
+        0.351,
+        1,
+        0.393
+      ],
+      "timbre": [
+        46.337,
+        40.932,
+        65.333,
+        -36.224,
+        49.244,
+        -20.937,
+        -11.535,
+        25.759,
+        28.36,
+        -29.117,
+        38.493,
+        -9.868
+      ]
+    },
+    {
+      "start": 19.94036,
+      "duration": 0.11506,
+      "confidence": 0.413,
+      "loudness_start": -13.082,
+      "loudness_max_time": 0.0024,
+      "loudness_max": -8.668,
+      "pitches": [
+        0.433,
+        0.336,
+        0.342,
+        0.36,
+        0.425,
+        0.705,
+        0.647,
+        0.401,
+        0.282,
+        0.305,
+        1,
+        0.349
+      ],
+      "timbre": [
+        47.938,
+        115.465,
+        58.056,
+        66.407,
+        50.658,
+        -19.932,
+        -27.889,
+        -47.485,
+        -5.743,
+        -24.21,
+        -51.176,
+        4.32
+      ]
+    },
+    {
+      "start": 20.05542,
+      "duration": 0.21537,
+      "confidence": 0.625,
+      "loudness_start": -19.41,
+      "loudness_max_time": 0.03567,
+      "loudness_max": -9.015,
+      "pitches": [
+        0.271,
+        0.239,
+        0.069,
+        0.117,
+        1,
+        0.717,
+        0.382,
+        0.265,
+        0.212,
+        0.325,
+        0.126,
+        0.117
+      ],
+      "timbre": [
+        46.101,
+        -69.641,
+        -4.096,
+        25.043,
+        29.976,
+        -14.498,
+        -23.602,
+        1.489,
+        -23.325,
+        24.799,
+        21.046,
+        -0.68
+      ]
+    },
+    {
+      "start": 20.27079,
+      "duration": 0.19102,
+      "confidence": 0.894,
+      "loudness_start": -18.099,
+      "loudness_max_time": 0.06652,
+      "loudness_max": -3.54,
+      "pitches": [
+        0.335,
+        0.562,
+        0.463,
+        0.563,
+        0.681,
+        1,
+        0.691,
+        0.385,
+        0.357,
+        0.41,
+        0.452,
+        0.246
+      ],
+      "timbre": [
+        47.123,
+        -29.237,
+        -19.207,
+        -23.202,
+        2.081,
+        8.21,
+        30.101,
+        -22.602,
+        -25.397,
+        -32.383,
+        -47.594,
+        27.671
+      ]
+    },
+    {
+      "start": 20.46181,
+      "duration": 0.13501,
+      "confidence": 0.738,
+      "loudness_start": -17.315,
+      "loudness_max_time": 0.00814,
+      "loudness_max": -7.53,
+      "pitches": [
+        0.393,
+        0.22,
+        0.121,
+        0.137,
+        0.233,
+        1,
+        0.229,
+        0.232,
+        0.214,
+        0.226,
+        0.298,
+        0.278
+      ],
+      "timbre": [
+        47.787,
+        64.692,
+        64.341,
+        61.66,
+        40.557,
+        -48.826,
+        -18.174,
+        -17.038,
+        -40.955,
+        -12.054,
+        -35.864,
+        -11.916
+      ]
+    },
+    {
+      "start": 20.59683,
+      "duration": 0.10844,
+      "confidence": 0.51,
+      "loudness_start": -18.627,
+      "loudness_max_time": 0.00965,
+      "loudness_max": -8.631,
+      "pitches": [
+        0.505,
+        0.313,
+        0.297,
+        1,
+        0.332,
+        0.251,
+        0.303,
+        0.219,
+        0.105,
+        0.12,
+        0.234,
+        0.066
+      ],
+      "timbre": [
+        45.528,
+        22.04,
+        13.506,
+        65.363,
+        50.586,
+        -59.56,
+        -20.893,
+        -79.723,
+        -31.093,
+        37.685,
+        -39.288,
+        14.699
+      ]
+    },
+    {
+      "start": 20.70526,
+      "duration": 0.28113,
+      "confidence": 1,
+      "loudness_start": -20.647,
+      "loudness_max_time": 0.03478,
+      "loudness_max": -3.02,
+      "pitches": [
+        0.397,
+        0.244,
+        0.092,
+        0.539,
+        1,
+        0.693,
+        0.389,
+        0.314,
+        0.226,
+        0.212,
+        0.212,
+        0.128
+      ],
+      "timbre": [
+        49.652,
+        24.175,
+        -0.404,
+        52.88,
+        46.67,
+        39.367,
+        -21.078,
+        8.911,
+        2.387,
+        -15.453,
+        31.646,
+        0.596
+      ]
+    },
+    {
+      "start": 20.98639,
+      "duration": 0.10952,
+      "confidence": 0.686,
+      "loudness_start": -17.652,
+      "loudness_max_time": 0.00883,
+      "loudness_max": -8.228,
+      "pitches": [
+        0.525,
+        0.333,
+        1,
+        0.365,
+        0.192,
+        0.262,
+        0.35,
+        0.29,
+        0.171,
+        0.275,
+        0.108,
+        0.099
+      ],
+      "timbre": [
+        44.313,
+        9,
+        24.85,
+        89.079,
+        29.21,
+        -79.099,
+        -18.74,
+        -82.738,
+        -32.753,
+        39.688,
+        -20.043,
+        7.444
+      ]
+    },
+    {
+      "start": 21.09592,
+      "duration": 0.12594,
+      "confidence": 0.789,
+      "loudness_start": -21.592,
+      "loudness_max_time": 0.03876,
+      "loudness_max": -10.545,
+      "pitches": [
+        0.394,
+        0.353,
+        0.356,
+        0.371,
+        0.605,
+        1,
+        1,
+        0.772,
+        0.504,
+        0.332,
+        0.267,
+        0.151
+      ],
+      "timbre": [
+        44.063,
+        -125.899,
+        -24.964,
+        11.449,
+        52.382,
+        1.601,
+        -4.866,
+        -36.643,
+        -35.686,
+        22.961,
+        6.078,
+        -0.215
+      ]
+    },
+    {
+      "start": 21.22186,
+      "duration": 0.13007,
+      "confidence": 0.275,
+      "loudness_start": -19.429,
+      "loudness_max_time": 0.04455,
+      "loudness_max": -14.261,
+      "pitches": [
+        0.569,
+        0.219,
+        0.138,
+        0.134,
+        0.158,
+        0.159,
+        0.123,
+        0.222,
+        0.139,
+        0.728,
+        1,
+        0.271
+      ],
+      "timbre": [
+        42.708,
+        -116.35,
+        -25.613,
+        -13.699,
+        40.836,
+        -36.271,
+        17.669,
+        -15.085,
+        -10.252,
+        -29.805,
+        -8.316,
+        14.08
+      ]
+    },
+    {
+      "start": 21.35193,
+      "duration": 0.36454,
+      "confidence": 1,
+      "loudness_start": -19.136,
+      "loudness_max_time": 0.08227,
+      "loudness_max": -2.682,
+      "pitches": [
+        0.422,
+        0.282,
+        0.227,
+        0.86,
+        1,
+        0.886,
+        0.57,
+        0.506,
+        0.462,
+        0.485,
+        0.42,
+        0.338
+      ],
+      "timbre": [
+        50.007,
+        22.282,
+        40.887,
+        -50.419,
+        43.235,
+        53.308,
+        33.73,
+        45.385,
+        2.272,
+        -65.541,
+        27.54,
+        -8.594
+      ]
+    },
+    {
+      "start": 21.71646,
+      "duration": 0.32005,
+      "confidence": 0.659,
+      "loudness_start": -11.221,
+      "loudness_max_time": 0.0797,
+      "loudness_max": -3.43,
+      "pitches": [
+        0.367,
+        0.299,
+        0.163,
+        0.204,
+        0.86,
+        1,
+        0.6,
+        0.507,
+        0.44,
+        0.347,
+        0.298,
+        0.201
+      ],
+      "timbre": [
+        51.454,
+        70.151,
+        108.288,
+        0.167,
+        75.008,
+        -27.919,
+        -8.932,
+        18.044,
+        -27.703,
+        3.726,
+        -12.111,
+        4.526
+      ]
+    },
+    {
+      "start": 22.03651,
+      "duration": 0.11569,
+      "confidence": 0.349,
+      "loudness_start": -13.01,
+      "loudness_max_time": 0.03415,
+      "loudness_max": -8.401,
+      "pitches": [
+        0.493,
+        0.244,
+        0.174,
+        0.36,
+        0.351,
+        0.382,
+        0.387,
+        0.402,
+        0.478,
+        1,
+        0.366,
+        0.336
+      ],
+      "timbre": [
+        48.838,
+        64.734,
+        126.048,
+        82.649,
+        83.471,
+        -14.904,
+        -9.632,
+        -25.094,
+        -20.791,
+        -20.027,
+        -38.926,
+        3.968
+      ]
+    },
+    {
+      "start": 22.1522,
+      "duration": 0.22576,
+      "confidence": 0.929,
+      "loudness_start": -19.181,
+      "loudness_max_time": 0.04166,
+      "loudness_max": -4.675,
+      "pitches": [
+        0.331,
+        0.259,
+        0.132,
+        0.209,
+        1,
+        0.743,
+        0.459,
+        0.399,
+        0.315,
+        0.28,
+        0.37,
+        0.153
+      ],
+      "timbre": [
+        51.377,
+        37.793,
+        51.311,
+        10.837,
+        64.878,
+        13.116,
+        -5.99,
+        19.649,
+        -31.516,
+        11.55,
+        55.336,
+        -13.349
+      ]
+    },
+    {
+      "start": 22.37796,
+      "duration": 0.18,
+      "confidence": 0.616,
+      "loudness_start": -10.756,
+      "loudness_max_time": 0.06901,
+      "loudness_max": -2.745,
+      "pitches": [
+        0.57,
+        1,
+        0.764,
+        0.701,
+        0.685,
+        0.868,
+        0.75,
+        0.186,
+        0.312,
+        0.299,
+        0.274,
+        0.293
+      ],
+      "timbre": [
+        49.705,
+        24.891,
+        40.923,
+        52.895,
+        34.991,
+        3.264,
+        15.772,
+        -41.002,
+        -42.368,
+        2.67,
+        -59.139,
+        22.957
+      ]
+    },
+    {
+      "start": 22.55796,
+      "duration": 0.1337,
+      "confidence": 0.63,
+      "loudness_start": -17.346,
+      "loudness_max_time": 0.0081,
+      "loudness_max": -6.762,
+      "pitches": [
+        1,
+        0.303,
+        0.162,
+        0.193,
+        0.288,
+        0.361,
+        0.319,
+        0.395,
+        0.357,
+        0.337,
+        0.486,
+        0.431
+      ],
+      "timbre": [
+        47.129,
+        87.737,
+        79.738,
+        77.999,
+        42.155,
+        -52.185,
+        -11.505,
+        -13.885,
+        -35.688,
+        -16.98,
+        -40.751,
+        -26.509
+      ]
+    },
+    {
+      "start": 22.69166,
+      "duration": 0.11624,
+      "confidence": 0.391,
+      "loudness_start": -19.621,
+      "loudness_max_time": 0.00704,
+      "loudness_max": -11.093,
+      "pitches": [
+        1,
+        0.41,
+        0.34,
+        0.334,
+        0.283,
+        0.33,
+        0.39,
+        0.245,
+        0.124,
+        0.148,
+        0.11,
+        0.072
+      ],
+      "timbre": [
+        44.01,
+        68.592,
+        22.338,
+        56.421,
+        39.505,
+        -56.865,
+        -25.862,
+        -85.115,
+        -32.739,
+        42.692,
+        -33.502,
+        0.076
+      ]
+    },
+    {
+      "start": 22.80789,
+      "duration": 0.27841,
+      "confidence": 1,
+      "loudness_start": -20.735,
+      "loudness_max_time": 0.02857,
+      "loudness_max": -3.218,
+      "pitches": [
+        0.345,
+        0.221,
+        0.081,
+        0.128,
+        1,
+        0.661,
+        0.348,
+        0.257,
+        0.209,
+        0.41,
+        0.353,
+        0.126
+      ],
+      "timbre": [
+        49.441,
+        45.282,
+        5.388,
+        67.239,
+        43.316,
+        24.858,
+        -32.865,
+        11.814,
+        -5.898,
+        4.988,
+        37.659,
+        -1.521
+      ]
+    },
+    {
+      "start": 23.0863,
+      "duration": 0.10435,
+      "confidence": 0.637,
+      "loudness_start": -18.976,
+      "loudness_max_time": 0.00827,
+      "loudness_max": -10.118,
+      "pitches": [
+        0.78,
+        0.491,
+        0.488,
+        0.445,
+        0.359,
+        0.436,
+        0.52,
+        0.464,
+        0.304,
+        1,
+        0.2,
+        0.134
+      ],
+      "timbre": [
+        43.565,
+        28.005,
+        41.341,
+        71.117,
+        21.863,
+        -78.668,
+        -34.911,
+        -82.218,
+        -43.234,
+        50.015,
+        -22.66,
+        11.367
+      ]
+    },
+    {
+      "start": 23.19066,
+      "duration": 0.13383,
+      "confidence": 0.803,
+      "loudness_start": -21.348,
+      "loudness_max_time": 0.04311,
+      "loudness_max": -9.949,
+      "pitches": [
+        0.323,
+        0.324,
+        0.367,
+        0.376,
+        0.655,
+        0.864,
+        1,
+        0.741,
+        0.505,
+        0.341,
+        0.258,
+        0.174
+      ],
+      "timbre": [
+        44.218,
+        -116.344,
+        -8.758,
+        10.001,
+        37.022,
+        10.735,
+        -2.742,
+        -39.332,
+        -43.033,
+        17.421,
+        6.113,
+        -4.756
+      ]
+    },
+    {
+      "start": 23.32449,
+      "duration": 0.11973,
+      "confidence": 0.202,
+      "loudness_start": -19.104,
+      "loudness_max_time": 0.03877,
+      "loudness_max": -14.419,
+      "pitches": [
+        0.291,
+        0.148,
+        0.102,
+        0.1,
+        0.12,
+        0.33,
+        0.125,
+        0.156,
+        0.148,
+        0.725,
+        1,
+        0.268
+      ],
+      "timbre": [
+        42.877,
+        -107.895,
+        -13.287,
+        -10.953,
+        23.592,
+        -35.32,
+        20.188,
+        -18.467,
+        -21.223,
+        -32.897,
+        -5.891,
+        0.952
+      ]
+    },
+    {
+      "start": 23.44422,
+      "duration": 0.28122,
+      "confidence": 1,
+      "loudness_start": -19.315,
+      "loudness_max_time": 0.04552,
+      "loudness_max": -2.997,
+      "pitches": [
+        0.431,
+        0.273,
+        0.216,
+        0.449,
+        1,
+        0.726,
+        0.423,
+        0.365,
+        0.282,
+        0.257,
+        0.281,
+        0.352
+      ],
+      "timbre": [
+        46.851,
+        -21.722,
+        7.29,
+        40.055,
+        21.412,
+        74.147,
+        15.832,
+        27.619,
+        -0.84,
+        -73.323,
+        -26.802,
+        12.324
+      ]
+    },
+    {
+      "start": 23.72544,
+      "duration": 0.14435,
+      "confidence": 0.998,
+      "loudness_start": -23.748,
+      "loudness_max_time": 0.0255,
+      "loudness_max": -10.145,
+      "pitches": [
+        0.355,
+        0.262,
+        0.271,
+        0.345,
+        0.766,
+        0.685,
+        0.507,
+        0.253,
+        0.179,
+        1,
+        0.189,
+        0.238
+      ],
+      "timbre": [
+        44.238,
+        76.503,
+        27.121,
+        66.113,
+        68.96,
+        13.143,
+        -11.685,
+        -80.27,
+        -26.52,
+        -12.561,
+        28.428,
+        5.291
+      ]
+    },
+    {
+      "start": 23.8698,
+      "duration": 0.13379,
+      "confidence": 0.892,
+      "loudness_start": -21.295,
+      "loudness_max_time": 0.04236,
+      "loudness_max": -9.07,
+      "pitches": [
+        0.404,
+        0.269,
+        0.237,
+        0.326,
+        1,
+        0.97,
+        0.533,
+        0.384,
+        0.302,
+        0.294,
+        0.142,
+        0.056
+      ],
+      "timbre": [
+        47.269,
+        -77.443,
+        -9.976,
+        2.178,
+        26.73,
+        -23.464,
+        -30.483,
+        -4.531,
+        5.063,
+        -12.778,
+        15.542,
+        6.949
+      ]
+    },
+    {
+      "start": 24.00358,
+      "duration": 0.24349,
+      "confidence": 0.496,
+      "loudness_start": -16.61,
+      "loudness_max_time": 0.1695,
+      "loudness_max": -8.173,
+      "pitches": [
+        0.38,
+        0.299,
+        0.235,
+        0.232,
+        0.275,
+        1,
+        0.56,
+        0.226,
+        0.193,
+        0.219,
+        0.22,
+        0.172
+      ],
+      "timbre": [
+        47.616,
+        81.536,
+        83.607,
+        -38.582,
+        46.806,
+        -39.113,
+        -29.25,
+        16.112,
+        2.416,
+        2.062,
+        -10.541,
+        2.779
+      ]
+    },
+    {
+      "start": 24.24707,
+      "duration": 0.21365,
+      "confidence": 0.708,
+      "loudness_start": -19.242,
+      "loudness_max_time": 0.03967,
+      "loudness_max": -8.734,
+      "pitches": [
+        0.24,
+        0.23,
+        0.078,
+        0.469,
+        1,
+        0.749,
+        0.422,
+        0.303,
+        0.23,
+        0.143,
+        0.154,
+        0.1
+      ],
+      "timbre": [
+        46.305,
+        -73.366,
+        -9.456,
+        22.776,
+        37.86,
+        -0.515,
+        -24.712,
+        -2.04,
+        -18.353,
+        17.613,
+        10.875,
+        -0.908
+      ]
+    },
+    {
+      "start": 24.46073,
+      "duration": 0.19941,
+      "confidence": 0.93,
+      "loudness_start": -18.873,
+      "loudness_max_time": 0.07306,
+      "loudness_max": -2.872,
+      "pitches": [
+        0.385,
+        0.623,
+        0.503,
+        0.764,
+        0.746,
+        1,
+        0.759,
+        0.422,
+        0.387,
+        0.43,
+        0.5,
+        0.275
+      ],
+      "timbre": [
+        47.307,
+        -30.193,
+        -18.367,
+        -31.537,
+        12.477,
+        3.657,
+        35.783,
+        -18.695,
+        -26.176,
+        -34.395,
+        -44.337,
+        25.66
+      ]
+    },
+    {
+      "start": 24.66014,
+      "duration": 0.12748,
+      "confidence": 0.735,
+      "loudness_start": -17.015,
+      "loudness_max_time": 0.00192,
+      "loudness_max": -5.772,
+      "pitches": [
+        0.273,
+        0.215,
+        1,
+        0.218,
+        0.211,
+        0.264,
+        0.248,
+        0.209,
+        0.223,
+        0.405,
+        0.307,
+        0.275
+      ],
+      "timbre": [
+        48.142,
+        57.548,
+        63.161,
+        66.841,
+        33.245,
+        -53.093,
+        -13.345,
+        -22.914,
+        -42.086,
+        -20.11,
+        -42.292,
+        -11.403
+      ]
+    },
+    {
+      "start": 24.78762,
+      "duration": 0.11542,
+      "confidence": 0.402,
+      "loudness_start": -18.443,
+      "loudness_max_time": 0.00815,
+      "loudness_max": -8.916,
+      "pitches": [
+        1,
+        0.325,
+        0.216,
+        0.207,
+        0.202,
+        0.205,
+        0.258,
+        0.257,
+        0.085,
+        0.093,
+        0.078,
+        0.108
+      ],
+      "timbre": [
+        45.317,
+        36.199,
+        4.377,
+        64.25,
+        46.795,
+        -51.778,
+        -19.342,
+        -87.733,
+        -24.81,
+        36.494,
+        -38.001,
+        12.506
+      ]
+    },
+    {
+      "start": 24.90304,
+      "duration": 0.27937,
+      "confidence": 1,
+      "loudness_start": -21.58,
+      "loudness_max_time": 0.02632,
+      "loudness_max": -3.313,
+      "pitches": [
+        0.764,
+        0.261,
+        0.099,
+        0.229,
+        1,
+        0.698,
+        0.373,
+        0.319,
+        0.207,
+        0.189,
+        0.16,
+        0.145
+      ],
+      "timbre": [
+        50.026,
+        28.101,
+        -3.344,
+        52.679,
+        43.575,
+        26.157,
+        -27.157,
+        9.084,
+        2.238,
+        -4.946,
+        31.986,
+        1.347
+      ]
+    },
+    {
+      "start": 25.1824,
+      "duration": 0.10902,
+      "confidence": 0.627,
+      "loudness_start": -17.47,
+      "loudness_max_time": 0.00782,
+      "loudness_max": -8.646,
+      "pitches": [
+        0.525,
+        0.314,
+        0.346,
+        1,
+        0.279,
+        0.299,
+        0.368,
+        0.346,
+        0.192,
+        0.167,
+        0.241,
+        0.089
+      ],
+      "timbre": [
+        43.971,
+        7.049,
+        27.796,
+        85.137,
+        26.872,
+        -85.722,
+        -22.872,
+        -82.047,
+        -42.328,
+        45.904,
+        -26.647,
+        8.356
+      ]
+    },
+    {
+      "start": 25.29143,
+      "duration": 0.12907,
+      "confidence": 0.799,
+      "loudness_start": -21.868,
+      "loudness_max_time": 0.03676,
+      "loudness_max": -10.164,
+      "pitches": [
+        0.314,
+        0.322,
+        0.364,
+        0.387,
+        0.677,
+        0.884,
+        1,
+        0.749,
+        0.512,
+        0.334,
+        0.248,
+        0.162
+      ],
+      "timbre": [
+        44.167,
+        -128.284,
+        -16.124,
+        20.067,
+        35.152,
+        -3.335,
+        -7.741,
+        -37.273,
+        -46.711,
+        25.988,
+        16.073,
+        -8.626
+      ]
+    },
+    {
+      "start": 25.4205,
+      "duration": 0.12558,
+      "confidence": 0.33,
+      "loudness_start": -20.145,
+      "loudness_max_time": 0.04003,
+      "loudness_max": -14.185,
+      "pitches": [
+        0.277,
+        0.141,
+        0.101,
+        0.098,
+        0.118,
+        0.326,
+        0.119,
+        0.153,
+        0.139,
+        0.756,
+        1,
+        0.255
+      ],
+      "timbre": [
+        43.076,
+        -108.95,
+        -9.402,
+        -6.962,
+        22.299,
+        -37.147,
+        16.373,
+        -15.206,
+        -20.567,
+        -35.962,
+        -5.012,
+        0.469
+      ]
+    },
+    {
+      "start": 25.54608,
+      "duration": 0.21655,
+      "confidence": 0.621,
+      "loudness_start": -19.033,
+      "loudness_max_time": 0.03701,
+      "loudness_max": -11.938,
+      "pitches": [
+        0.354,
+        0.294,
+        0.256,
+        0.529,
+        1,
+        0.774,
+        0.48,
+        0.332,
+        0.294,
+        0.356,
+        0.186,
+        0.361
+      ],
+      "timbre": [
+        44.049,
+        -76.598,
+        -23.898,
+        -5.358,
+        21.954,
+        -17.041,
+        16.112,
+        3.65,
+        -15.582,
+        -30.335,
+        23.057,
+        -2.314
+      ]
+    },
+    {
+      "start": 25.76263,
+      "duration": 0.18517,
+      "confidence": 0.805,
+      "loudness_start": -20.788,
+      "loudness_max_time": 0.0919,
+      "loudness_max": -9.447,
+      "pitches": [
+        1,
+        0.442,
+        0.494,
+        0.495,
+        0.634,
+        0.871,
+        0.901,
+        0.718,
+        0.526,
+        0.995,
+        0.895,
+        0.593
+      ],
+      "timbre": [
+        43.121,
+        59.15,
+        102.714,
+        -32.586,
+        65.047,
+        -20.06,
+        -46.626,
+        12.276,
+        -14.541,
+        -10.495,
+        -28.89,
+        29.004
+      ]
+    },
+    {
+      "start": 25.9478,
+      "duration": 0.14472,
+      "confidence": 0.863,
+      "loudness_start": -19.771,
+      "loudness_max_time": 0.03451,
+      "loudness_max": -7.81,
+      "pitches": [
+        0.416,
+        0.351,
+        0.338,
+        0.377,
+        0.763,
+        1,
+        0.723,
+        0.527,
+        0.408,
+        0.23,
+        0.304,
+        0.124
+      ],
+      "timbre": [
+        47.641,
+        -47.576,
+        -2.266,
+        33.893,
+        40.134,
+        -12.248,
+        -23.852,
+        -21.153,
+        -30.467,
+        30.103,
+        10.954,
+        5.586
+      ]
+    },
+    {
+      "start": 26.09252,
+      "duration": 0.10562,
+      "confidence": 0.375,
+      "loudness_start": -16.749,
+      "loudness_max_time": 0.01526,
+      "loudness_max": -10.007,
+      "pitches": [
+        1,
+        0.289,
+        0.314,
+        0.249,
+        0.309,
+        0.315,
+        0.175,
+        0.238,
+        0.133,
+        0.166,
+        0.09,
+        0.085
+      ],
+      "timbre": [
+        44.709,
+        24.387,
+        51.969,
+        56.295,
+        30.313,
+        -55.514,
+        -13.317,
+        -27.174,
+        -14.641,
+        5.697,
+        -4.384,
+        -21.509
+      ]
+    },
+    {
+      "start": 26.19814,
+      "duration": 0.15814,
+      "confidence": 0.827,
+      "loudness_start": -19.452,
+      "loudness_max_time": 0.07095,
+      "loudness_max": -9.182,
+      "pitches": [
+        1,
+        0.359,
+        0.381,
+        0.473,
+        0.509,
+        0.583,
+        0.5,
+        0.4,
+        0.31,
+        0.282,
+        0.333,
+        0.336
+      ],
+      "timbre": [
+        46.402,
+        106.98,
+        74.713,
+        27.916,
+        55.085,
+        27.583,
+        -18.951,
+        -12.015,
+        -0.763,
+        -28.405,
+        -40.838,
+        -4.478
+      ]
+    },
+    {
+      "start": 26.35628,
+      "duration": 0.11424,
+      "confidence": 0.543,
+      "loudness_start": -19.923,
+      "loudness_max_time": 0.02256,
+      "loudness_max": -10.626,
+      "pitches": [
+        0.381,
+        0.262,
+        0.281,
+        0.376,
+        0.747,
+        1,
+        0.741,
+        0.53,
+        0.369,
+        0.21,
+        0.131,
+        0.087
+      ],
+      "timbre": [
+        45.34,
+        -117.954,
+        -19.223,
+        2.884,
+        20.631,
+        -43.088,
+        -31.135,
+        -14.85,
+        -34.09,
+        35.885,
+        20.211,
+        -1.281
+      ]
+    },
+    {
+      "start": 26.47052,
+      "duration": 0.14998,
+      "confidence": 0.477,
+      "loudness_start": -17.644,
+      "loudness_max_time": 0.06493,
+      "loudness_max": -12.336,
+      "pitches": [
+        0.355,
+        0.206,
+        0.087,
+        0.083,
+        0.145,
+        0.267,
+        0.468,
+        0.655,
+        0.469,
+        0.462,
+        1,
+        0.62
+      ],
+      "timbre": [
+        45.753,
+        0.306,
+        26.574,
+        -41.642,
+        19.678,
+        -19.674,
+        -20.068,
+        1.529,
+        1.297,
+        -18.695,
+        6.864,
+        8.712
+      ]
+    },
+    {
+      "start": 26.6205,
+      "duration": 0.13524,
+      "confidence": 0.148,
+      "loudness_start": -13.448,
+      "loudness_max_time": 0.01514,
+      "loudness_max": -10.234,
+      "pitches": [
+        0.32,
+        0.64,
+        0.333,
+        0.471,
+        0.926,
+        1,
+        0.467,
+        0.177,
+        0.141,
+        0.205,
+        0.093,
+        0.221
+      ],
+      "timbre": [
+        47.536,
+        -17.033,
+        -43.948,
+        -38.186,
+        -11.322,
+        -57.398,
+        -10.574,
+        -1.836,
+        -12.477,
+        9.39,
+        1.711,
+        6.285
+      ]
+    },
+    {
+      "start": 26.75574,
+      "duration": 0.13293,
+      "confidence": 0.519,
+      "loudness_start": -14.247,
+      "loudness_max_time": 0.00214,
+      "loudness_max": -6.111,
+      "pitches": [
+        0.364,
+        0.281,
+        0.157,
+        0.181,
+        0.399,
+        0.351,
+        0.266,
+        0.271,
+        0.298,
+        1,
+        0.415,
+        0.351
+      ],
+      "timbre": [
+        47.638,
+        78.008,
+        74.8,
+        65.988,
+        38.37,
+        -55.453,
+        -21.401,
+        -12.576,
+        -40.717,
+        -19.472,
+        -35.771,
+        -15.555
+      ]
+    },
+    {
+      "start": 26.88866,
+      "duration": 0.11646,
+      "confidence": 0.277,
+      "loudness_start": -18.546,
+      "loudness_max_time": 0.00802,
+      "loudness_max": -10.196,
+      "pitches": [
+        0.864,
+        0.502,
+        0.422,
+        0.473,
+        0.414,
+        1,
+        0.476,
+        0.251,
+        0.149,
+        0.192,
+        0.131,
+        0.045
+      ],
+      "timbre": [
+        43.739,
+        30.489,
+        19.018,
+        61.327,
+        44.589,
+        -75.56,
+        -12.494,
+        -87.858,
+        -36.634,
+        40.883,
+        -29.68,
+        23.058
+      ]
+    },
+    {
+      "start": 27.00512,
+      "duration": 0.27238,
+      "confidence": 1,
+      "loudness_start": -21.012,
+      "loudness_max_time": 0.02822,
+      "loudness_max": -3.363,
+      "pitches": [
+        0.464,
+        0.234,
+        0.082,
+        0.128,
+        1,
+        0.642,
+        0.336,
+        0.248,
+        0.196,
+        0.212,
+        0.205,
+        0.192
+      ],
+      "timbre": [
+        48.383,
+        12.041,
+        -17.016,
+        108.124,
+        41.018,
+        35.725,
+        -27.448,
+        -8.804,
+        -14.839,
+        -17.509,
+        6.536,
+        -3.765
+      ]
+    },
+    {
+      "start": 27.27751,
+      "duration": 0.1166,
+      "confidence": 0.767,
+      "loudness_start": -27.375,
+      "loudness_max_time": 0.00901,
+      "loudness_max": -13.246,
+      "pitches": [
+        0.884,
+        0.717,
+        0.797,
+        0.67,
+        0.63,
+        0.6,
+        0.59,
+        0.506,
+        0.49,
+        1,
+        0.713,
+        0.558
+      ],
+      "timbre": [
+        32.747,
+        113.312,
+        -9.039,
+        220.599,
+        -13.925,
+        -82.432,
+        -52.1,
+        -59.182,
+        -31.13,
+        28.088,
+        -71.913,
+        -0.21
+      ]
+    },
+    {
+      "start": 27.3941,
+      "duration": 0.51048,
+      "confidence": 1,
+      "loudness_start": -45,
+      "loudness_max_time": 0.05679,
+      "loudness_max": -11.585,
+      "pitches": [
+        0.812,
+        0.925,
+        0.962,
+        0.949,
+        0.98,
+        1,
+        0.96,
+        0.95,
+        0.897,
+        0.731,
+        0.593,
+        0.572
+      ],
+      "timbre": [
+        24.002,
+        102.336,
+        -59.911,
+        263.774,
+        26.758,
+        86.578,
+        -33.723,
+        9.184,
+        -65.286,
+        40.553,
+        -25.006,
+        -6.514
+      ]
+    },
+    {
+      "start": 27.90458,
+      "duration": 1.62875,
+      "confidence": 0.544,
+      "loudness_start": -56.378,
+      "loudness_max_time": 0.04866,
+      "loudness_max": -51.399,
+      "loudness_end": -60,
+      "pitches": [
+        0.789,
+        0.619,
+        0.594,
+        0.382,
+        0.838,
+        0.7,
+        0.851,
+        1,
+        0.88,
+        0.831,
+        0.424,
+        0.343
+      ],
+      "timbre": [
+        4.462,
+        116.149,
+        3.762,
+        29.358,
+        43.064,
+        -39.207,
+        -22.768,
+        48.181,
+        -49.011,
+        -8.289,
+        -5.944,
+        -17.697
+      ]
+    }
+  ]
+}

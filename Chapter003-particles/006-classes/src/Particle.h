@@ -13,6 +13,10 @@ class Particle
 {
 public:
     
+    void initialize(float x=ofRandomWidth(), float y=ofRandomHeight());
+    void updateMe();
+    void drawMe();
+
     ofPoint pos;
     ofPoint vel;
     ofColor color;

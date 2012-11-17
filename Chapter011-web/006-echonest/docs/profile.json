@@ -1,0 +1,35 @@
+{
+   "response" : {
+      "status" : {
+         "code" : 0,
+         "message" : "Success",
+         "version" : "4.2"
+      },
+      "track" : {
+         "artist" : "MIA",
+         "artist_id" : "ARLVB0I1187FB51F5B",
+         "audio_md5" : "2a8facbe31fa8f20bed29efdb454e884",
+         "audio_summary" : {
+            "analysis_url" : "http://echonest-analysis.s3.amazonaws.com/TR/TRECWVQ13B0B455090/3/full.json?AWSAccessKeyId=AKIAJRDFEY23UEVW42BQ&Expires=1353110330&Signature=ofJphToUWaxha%2BAp4qrqs/osxXY%3D",
+            "danceability" : 0.8754315487418757,
+            "duration" : 29.533330,
+            "energy" : 0.6884969721959496,
+            "key" : 0,
+            "liveness" : 0.1007527187599590,
+            "loudness" : -7.6070,
+            "mode" : 1,
+            "speechiness" : 0.06071305671336952,
+            "tempo" : 114.4260,
+            "time_signature" : 4
+         },
+         "bitrate" : 212,
+         "id" : "TRECWVQ13B0B455090",
+         "md5" : "5a9f1de27e36dfbaaeffb06219e99d37",
+         "release" : "Arular",
+         "samplerate" : 44100,
+         "song_id" : "SOKMPNY1315CD4938E",
+         "status" : "complete",
+         "title" : "One For The Head Skit"
+      }
+   }
+}
