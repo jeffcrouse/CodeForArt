@@ -27,7 +27,6 @@
 *.sqlite
 
 # OS generated files #
-######################
 .DS_Store?
 .DS_Store
 ehthumbs.db
@@ -35,8 +34,7 @@ Icon?
 Thumbs.db
 
 
-# XCode user profiles #
-######################
+# XCode user profiles 
 *.perspectivev3
 *.pbxuser
 *.mode1
@@ -52,3 +50,8 @@ xcuserdata
 # Exclude temp nibs and swap files
 *~.nib
 *.swp
+
+#Code::Blocks
+*.depend
+*.layout
+

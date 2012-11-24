@@ -24,30 +24,30 @@ void Thing::update() {
 	vel.y = ofClamp(vel.y, -max_vel, max_vel);
     loc += vel;
     acc.set(0,0);
-	
+
     if (loc.y > ofGetHeight()) {
 		vel.y *= -bounce;
 		loc.y = ofGetHeight();
     }
     if ((loc.x > ofGetWidth()) || (loc.x < 0)) {
 		vel.x *= -bounce;
-    }    
+    }
     //if (loc.x < 0)     loc.x = ofGetWidth();
     //if (loc.x > ofGetWidth()) loc.x = 0;
-	
+
 }
 
 // Renders a vector object 'v' as an arrow and a location 'loc'
 void Thing::drawVector(float scayl) {
-	
+
 	float angle = (float)atan2(-vel.y, vel.x);
     float theta =  -1.0*angle;
 	float heading2D = ofRadToDeg(theta);
 	float mag = sqrt(vel.x*vel.x + vel.y*vel.y);
-	
+
 	ofSetHexColor(0x000000);
 	ofNoFill();
-	
+
 	ofPushMatrix();
 	float arrowsize = 4;
 	// Translate to location to render vector
@@ -68,11 +68,11 @@ ofPoint Thing::calcGravForce(Thing* t) {
     float d = ofDist(t->loc.x, t->loc.y, loc.x, loc.y);		// Distance between objects
     d = ofClamp(d, 20.0, 50.0);								// Limiting the distance to eliminate "extreme" results for very close or very far objects
 	dir /= d;												// Normalize vector (distance doesn't matter here, we just want this vector for direction)
-    
+
 	float force = (G * mass * t->mass) / (d * d);			// Calculate gravitional force magnitude
     dir *= force;											// Get force vector --> magnitude * direction
-    
-	
+
+
 	return dir;
 }
 
@@ -85,7 +85,7 @@ void Thing::applyForce(ofPoint force) {
 
 void Thing::draw() {
 	ofFill();
-	ofSetColor(0x999999);
+	ofSetHexColor(0x999999);
 	ofCircle(loc.x, loc.y, mass*5);
 	drawVector(10);
 }
