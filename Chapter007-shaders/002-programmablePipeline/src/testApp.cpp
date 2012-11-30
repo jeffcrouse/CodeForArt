@@ -4,7 +4,7 @@
 void testApp::setup(){
 
     // Try changing "passthrough" to "shader"
-    shader.load("passthrough");
+    shader.load("shader");
     glEnable(GL_DEPTH_TEST);
 }
 
@@ -35,15 +35,6 @@ void testApp::draw(){
         ofFill();
         ofSetColor(100, 200, 100);
         ofBox(200);
-        /*
-        float s = 200;
-        glBegin(GL_QUADS); // Start drawing a quad primitive
-        glVertex3f(-s, -s, 0.0f);   glColor3f(1.0, 0, 0);
-        glVertex3f(-s, s, 0.0f);    glColor3f(0, 1.0, 0);
-        glVertex3f(s, s, 0.0f);     glColor3f(0, 1.0, 1.0);
-        glVertex3f(s, -s, 0.0f);    glColor3f(1.0, 1.0, 1.0);
-        glEnd();
-        */
         shader.end();
 
     }

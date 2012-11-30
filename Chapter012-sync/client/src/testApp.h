@@ -1,7 +1,8 @@
 #pragma once
 
 #include "ofMain.h"
-#define STRINGIFY(A) #A
+#include "ofxLibwebsockets.h"
+
 
 class testApp : public ofBaseApp{
 
@@ -19,7 +20,16 @@ class testApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
+		
+        ofxLibwebsockets::Client client;
+        bool bConnected;
     
-        ofVideoGrabber cam;
-        ofShader oldTV;
+    
+        // websocket methods
+        void onConnect( ofxLibwebsockets::Event& args );
+        void onOpen( ofxLibwebsockets::Event& args );
+        void onClose( ofxLibwebsockets::Event& args );
+        void onIdle( ofxLibwebsockets::Event& args );
+        void onMessage( ofxLibwebsockets::Event& args );
+        void onBroadcast( ofxLibwebsockets::Event& args );
 };

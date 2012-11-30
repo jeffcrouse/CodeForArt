@@ -3,6 +3,7 @@
 #include "ofMain.h"
 #define STRINGIFY(A) #A
 
+
 class testApp : public ofBaseApp{
 
 	public:
@@ -21,5 +22,5 @@ class testApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
     
         ofVideoGrabber cam;
-        ofShader oldTV;
+        ofShader noise;
 };
