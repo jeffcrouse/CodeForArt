@@ -2,26 +2,17 @@
 
 //--------------------------------------------------------------
 void testApp::setup(){
-	ofSetFrameRate(36);
-	ofBackground(200, 200, 200);
-	
-	gravity.y = 0.2;
+
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
-	
-	ps.applyForce(gravity);
-	ps.update();
-    
-	for(int i=0; i<10; i++) {
-		ps.addParticle(ofGetWidth()/2, ofGetHeight()-10);
-	}
+
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
-    ps.draw();
+
 }
 
 //--------------------------------------------------------------

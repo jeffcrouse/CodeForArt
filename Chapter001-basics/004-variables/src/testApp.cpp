@@ -1,13 +1,13 @@
 #include "testApp.h"
 
 /*
-
+ 
  1. The update() function
  2. Using & changing variables to make things move
  3. if statement
  4. How can you make it go faster?
  
-*/
+ */
 
 
 float circleX;
@@ -42,7 +42,6 @@ void testApp::draw(){
     ofSetColor(24, 58, 117);
     ofCircle(circleX, circleY, 20);
 }
-
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
 

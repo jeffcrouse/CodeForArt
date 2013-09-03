@@ -23,13 +23,14 @@ void testApp::setup(){
 	ofSetWindowShape(640, 480);
 	ofBackground(255, 255, 255);
 	ofEnableSmoothing();
-	
+	ofEnableAlphaBlending();
+    ofSetCircleResolution(100);
 	//ofSetBackgroundAuto(false);
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
-
+    
 }
 
 //--------------------------------------------------------------
@@ -64,12 +65,12 @@ void testApp::draw(){
 
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
-
+    
 }
 
 //--------------------------------------------------------------
 void testApp::keyReleased(int key){
-
+    
 }
 
 //--------------------------------------------------------------
@@ -102,15 +103,15 @@ void testApp::mouseReleased(int x, int y, int button){
 
 //--------------------------------------------------------------
 void testApp::windowResized(int w, int h){
-
+    
 }
 
 //--------------------------------------------------------------
 void testApp::gotMessage(ofMessage msg){
-
+    
 }
 
 //--------------------------------------------------------------
-void testApp::dragEvent(ofDragInfo dragInfo){ 
-
+void testApp::dragEvent(ofDragInfo dragInfo){
+    
 }
