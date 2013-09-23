@@ -2,6 +2,8 @@
 
 #include "ofMain.h"
 
+#define NUM_PARTICLES 100
+
 class testApp : public ofBaseApp{
 
 	public:
@@ -19,4 +21,10 @@ class testApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 		
+        float x_pos[NUM_PARTICLES];
+        float y_pos[NUM_PARTICLES];
+        float x_vel[NUM_PARTICLES];
+        float y_vel[NUM_PARTICLES];
+        float radius[NUM_PARTICLES];
+        int color[NUM_PARTICLES];
 };

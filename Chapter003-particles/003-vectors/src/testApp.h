@@ -19,4 +19,11 @@ class testApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 		
+        vector<ofPoint> pos;
+        vector<ofPoint> vel;
+        vector<ofColor> color;
+        vector<float> radius;
+        vector<float> born;
+    
+        ofPoint mouse, mousePrev, mouseVel;
 };

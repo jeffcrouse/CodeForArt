@@ -2,17 +2,40 @@
 
 //--------------------------------------------------------------
 void testApp::setup(){
-
+    
+    ofSetFrameRate(60);
+    ofBackgroundHex(0xEFDC9E);
+    ofEnableAlphaBlending();
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
-
+    
+    ofSetWindowTitle("fps="+ofToString(ofGetFrameRate()));
+    
+    for(int i=0; i<particles.size(); i++)
+    {
+        particles[i].updateMe();
+        
+        if(particles[i].color.a < 10) {
+            particles.erase( particles.begin() + i );
+        }
+    }
+    
+    
+    mouse.set(mouseX, mouseY);
+    mouseVel = mouse-mousePrev;
+    mousePrev = mouse;
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
-
+    
+    for(int i=0; i<particles.size(); i++)
+    {
+        particles[i].drawMe();
+    }
+    
 }
 
 //--------------------------------------------------------------
@@ -32,7 +55,9 @@ void testApp::mouseMoved(int x, int y ){
 
 //--------------------------------------------------------------
 void testApp::mouseDragged(int x, int y, int button){
-
+    Particle p;
+    p.initialize(x, y, mouseVel.x*5, mouseVel.y*5);
+    particles.push_back(p);
 }
 
 //--------------------------------------------------------------
