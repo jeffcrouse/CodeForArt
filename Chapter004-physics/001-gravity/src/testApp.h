@@ -19,4 +19,6 @@ class testApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 		
+        float radius;
+        ofPoint pos, vel, acc;
 };
